@@ -1,0 +1,7 @@
+# Runtime dependencies for the Cost-Center Drill-Down Analyzer.
+# Pinned to the exact versions the app was developed and tested with.
+# Requires Python 3.11+ (pandas 3.x); deploy with Python 3.12.
+streamlit==1.58.0
+pandas==3.0.3
+numpy==2.4.4
+plotly==6.8.0

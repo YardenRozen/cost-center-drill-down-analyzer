@@ -1,0 +1,47 @@
+# ---------------------------------------------------------------
+# IMPORTANT: the data/ folder and its CSV files MUST be committed.
+# The deployed app reads the mock data directly from the repo.
+# Do not add rules here that match data/ or *.csv.
+# ---------------------------------------------------------------
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test and tooling caches
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Packaging artifacts
+build/
+dist/
+*.egg-info/
+
+# Local Streamlit secrets (never commit credentials)
+.streamlit/secrets.toml
+
+# Editors and IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Office temporary lock files (e.g. ~$document.docx)
+~$*
+
+# Explicitly keep the mock data, even if a global ignore rule matches it
+!data/
+!data/*.csv
