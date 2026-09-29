@@ -1,0 +1,349 @@
+Month,Cost_Center,Expense_Category,Budget_Amount
+2026-01,HR,Payroll,185000.0
+2026-01,HR,Employee Welfare,22000.0
+2026-01,HR,Consulting,18000.0
+2026-01,HR,Software Licenses,6000.0
+2026-01,HR,Travel,4000.0
+2026-01,HR,Office Supplies,3500.0
+2026-01,IT,Payroll,240000.0
+2026-01,IT,Software Licenses,95000.0
+2026-01,IT,Cloud Infrastructure,70000.0
+2026-01,IT,Consulting,30000.0
+2026-01,IT,Travel,5000.0
+2026-01,IT,Office Supplies,4000.0
+2026-01,Marketing,Payroll,160000.0
+2026-01,Marketing,Advertising,120000.0
+2026-01,Marketing,Consulting,35000.0
+2026-01,Marketing,Travel,18000.0
+2026-01,Marketing,Software Licenses,12000.0
+2026-01,Marketing,Office Supplies,3000.0
+2026-01,R&D,Payroll,520000.0
+2026-01,R&D,Cloud Infrastructure,85000.0
+2026-01,R&D,Software Licenses,45000.0
+2026-01,R&D,Consulting,40000.0
+2026-01,R&D,Travel,22000.0
+2026-01,R&D,Office Supplies,5000.0
+2026-01,Operations,Payroll,210000.0
+2026-01,Operations,Consulting,25000.0
+2026-01,Operations,Office Supplies,15000.0
+2026-01,Operations,Travel,12000.0
+2026-01,Operations,Software Licenses,8000.0
+2026-02,HR,Payroll,185000.0
+2026-02,HR,Employee Welfare,22000.0
+2026-02,HR,Consulting,18000.0
+2026-02,HR,Software Licenses,6000.0
+2026-02,HR,Travel,4000.0
+2026-02,HR,Office Supplies,3500.0
+2026-02,IT,Payroll,240000.0
+2026-02,IT,Software Licenses,95000.0
+2026-02,IT,Cloud Infrastructure,70000.0
+2026-02,IT,Consulting,30000.0
+2026-02,IT,Travel,5000.0
+2026-02,IT,Office Supplies,4000.0
+2026-02,Marketing,Payroll,160000.0
+2026-02,Marketing,Advertising,120000.0
+2026-02,Marketing,Consulting,35000.0
+2026-02,Marketing,Travel,18000.0
+2026-02,Marketing,Software Licenses,12000.0
+2026-02,Marketing,Office Supplies,3000.0
+2026-02,R&D,Payroll,520000.0
+2026-02,R&D,Cloud Infrastructure,85000.0
+2026-02,R&D,Software Licenses,45000.0
+2026-02,R&D,Consulting,40000.0
+2026-02,R&D,Travel,22000.0
+2026-02,R&D,Office Supplies,5000.0
+2026-02,Operations,Payroll,210000.0
+2026-02,Operations,Consulting,25000.0
+2026-02,Operations,Office Supplies,15000.0
+2026-02,Operations,Travel,12000.0
+2026-02,Operations,Software Licenses,8000.0
+2026-03,HR,Payroll,185000.0
+2026-03,HR,Employee Welfare,22000.0
+2026-03,HR,Consulting,18000.0
+2026-03,HR,Software Licenses,6000.0
+2026-03,HR,Travel,4000.0
+2026-03,HR,Office Supplies,3500.0
+2026-03,IT,Payroll,240000.0
+2026-03,IT,Software Licenses,95000.0
+2026-03,IT,Cloud Infrastructure,70000.0
+2026-03,IT,Consulting,30000.0
+2026-03,IT,Travel,5000.0
+2026-03,IT,Office Supplies,4000.0
+2026-03,Marketing,Payroll,160000.0
+2026-03,Marketing,Advertising,144000.0
+2026-03,Marketing,Consulting,35000.0
+2026-03,Marketing,Travel,18000.0
+2026-03,Marketing,Software Licenses,12000.0
+2026-03,Marketing,Office Supplies,3000.0
+2026-03,R&D,Payroll,520000.0
+2026-03,R&D,Cloud Infrastructure,85000.0
+2026-03,R&D,Software Licenses,45000.0
+2026-03,R&D,Consulting,40000.0
+2026-03,R&D,Travel,22000.0
+2026-03,R&D,Office Supplies,5000.0
+2026-03,Operations,Payroll,210000.0
+2026-03,Operations,Consulting,25000.0
+2026-03,Operations,Office Supplies,15000.0
+2026-03,Operations,Travel,12000.0
+2026-03,Operations,Software Licenses,8000.0
+2026-04,HR,Payroll,185000.0
+2026-04,HR,Employee Welfare,39500.0
+2026-04,HR,Consulting,18000.0
+2026-04,HR,Software Licenses,6000.0
+2026-04,HR,Travel,4000.0
+2026-04,HR,Office Supplies,3500.0
+2026-04,IT,Payroll,240000.0
+2026-04,IT,Software Licenses,95000.0
+2026-04,IT,Cloud Infrastructure,70000.0
+2026-04,IT,Consulting,30000.0
+2026-04,IT,Travel,5000.0
+2026-04,IT,Office Supplies,4000.0
+2026-04,Marketing,Payroll,160000.0
+2026-04,Marketing,Advertising,120000.0
+2026-04,Marketing,Consulting,35000.0
+2026-04,Marketing,Travel,18000.0
+2026-04,Marketing,Software Licenses,12000.0
+2026-04,Marketing,Office Supplies,3000.0
+2026-04,R&D,Payroll,520000.0
+2026-04,R&D,Cloud Infrastructure,85000.0
+2026-04,R&D,Software Licenses,45000.0
+2026-04,R&D,Consulting,40000.0
+2026-04,R&D,Travel,22000.0
+2026-04,R&D,Office Supplies,5000.0
+2026-04,Operations,Payroll,210000.0
+2026-04,Operations,Consulting,25000.0
+2026-04,Operations,Office Supplies,15000.0
+2026-04,Operations,Travel,12000.0
+2026-04,Operations,Software Licenses,8000.0
+2026-05,HR,Payroll,185000.0
+2026-05,HR,Employee Welfare,22000.0
+2026-05,HR,Consulting,18000.0
+2026-05,HR,Software Licenses,6000.0
+2026-05,HR,Travel,4000.0
+2026-05,HR,Office Supplies,3500.0
+2026-05,IT,Payroll,240000.0
+2026-05,IT,Software Licenses,95000.0
+2026-05,IT,Cloud Infrastructure,70000.0
+2026-05,IT,Consulting,30000.0
+2026-05,IT,Travel,5000.0
+2026-05,IT,Office Supplies,4000.0
+2026-05,Marketing,Payroll,160000.0
+2026-05,Marketing,Advertising,120000.0
+2026-05,Marketing,Consulting,35000.0
+2026-05,Marketing,Travel,18000.0
+2026-05,Marketing,Software Licenses,12000.0
+2026-05,Marketing,Office Supplies,3000.0
+2026-05,R&D,Payroll,520000.0
+2026-05,R&D,Cloud Infrastructure,85000.0
+2026-05,R&D,Software Licenses,45000.0
+2026-05,R&D,Consulting,40000.0
+2026-05,R&D,Travel,22000.0
+2026-05,R&D,Office Supplies,5000.0
+2026-05,Operations,Payroll,210000.0
+2026-05,Operations,Consulting,25000.0
+2026-05,Operations,Office Supplies,15000.0
+2026-05,Operations,Travel,12000.0
+2026-05,Operations,Software Licenses,8000.0
+2026-06,HR,Payroll,185000.0
+2026-06,HR,Employee Welfare,22000.0
+2026-06,HR,Consulting,18000.0
+2026-06,HR,Software Licenses,6000.0
+2026-06,HR,Travel,4000.0
+2026-06,HR,Office Supplies,3500.0
+2026-06,IT,Payroll,240000.0
+2026-06,IT,Software Licenses,95000.0
+2026-06,IT,Cloud Infrastructure,70000.0
+2026-06,IT,Consulting,30000.0
+2026-06,IT,Travel,5000.0
+2026-06,IT,Office Supplies,4000.0
+2026-06,Marketing,Payroll,160000.0
+2026-06,Marketing,Advertising,120000.0
+2026-06,Marketing,Consulting,35000.0
+2026-06,Marketing,Travel,18000.0
+2026-06,Marketing,Software Licenses,12000.0
+2026-06,Marketing,Office Supplies,3000.0
+2026-06,R&D,Payroll,520000.0
+2026-06,R&D,Cloud Infrastructure,85000.0
+2026-06,R&D,Software Licenses,45000.0
+2026-06,R&D,Consulting,40000.0
+2026-06,R&D,Travel,22000.0
+2026-06,R&D,Office Supplies,5000.0
+2026-06,Operations,Payroll,210000.0
+2026-06,Operations,Consulting,25000.0
+2026-06,Operations,Office Supplies,15000.0
+2026-06,Operations,Travel,12000.0
+2026-06,Operations,Software Licenses,8000.0
+2026-07,HR,Payroll,185000.0
+2026-07,HR,Employee Welfare,22000.0
+2026-07,HR,Consulting,18000.0
+2026-07,HR,Software Licenses,6000.0
+2026-07,HR,Travel,2500.0
+2026-07,HR,Office Supplies,3500.0
+2026-07,IT,Payroll,240000.0
+2026-07,IT,Software Licenses,95000.0
+2026-07,IT,Cloud Infrastructure,70000.0
+2026-07,IT,Consulting,30000.0
+2026-07,IT,Travel,3000.0
+2026-07,IT,Office Supplies,4000.0
+2026-07,Marketing,Payroll,160000.0
+2026-07,Marketing,Advertising,120000.0
+2026-07,Marketing,Consulting,35000.0
+2026-07,Marketing,Travel,11000.0
+2026-07,Marketing,Software Licenses,12000.0
+2026-07,Marketing,Office Supplies,3000.0
+2026-07,R&D,Payroll,520000.0
+2026-07,R&D,Cloud Infrastructure,85000.0
+2026-07,R&D,Software Licenses,45000.0
+2026-07,R&D,Consulting,40000.0
+2026-07,R&D,Travel,13000.0
+2026-07,R&D,Office Supplies,5000.0
+2026-07,Operations,Payroll,210000.0
+2026-07,Operations,Consulting,25000.0
+2026-07,Operations,Office Supplies,15000.0
+2026-07,Operations,Travel,7000.0
+2026-07,Operations,Software Licenses,8000.0
+2026-08,HR,Payroll,185000.0
+2026-08,HR,Employee Welfare,22000.0
+2026-08,HR,Consulting,18000.0
+2026-08,HR,Software Licenses,6000.0
+2026-08,HR,Travel,2500.0
+2026-08,HR,Office Supplies,3500.0
+2026-08,IT,Payroll,240000.0
+2026-08,IT,Software Licenses,95000.0
+2026-08,IT,Cloud Infrastructure,70000.0
+2026-08,IT,Consulting,30000.0
+2026-08,IT,Travel,3000.0
+2026-08,IT,Office Supplies,4000.0
+2026-08,Marketing,Payroll,160000.0
+2026-08,Marketing,Advertising,120000.0
+2026-08,Marketing,Consulting,35000.0
+2026-08,Marketing,Travel,11000.0
+2026-08,Marketing,Software Licenses,12000.0
+2026-08,Marketing,Office Supplies,3000.0
+2026-08,R&D,Payroll,520000.0
+2026-08,R&D,Cloud Infrastructure,85000.0
+2026-08,R&D,Software Licenses,45000.0
+2026-08,R&D,Consulting,40000.0
+2026-08,R&D,Travel,13000.0
+2026-08,R&D,Office Supplies,5000.0
+2026-08,Operations,Payroll,210000.0
+2026-08,Operations,Consulting,25000.0
+2026-08,Operations,Office Supplies,15000.0
+2026-08,Operations,Travel,7000.0
+2026-08,Operations,Software Licenses,8000.0
+2026-09,HR,Payroll,185000.0
+2026-09,HR,Employee Welfare,39500.0
+2026-09,HR,Consulting,18000.0
+2026-09,HR,Software Licenses,6000.0
+2026-09,HR,Travel,4000.0
+2026-09,HR,Office Supplies,3500.0
+2026-09,IT,Payroll,240000.0
+2026-09,IT,Software Licenses,95000.0
+2026-09,IT,Cloud Infrastructure,70000.0
+2026-09,IT,Consulting,30000.0
+2026-09,IT,Travel,5000.0
+2026-09,IT,Office Supplies,4000.0
+2026-09,Marketing,Payroll,160000.0
+2026-09,Marketing,Advertising,138000.0
+2026-09,Marketing,Consulting,35000.0
+2026-09,Marketing,Travel,18000.0
+2026-09,Marketing,Software Licenses,12000.0
+2026-09,Marketing,Office Supplies,3000.0
+2026-09,R&D,Payroll,520000.0
+2026-09,R&D,Cloud Infrastructure,85000.0
+2026-09,R&D,Software Licenses,45000.0
+2026-09,R&D,Consulting,40000.0
+2026-09,R&D,Travel,22000.0
+2026-09,R&D,Office Supplies,5000.0
+2026-09,Operations,Payroll,210000.0
+2026-09,Operations,Consulting,25000.0
+2026-09,Operations,Office Supplies,15000.0
+2026-09,Operations,Travel,12000.0
+2026-09,Operations,Software Licenses,8000.0
+2026-10,HR,Payroll,185000.0
+2026-10,HR,Employee Welfare,22000.0
+2026-10,HR,Consulting,18000.0
+2026-10,HR,Software Licenses,6000.0
+2026-10,HR,Travel,5000.0
+2026-10,HR,Office Supplies,3500.0
+2026-10,IT,Payroll,240000.0
+2026-10,IT,Software Licenses,95000.0
+2026-10,IT,Cloud Infrastructure,70000.0
+2026-10,IT,Consulting,30000.0
+2026-10,IT,Travel,6500.0
+2026-10,IT,Office Supplies,4000.0
+2026-10,Marketing,Payroll,160000.0
+2026-10,Marketing,Advertising,120000.0
+2026-10,Marketing,Consulting,35000.0
+2026-10,Marketing,Travel,23500.0
+2026-10,Marketing,Software Licenses,12000.0
+2026-10,Marketing,Office Supplies,3000.0
+2026-10,R&D,Payroll,520000.0
+2026-10,R&D,Cloud Infrastructure,85000.0
+2026-10,R&D,Software Licenses,45000.0
+2026-10,R&D,Consulting,40000.0
+2026-10,R&D,Travel,28500.0
+2026-10,R&D,Office Supplies,5000.0
+2026-10,Operations,Payroll,210000.0
+2026-10,Operations,Consulting,25000.0
+2026-10,Operations,Office Supplies,15000.0
+2026-10,Operations,Travel,15500.0
+2026-10,Operations,Software Licenses,8000.0
+2026-11,HR,Payroll,185000.0
+2026-11,HR,Employee Welfare,22000.0
+2026-11,HR,Consulting,18000.0
+2026-11,HR,Software Licenses,6000.0
+2026-11,HR,Travel,4000.0
+2026-11,HR,Office Supplies,3500.0
+2026-11,IT,Payroll,240000.0
+2026-11,IT,Software Licenses,95000.0
+2026-11,IT,Cloud Infrastructure,70000.0
+2026-11,IT,Consulting,30000.0
+2026-11,IT,Travel,5000.0
+2026-11,IT,Office Supplies,4000.0
+2026-11,Marketing,Payroll,160000.0
+2026-11,Marketing,Advertising,168000.0
+2026-11,Marketing,Consulting,35000.0
+2026-11,Marketing,Travel,18000.0
+2026-11,Marketing,Software Licenses,12000.0
+2026-11,Marketing,Office Supplies,3000.0
+2026-11,R&D,Payroll,520000.0
+2026-11,R&D,Cloud Infrastructure,85000.0
+2026-11,R&D,Software Licenses,45000.0
+2026-11,R&D,Consulting,40000.0
+2026-11,R&D,Travel,22000.0
+2026-11,R&D,Office Supplies,5000.0
+2026-11,Operations,Payroll,210000.0
+2026-11,Operations,Consulting,25000.0
+2026-11,Operations,Office Supplies,15000.0
+2026-11,Operations,Travel,12000.0
+2026-11,Operations,Software Licenses,8000.0
+2026-12,HR,Payroll,185000.0
+2026-12,HR,Employee Welfare,22000.0
+2026-12,HR,Consulting,18000.0
+2026-12,HR,Software Licenses,6000.0
+2026-12,HR,Travel,4000.0
+2026-12,HR,Office Supplies,3500.0
+2026-12,IT,Payroll,240000.0
+2026-12,IT,Software Licenses,95000.0
+2026-12,IT,Cloud Infrastructure,70000.0
+2026-12,IT,Consulting,30000.0
+2026-12,IT,Travel,5000.0
+2026-12,IT,Office Supplies,4000.0
+2026-12,Marketing,Payroll,160000.0
+2026-12,Marketing,Advertising,156000.0
+2026-12,Marketing,Consulting,35000.0
+2026-12,Marketing,Travel,18000.0
+2026-12,Marketing,Software Licenses,12000.0
+2026-12,Marketing,Office Supplies,3000.0
+2026-12,R&D,Payroll,520000.0
+2026-12,R&D,Cloud Infrastructure,85000.0
+2026-12,R&D,Software Licenses,45000.0
+2026-12,R&D,Consulting,40000.0
+2026-12,R&D,Travel,22000.0
+2026-12,R&D,Office Supplies,5000.0
+2026-12,Operations,Payroll,210000.0
+2026-12,Operations,Consulting,25000.0
+2026-12,Operations,Office Supplies,15000.0
+2026-12,Operations,Travel,12000.0
+2026-12,Operations,Software Licenses,8000.0

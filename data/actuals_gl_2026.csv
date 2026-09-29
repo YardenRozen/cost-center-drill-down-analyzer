@@ -1,0 +1,1278 @@
+Transaction_ID,Date,Cost_Center,Expense_Category,Vendor_Name,Description,Actual_Amount
+JE-2026-000001,2026-01-01,HR,Consulting,PwC Kesselman,Tax advisory services - Jan 2026,2089.71
+JE-2026-000002,2026-01-01,HR,Travel,Issta Travel,Travel package - conference trip - Jan 2026,529.2
+JE-2026-000003,2026-01-01,IT,Office Supplies,Shufersal,Kitchen and refreshments - Jan 2026,875.4
+JE-2026-000004,2026-01-01,IT,Travel,Booking.com,Hotel accommodation - Jan 2026,242.41
+JE-2026-000005,2026-01-01,Operations,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jan 2026,3266.42
+JE-2026-000006,2026-01-01,R&D,Office Supplies,Shufersal,Kitchen and refreshments - Jan 2026,400.1
+JE-2026-000007,2026-01-01,R&D,Travel,Issta Travel,Travel package - conference trip - Jan 2026,1261.91
+JE-2026-000008,2026-01-04,IT,Travel,Gett,Local taxi rides - Jan 2026,178.83
+JE-2026-000009,2026-01-04,Marketing,Office Supplies,Office Depot Israel,Office stationery - Jan 2026,498.65
+JE-2026-000010,2026-01-04,Marketing,Software Licenses,Adobe,Adobe Creative Cloud licenses - Jan 2026,1536.81
+JE-2026-000011,2026-01-04,Marketing,Travel,Gett,Local taxi rides - Jan 2026,1110.55
+JE-2026-000012,2026-01-04,Operations,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Jan 2026,1815.19
+JE-2026-000013,2026-01-04,R&D,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - Jan 2026,7422.13
+JE-2026-000014,2026-01-04,R&D,Consulting,Deloitte Israel,Advisory services - process improvement - Jan 2026,5573.97
+JE-2026-000015,2026-01-05,HR,Office Supplies,Office Depot Israel,Office stationery - Jan 2026,435.61
+JE-2026-000016,2026-01-05,IT,Consulting,EY Kost Forer,Financial due diligence support - Jan 2026,2445.27
+JE-2026-000017,2026-01-05,IT,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jan 2026,4216.24
+JE-2026-000018,2026-01-05,IT,Travel,Gett,Local taxi rides - Jan 2026,806.62
+JE-2026-000019,2026-01-05,Marketing,Travel,Gett,Local taxi rides - Jan 2026,1517.57
+JE-2026-000020,2026-01-05,Operations,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jan 2026,3785.48
+JE-2026-000021,2026-01-06,HR,Consulting,EY Kost Forer,Financial due diligence support - Jan 2026,5511.09
+JE-2026-000022,2026-01-06,HR,Employee Welfare,BuyMe,Holiday gift cards - Jan 2026,10575.16
+JE-2026-000023,2026-01-06,HR,Office Supplies,Kravitz,Office stationery - Jan 2026,499.5
+JE-2026-000024,2026-01-06,IT,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - Jan 2026,22005.73
+JE-2026-000025,2026-01-06,IT,Cloud Infrastructure,Microsoft Azure,Azure virtual machines usage - Jan 2026,20377.81
+JE-2026-000026,2026-01-06,IT,Office Supplies,Kravitz,Office stationery - Jan 2026,290.57
+JE-2026-000027,2026-01-06,IT,Travel,Gett,Local taxi rides - Jan 2026,279.27
+JE-2026-000028,2026-01-06,Marketing,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jan 2026,6105.7
+JE-2026-000029,2026-01-06,Marketing,Consulting,EY Kost Forer,Financial due diligence support - Jan 2026,13271.75
+JE-2026-000030,2026-01-06,Marketing,Software Licenses,Microsoft,Microsoft 365 subscription - Jan 2026,1219.46
+JE-2026-000031,2026-01-06,Marketing,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Jan 2026,281.19
+JE-2026-000032,2026-01-06,Operations,Office Supplies,Shufersal,Kitchen and refreshments - Jan 2026,2868.2
+JE-2026-000033,2026-01-06,R&D,Office Supplies,Office Depot Israel,Office stationery - Jan 2026,1202.32
+JE-2026-000034,2026-01-07,HR,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Jan 2026,3179.07
+JE-2026-000035,2026-01-07,HR,Travel,Gett,Local taxi rides - Jan 2026,195.89
+JE-2026-000036,2026-01-07,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - Jan 2026,256.48
+JE-2026-000037,2026-01-07,IT,Travel,Gett,Local taxi rides - Jan 2026,760.64
+JE-2026-000038,2026-01-07,Marketing,Software Licenses,Slack Technologies,Slack Business+ subscription - Jan 2026,1756.75
+JE-2026-000039,2026-01-07,Operations,Software Licenses,Monday.com,Work management platform subscription - Jan 2026,1626.15
+JE-2026-000040,2026-01-08,HR,Office Supplies,Kravitz,Office stationery - Jan 2026,344.4
+JE-2026-000041,2026-01-08,IT,Office Supplies,Office Depot Israel,Office stationery - Jan 2026,848.09
+JE-2026-000042,2026-01-08,Operations,Office Supplies,IKEA Israel,Office furniture - Jan 2026,1258.28
+JE-2026-000043,2026-01-08,R&D,Office Supplies,Shufersal,Kitchen and refreshments - Jan 2026,1249.96
+JE-2026-000044,2026-01-11,HR,Travel,Hertz Israel,Car rental - Jan 2026,354.34
+JE-2026-000045,2026-01-11,Marketing,Advertising,Outbrain,Content recommendation campaign - Jan 2026,47146.44
+JE-2026-000046,2026-01-11,Marketing,Office Supplies,IKEA Israel,Office furniture - Jan 2026,688.12
+JE-2026-000047,2026-01-11,Operations,Software Licenses,Monday.com,Work management platform subscription - Jan 2026,4343.1
+JE-2026-000048,2026-01-11,R&D,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jan 2026,8465.61
+JE-2026-000049,2026-01-11,R&D,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Jan 2026,4356.83
+JE-2026-000050,2026-01-11,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - Jan 2026,6766.03
+JE-2026-000051,2026-01-12,IT,Cloud Infrastructure,Google Cloud,BigQuery analytics usage - Jan 2026,9195.15
+JE-2026-000052,2026-01-12,IT,Travel,Hertz Israel,Car rental - Jan 2026,290.42
+JE-2026-000053,2026-01-12,Marketing,Office Supplies,Office Depot Israel,Office stationery - Jan 2026,206.97
+JE-2026-000054,2026-01-12,Marketing,Office Supplies,IKEA Israel,Office furniture - Jan 2026,214.02
+JE-2026-000055,2026-01-12,Operations,Software Licenses,Salesforce,Additional CRM user seats - Jan 2026,2645.64
+JE-2026-000056,2026-01-13,HR,Travel,Booking.com,Hotel accommodation - Jan 2026,895.72
+JE-2026-000057,2026-01-13,Marketing,Advertising,Google Ads,Paid search campaign - Jan 2026,11530.88
+JE-2026-000058,2026-01-13,Marketing,Office Supplies,Office Depot Israel,Printer toner and paper - Jan 2026,585.43
+JE-2026-000059,2026-01-13,Operations,Office Supplies,Kravitz,Office stationery - Jan 2026,2962.86
+JE-2026-000060,2026-01-14,HR,Consulting,PwC Kesselman,Tax advisory services - Jan 2026,4468.32
+JE-2026-000061,2026-01-14,HR,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Jan 2026,259.81
+JE-2026-000062,2026-01-14,IT,Travel,Issta Travel,Travel package - conference trip - Jan 2026,373.3
+JE-2026-000063,2026-01-14,Marketing,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Jan 2026,13134.2
+JE-2026-000064,2026-01-14,Operations,Consulting,Nisha Recruitment,Recruitment fees - placement - Jan 2026,4096.25
+JE-2026-000065,2026-01-14,Operations,Office Supplies,IKEA Israel,Office furniture - Jan 2026,794.17
+JE-2026-000066,2026-01-14,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - Jan 2026,2786.92
+JE-2026-000067,2026-01-14,R&D,Travel,Gett,Local taxi rides - Jan 2026,3572.78
+JE-2026-000068,2026-01-14,R&D,Travel,Booking.com,Hotel accommodation - Jan 2026,2031.76
+JE-2026-000069,2026-01-15,HR,Employee Welfare,Holmes Place,Employee gym memberships - Jan 2026,11810.34
+JE-2026-000070,2026-01-15,IT,Office Supplies,Kravitz,Office stationery - Jan 2026,972.05
+JE-2026-000071,2026-01-15,IT,Software Licenses,Microsoft,Additional M365 user seats - Jan 2026,4870.34
+JE-2026-000072,2026-01-15,Marketing,Advertising,Google Ads,Paid search campaign - Jan 2026,25535.62
+JE-2026-000073,2026-01-15,Marketing,Office Supplies,Office Depot Israel,Office stationery - Jan 2026,95.04
+JE-2026-000074,2026-01-15,Operations,Office Supplies,Office Depot Israel,Office stationery - Jan 2026,2674.22
+JE-2026-000075,2026-01-15,R&D,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - Jan 2026,15637.66
+JE-2026-000076,2026-01-15,R&D,Software Licenses,JetBrains,IDE developer licenses renewal - Jan 2026,3928.48
+JE-2026-000077,2026-01-18,HR,Travel,Issta Travel,Travel package - conference trip - Jan 2026,396.69
+JE-2026-000078,2026-01-18,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - Jan 2026,398.12
+JE-2026-000079,2026-01-18,IT,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jan 2026,7241.21
+JE-2026-000080,2026-01-18,IT,Software Licenses,Monday.com,Work management platform subscription - Jan 2026,24322.11
+JE-2026-000081,2026-01-18,Marketing,Software Licenses,JetBrains,IDE developer licenses renewal - Jan 2026,1327.53
+JE-2026-000082,2026-01-18,Operations,Office Supplies,Office Depot Israel,Printer toner and paper - Jan 2026,2798.62
+JE-2026-000083,2026-01-18,Operations,Office Supplies,IKEA Israel,Office furniture - Jan 2026,307.01
+JE-2026-000084,2026-01-18,R&D,Consulting,Deloitte Israel,Advisory services - process improvement - Jan 2026,12324.05
+JE-2026-000085,2026-01-18,R&D,Consulting,Nisha Recruitment,Recruitment fees - placement - Jan 2026,5727.95
+JE-2026-000086,2026-01-19,HR,Office Supplies,IKEA Israel,Office furniture - Jan 2026,174.02
+JE-2026-000087,2026-01-19,IT,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - Jan 2026,13995.09
+JE-2026-000088,2026-01-19,Marketing,Office Supplies,Office Depot Israel,Office stationery - Jan 2026,319.1
+JE-2026-000089,2026-01-19,Marketing,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Jan 2026,3706.83
+JE-2026-000090,2026-01-19,Operations,Travel,Issta Travel,Travel package - conference trip - Jan 2026,2912.89
+JE-2026-000091,2026-01-19,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Jan 2026,10738.05
+JE-2026-000092,2026-01-19,R&D,Cloud Infrastructure,Amazon Web Services,Data transfer charges - Jan 2026,12611.26
+JE-2026-000093,2026-01-19,R&D,Office Supplies,Office Depot Israel,Printer toner and paper - Jan 2026,1031.96
+JE-2026-000094,2026-01-19,R&D,Software Licenses,Salesforce,Sales Cloud subscription - Jan 2026,2358.23
+JE-2026-000095,2026-01-19,R&D,Software Licenses,Adobe,Adobe Creative Cloud licenses - Jan 2026,3998.19
+JE-2026-000096,2026-01-20,Marketing,Office Supplies,IKEA Israel,Office furniture - Jan 2026,371.84
+JE-2026-000097,2026-01-20,Marketing,Software Licenses,Salesforce,Sales Cloud subscription - Jan 2026,2082.32
+JE-2026-000098,2026-01-20,R&D,Office Supplies,Office Depot Israel,Office stationery - Jan 2026,475.66
+JE-2026-000099,2026-01-21,HR,Office Supplies,Kravitz,Office stationery - Jan 2026,237.87
+JE-2026-000100,2026-01-21,HR,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Jan 2026,1650.86
+JE-2026-000101,2026-01-21,IT,Consulting,EY Kost Forer,Financial due diligence support - Jan 2026,5302.54
+JE-2026-000102,2026-01-21,R&D,Software Licenses,Adobe,Adobe Creative Cloud licenses - Jan 2026,18680.6
+JE-2026-000103,2026-01-22,Marketing,Consulting,Nisha Recruitment,Recruitment fees - placement - Jan 2026,4128.8
+JE-2026-000104,2026-01-22,Marketing,Travel,Gett,Local taxi rides - Jan 2026,3892.32
+JE-2026-000105,2026-01-22,R&D,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - Jan 2026,13957.01
+JE-2026-000106,2026-01-22,R&D,Software Licenses,Monday.com,Work management platform subscription - Jan 2026,3827.08
+JE-2026-000107,2026-01-25,HR,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Jan 2026,3406.33
+JE-2026-000108,2026-01-25,HR,Software Licenses,Microsoft,Microsoft 365 subscription - Jan 2026,880.52
+JE-2026-000109,2026-01-25,IT,Office Supplies,Shufersal,Kitchen and refreshments - Jan 2026,912.5
+JE-2026-000110,2026-01-25,IT,Software Licenses,JetBrains,IDE developer licenses renewal - Jan 2026,48319.03
+JE-2026-000111,2026-01-25,Marketing,Software Licenses,Slack Technologies,Slack Business+ subscription - Jan 2026,2029.9
+JE-2026-000112,2026-01-25,R&D,Office Supplies,Shufersal,Kitchen and refreshments - Jan 2026,609.07
+JE-2026-000113,2026-01-26,HR,Software Licenses,Adobe,Adobe Creative Cloud licenses - Jan 2026,2811.37
+JE-2026-000114,2026-01-26,HR,Travel,Gett,Local taxi rides - Jan 2026,657.09
+JE-2026-000115,2026-01-26,IT,Software Licenses,Salesforce,Sales Cloud subscription - Jan 2026,21759.85
+JE-2026-000116,2026-01-26,IT,Travel,Hertz Israel,Car rental - Jan 2026,1572.08
+JE-2026-000117,2026-01-26,Marketing,Travel,Gett,Local taxi rides - Jan 2026,990.86
+JE-2026-000118,2026-01-26,Marketing,Travel,Booking.com,Hotel accommodation - Jan 2026,6424.72
+JE-2026-000119,2026-01-26,Operations,Consulting,Deloitte Israel,Advisory services - process improvement - Jan 2026,8541.48
+JE-2026-000120,2026-01-26,Operations,Travel,El Al Israel Airlines,Flight tickets - business trip - Jan 2026,2398.66
+JE-2026-000121,2026-01-26,R&D,Travel,Hertz Israel,Car rental - Jan 2026,2413.37
+JE-2026-000122,2026-01-27,IT,Consulting,Deloitte Israel,Advisory services - process improvement - Jan 2026,10665.01
+JE-2026-000123,2026-01-28,HR,Office Supplies,Kravitz,Office stationery - Jan 2026,423.6
+JE-2026-000124,2026-01-28,HR,Software Licenses,Slack Technologies,Slack Business+ subscription - Jan 2026,1179.74
+JE-2026-000125,2026-01-28,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - Jan 2026,11938.98
+JE-2026-000126,2026-01-28,Marketing,Software Licenses,Monday.com,Work management platform subscription - Jan 2026,1660.06
+JE-2026-000127,2026-01-28,Operations,Travel,Booking.com,Hotel accommodation - Jan 2026,4745.81
+JE-2026-000128,2026-01-28,Operations,Travel,Booking.com,Hotel accommodation - Jan 2026,2873.25
+JE-2026-000129,2026-01-28,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Jan 2026,21512.45
+JE-2026-000130,2026-01-28,R&D,Software Licenses,JetBrains,IDE developer licenses renewal - Jan 2026,7130.88
+JE-2026-000131,2026-01-29,HR,Office Supplies,Kravitz,Office stationery - Jan 2026,223.66
+JE-2026-000132,2026-01-29,HR,Office Supplies,Kravitz,Office stationery - Jan 2026,308.31
+JE-2026-000133,2026-01-29,HR,Payroll,Hilan,Monthly salary run - Jan 2026,144959.56
+JE-2026-000134,2026-01-29,HR,Payroll,Migdal Pension Fund,Pension and severance contributions - Jan 2026,26018.38
+JE-2026-000135,2026-01-29,HR,Payroll,National Insurance Institute,Employer NII contributions - Jan 2026,14867.65
+JE-2026-000136,2026-01-29,IT,Cloud Infrastructure,Microsoft Azure,Azure SQL database - Jan 2026,3102.7
+JE-2026-000137,2026-01-29,IT,Office Supplies,Kravitz,Office stationery - Jan 2026,107.14
+JE-2026-000138,2026-01-29,IT,Payroll,Hilan,Monthly salary run - Jan 2026,184657.42
+JE-2026-000139,2026-01-29,IT,Payroll,Migdal Pension Fund,Pension and severance contributions - Jan 2026,33143.64
+JE-2026-000140,2026-01-29,IT,Payroll,National Insurance Institute,Employer NII contributions - Jan 2026,18939.22
+JE-2026-000141,2026-01-29,IT,Travel,Hertz Israel,Car rental - Jan 2026,466.6
+JE-2026-000142,2026-01-29,Marketing,Payroll,Hilan,Monthly salary run - Jan 2026,126005.45
+JE-2026-000143,2026-01-29,Marketing,Payroll,Migdal Pension Fund,Pension and severance contributions - Jan 2026,22616.36
+JE-2026-000144,2026-01-29,Marketing,Payroll,National Insurance Institute,Employer NII contributions - Jan 2026,12923.64
+JE-2026-000145,2026-01-29,Operations,Payroll,Hilan,Monthly salary run - Jan 2026,158066.31
+JE-2026-000146,2026-01-29,Operations,Payroll,Migdal Pension Fund,Pension and severance contributions - Jan 2026,28370.88
+JE-2026-000147,2026-01-29,Operations,Payroll,National Insurance Institute,Employer NII contributions - Jan 2026,16211.93
+JE-2026-000148,2026-01-29,R&D,Consulting,Deloitte Israel,Advisory services - process improvement - Jan 2026,8290.23
+JE-2026-000149,2026-01-29,R&D,Payroll,Hilan,Monthly salary run - Jan 2026,405226.9
+JE-2026-000150,2026-01-29,R&D,Payroll,Migdal Pension Fund,Pension and severance contributions - Jan 2026,72733.03
+JE-2026-000151,2026-01-29,R&D,Payroll,National Insurance Institute,Employer NII contributions - Jan 2026,41561.73
+JE-2026-000152,2026-02-01,HR,Software Licenses,Atlassian,Jira and Confluence subscription - Feb 2026,1833.24
+JE-2026-000153,2026-02-01,IT,Travel,Issta Travel,Travel package - conference trip - Feb 2026,650.02
+JE-2026-000154,2026-02-01,Marketing,Software Licenses,Adobe,Adobe Creative Cloud licenses - Feb 2026,2375.48
+JE-2026-000155,2026-02-01,Marketing,Software Licenses,Salesforce,Additional CRM user seats - Feb 2026,1395.98
+JE-2026-000156,2026-02-01,Marketing,Travel,El Al Israel Airlines,Flight tickets - business trip - Feb 2026,1030.65
+JE-2026-000157,2026-02-01,Marketing,Travel,El Al Israel Airlines,Flight tickets - business trip - Feb 2026,1667.14
+JE-2026-000158,2026-02-02,IT,Consulting,Deloitte Israel,Advisory services - process improvement - Feb 2026,3959.59
+JE-2026-000159,2026-02-02,IT,Office Supplies,IKEA Israel,Office furniture - Feb 2026,116.3
+JE-2026-000160,2026-02-02,Operations,Software Licenses,Salesforce,Additional CRM user seats - Feb 2026,1211.16
+JE-2026-000161,2026-02-02,R&D,Software Licenses,Slack Technologies,Slack Business+ subscription - Feb 2026,12890.05
+JE-2026-000162,2026-02-03,HR,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Feb 2026,2485.91
+JE-2026-000163,2026-02-03,IT,Office Supplies,Shufersal,Kitchen and refreshments - Feb 2026,360.37
+JE-2026-000164,2026-02-03,Marketing,Office Supplies,Shufersal,Kitchen and refreshments - Feb 2026,47.22
+JE-2026-000165,2026-02-03,Marketing,Office Supplies,Shufersal,Kitchen and refreshments - Feb 2026,489.41
+JE-2026-000166,2026-02-03,Marketing,Software Licenses,Atlassian,Jira and Confluence subscription - Feb 2026,3901.8
+JE-2026-000167,2026-02-03,Marketing,Travel,Booking.com,Hotel accommodation - Feb 2026,859.77
+JE-2026-000168,2026-02-03,Operations,Office Supplies,Shufersal,Kitchen and refreshments - Feb 2026,394.89
+JE-2026-000169,2026-02-03,Operations,Software Licenses,Adobe,Adobe Creative Cloud licenses - Feb 2026,1068.42
+JE-2026-000170,2026-02-03,Operations,Software Licenses,Atlassian,Jira and Confluence subscription - Feb 2026,1512.99
+JE-2026-000171,2026-02-03,Operations,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Feb 2026,1324.47
+JE-2026-000172,2026-02-03,Operations,Travel,Hertz Israel,Car rental - Feb 2026,187.47
+JE-2026-000173,2026-02-03,R&D,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Feb 2026,3662.14
+JE-2026-000174,2026-02-04,HR,Travel,Booking.com,Hotel accommodation - Feb 2026,297.81
+JE-2026-000175,2026-02-04,HR,Travel,Booking.com,Hotel accommodation - Feb 2026,473.71
+JE-2026-000176,2026-02-04,IT,Office Supplies,IKEA Israel,Office furniture - Feb 2026,390.74
+JE-2026-000177,2026-02-04,Marketing,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Feb 2026,219.48
+JE-2026-000178,2026-02-04,Operations,Travel,Issta Travel,Travel package - conference trip - Feb 2026,2191.17
+JE-2026-000179,2026-02-04,R&D,Consulting,PwC Kesselman,Tax advisory services - Feb 2026,5568.61
+JE-2026-000180,2026-02-04,R&D,Software Licenses,Monday.com,Work management platform subscription - Feb 2026,4660.16
+JE-2026-000181,2026-02-05,HR,Travel,Booking.com,Hotel accommodation - Feb 2026,1228.64
+JE-2026-000182,2026-02-05,IT,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Feb 2026,15931.17
+JE-2026-000183,2026-02-05,IT,Office Supplies,Shufersal,Kitchen and refreshments - Feb 2026,381.97
+JE-2026-000184,2026-02-05,IT,Travel,Booking.com,Hotel accommodation - Feb 2026,480.38
+JE-2026-000185,2026-02-05,Marketing,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Feb 2026,5410.68
+JE-2026-000186,2026-02-05,Operations,Travel,Booking.com,Hotel accommodation - Feb 2026,1154.39
+JE-2026-000187,2026-02-08,IT,Cloud Infrastructure,Amazon Web Services,EC2 compute usage - Feb 2026,4809.51
+JE-2026-000188,2026-02-08,IT,Software Licenses,Microsoft,Microsoft 365 subscription - Feb 2026,33561.71
+JE-2026-000189,2026-02-08,Marketing,Office Supplies,IKEA Israel,Office furniture - Feb 2026,153.14
+JE-2026-000190,2026-02-08,Operations,Consulting,PwC Kesselman,Tax advisory services - Feb 2026,2938.31
+JE-2026-000191,2026-02-08,Operations,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Feb 2026,669.45
+JE-2026-000192,2026-02-08,R&D,Software Licenses,JetBrains,IDE developer licenses renewal - Feb 2026,18071.8
+JE-2026-000193,2026-02-09,HR,Consulting,Nisha Recruitment,Executive search fee - VP Engineering placement,21600.0
+JE-2026-000194,2026-02-09,HR,Employee Welfare,Cibus,Employee meal vouchers - Feb 2026,11291.8
+JE-2026-000195,2026-02-09,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - Feb 2026,238.26
+JE-2026-000196,2026-02-09,IT,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - Feb 2026,23684.11
+JE-2026-000197,2026-02-09,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - Feb 2026,29095.0
+JE-2026-000198,2026-02-09,Marketing,Travel,Gett,Local taxi rides - Feb 2026,1431.46
+JE-2026-000199,2026-02-09,Operations,Office Supplies,IKEA Israel,Office furniture - Feb 2026,1805.64
+JE-2026-000200,2026-02-09,Operations,Office Supplies,Shufersal,Kitchen and refreshments - Feb 2026,3635.11
+JE-2026-000201,2026-02-09,R&D,Office Supplies,Office Depot Israel,Office stationery - Feb 2026,516.96
+JE-2026-000202,2026-02-10,HR,Office Supplies,Office Depot Israel,Printer toner and paper - Feb 2026,689.11
+JE-2026-000203,2026-02-10,Marketing,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Feb 2026,1666.18
+JE-2026-000204,2026-02-10,R&D,Office Supplies,Kravitz,Office stationery - Feb 2026,728.97
+JE-2026-000205,2026-02-11,IT,Consulting,Nisha Recruitment,Recruitment fees - placement - Feb 2026,9871.73
+JE-2026-000206,2026-02-11,IT,Travel,Hertz Israel,Car rental - Feb 2026,140.2
+JE-2026-000207,2026-02-11,Marketing,Office Supplies,Office Depot Israel,Printer toner and paper - Feb 2026,264.15
+JE-2026-000208,2026-02-11,Marketing,Travel,Booking.com,Hotel accommodation - Feb 2026,148.77
+JE-2026-000209,2026-02-11,Operations,Travel,Issta Travel,Travel package - conference trip - Feb 2026,501.36
+JE-2026-000210,2026-02-11,Operations,Travel,El Al Israel Airlines,Flight tickets - business trip - Feb 2026,234.6
+JE-2026-000211,2026-02-12,HR,Consulting,Deloitte Israel,Advisory services - process improvement - Feb 2026,13217.28
+JE-2026-000212,2026-02-12,HR,Employee Welfare,BuyMe,Holiday gift cards - Feb 2026,3836.41
+JE-2026-000213,2026-02-12,IT,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Feb 2026,4568.78
+JE-2026-000214,2026-02-12,IT,Office Supplies,Kravitz,Office stationery - Feb 2026,1798.18
+JE-2026-000215,2026-02-12,R&D,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Feb 2026,7906.33
+JE-2026-000216,2026-02-12,R&D,Office Supplies,IKEA Israel,Office furniture - Feb 2026,571.66
+JE-2026-000217,2026-02-15,HR,Office Supplies,Kravitz,Office stationery - Feb 2026,423.3
+JE-2026-000218,2026-02-15,IT,Software Licenses,Salesforce,Additional CRM user seats - Feb 2026,15802.16
+JE-2026-000219,2026-02-15,Marketing,Advertising,Meta Platforms,Social media ads - Facebook and Instagram - Feb 2026,43126.53
+JE-2026-000220,2026-02-15,Marketing,Office Supplies,Kravitz,Office stationery - Feb 2026,641.58
+JE-2026-000221,2026-02-15,Marketing,Travel,El Al Israel Airlines,Flight tickets - business trip - Feb 2026,1940.14
+JE-2026-000222,2026-02-16,HR,Office Supplies,Kravitz,Office stationery - Feb 2026,857.46
+JE-2026-000223,2026-02-16,IT,Software Licenses,Salesforce,Additional CRM user seats - Feb 2026,18648.88
+JE-2026-000224,2026-02-16,Marketing,Advertising,Meta Platforms,Social media ads - Facebook and Instagram - Feb 2026,8595.24
+JE-2026-000225,2026-02-16,R&D,Travel,Gett,Local taxi rides - Feb 2026,333.93
+JE-2026-000226,2026-02-17,HR,Software Licenses,Adobe,Adobe Acrobat Pro licenses - Feb 2026,846.38
+JE-2026-000227,2026-02-17,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - Feb 2026,368.13
+JE-2026-000228,2026-02-17,Marketing,Consulting,KPMG Somekh Chaikin,Internal audit support services - Feb 2026,10479.64
+JE-2026-000229,2026-02-17,Marketing,Office Supplies,Office Depot Israel,Printer toner and paper - Feb 2026,593.24
+JE-2026-000230,2026-02-17,Operations,Office Supplies,Shufersal,Kitchen and refreshments - Feb 2026,2922.67
+JE-2026-000231,2026-02-17,R&D,Office Supplies,Office Depot Israel,Office stationery - Feb 2026,1425.71
+JE-2026-000232,2026-02-17,R&D,Software Licenses,Monday.com,Work management platform subscription - Feb 2026,1947.35
+JE-2026-000233,2026-02-18,IT,Travel,Booking.com,Hotel accommodation - Feb 2026,559.32
+JE-2026-000234,2026-02-18,IT,Travel,Issta Travel,Travel package - conference trip - Feb 2026,1217.43
+JE-2026-000235,2026-02-18,Marketing,Advertising,Taboola,Native advertising campaign - Feb 2026,17870.65
+JE-2026-000236,2026-02-18,Marketing,Travel,Gett,Local taxi rides - Feb 2026,1364.86
+JE-2026-000237,2026-02-18,R&D,Cloud Infrastructure,Microsoft Azure,Azure SQL database - Feb 2026,9674.91
+JE-2026-000238,2026-02-18,R&D,Consulting,Nisha Recruitment,Recruitment fees - placement - Feb 2026,5052.85
+JE-2026-000239,2026-02-19,HR,Consulting,KPMG Somekh Chaikin,Internal audit support services - Feb 2026,5003.21
+JE-2026-000240,2026-02-19,IT,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Feb 2026,11642.78
+JE-2026-000241,2026-02-19,IT,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Feb 2026,11249.23
+JE-2026-000242,2026-02-19,IT,Office Supplies,IKEA Israel,Office furniture - Feb 2026,762.86
+JE-2026-000243,2026-02-19,IT,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Feb 2026,26675.15
+JE-2026-000244,2026-02-19,Marketing,Advertising,Outbrain,Content recommendation campaign - Feb 2026,3401.91
+JE-2026-000245,2026-02-19,Marketing,Office Supplies,Office Depot Israel,Office stationery - Feb 2026,750.11
+JE-2026-000246,2026-02-19,Operations,Travel,Gett,Local taxi rides - Feb 2026,2992.57
+JE-2026-000247,2026-02-19,R&D,Travel,Issta Travel,Travel package - conference trip - Feb 2026,9232.35
+JE-2026-000248,2026-02-22,HR,Office Supplies,IKEA Israel,Office furniture - Feb 2026,93.31
+JE-2026-000249,2026-02-22,HR,Software Licenses,JetBrains,IDE developer licenses renewal - Feb 2026,308.34
+JE-2026-000250,2026-02-22,HR,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Feb 2026,305.45
+JE-2026-000251,2026-02-22,IT,Cloud Infrastructure,Amazon Web Services,S3 storage and backup - Feb 2026,17013.41
+JE-2026-000252,2026-02-22,Operations,Office Supplies,Shufersal,Kitchen and refreshments - Feb 2026,4935.06
+JE-2026-000253,2026-02-22,R&D,Cloud Infrastructure,Amazon Web Services,EC2 compute usage - Feb 2026,2723.69
+JE-2026-000254,2026-02-22,R&D,Consulting,Deloitte Israel,Advisory services - process improvement - Feb 2026,5892.6
+JE-2026-000255,2026-02-22,R&D,Office Supplies,Kravitz,Office stationery - Feb 2026,1009.46
+JE-2026-000256,2026-02-22,R&D,Travel,Issta Travel,Travel package - conference trip - Feb 2026,4537.83
+JE-2026-000257,2026-02-23,HR,Employee Welfare,Holmes Place,Employee gym memberships - Feb 2026,6677.18
+JE-2026-000258,2026-02-23,Operations,Software Licenses,Monday.com,Work management platform subscription - Feb 2026,3414.27
+JE-2026-000259,2026-02-23,Operations,Travel,Booking.com,Hotel accommodation - Feb 2026,1099.56
+JE-2026-000260,2026-02-24,HR,Office Supplies,IKEA Israel,Office furniture - Feb 2026,624.54
+JE-2026-000261,2026-02-24,IT,Office Supplies,Shufersal,Kitchen and refreshments - Feb 2026,431.77
+JE-2026-000262,2026-02-24,IT,Travel,Hertz Israel,Car rental - Feb 2026,561.93
+JE-2026-000263,2026-02-24,Marketing,Consulting,PwC Kesselman,Tax advisory services - Feb 2026,10748.11
+JE-2026-000264,2026-02-24,Marketing,Software Licenses,Adobe,Adobe Creative Cloud licenses - Feb 2026,2929.17
+JE-2026-000265,2026-02-24,Marketing,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Feb 2026,1728.48
+JE-2026-000266,2026-02-24,Operations,Consulting,EY Kost Forer,Financial due diligence support - Feb 2026,19140.48
+JE-2026-000267,2026-02-24,Operations,Travel,Booking.com,Hotel accommodation - Feb 2026,748.97
+JE-2026-000268,2026-02-24,R&D,Software Licenses,Salesforce,Additional CRM user seats - Feb 2026,6556.39
+JE-2026-000269,2026-02-25,HR,Office Supplies,Kravitz,Office stationery - Feb 2026,604.63
+JE-2026-000270,2026-02-25,HR,Travel,Gett,Local taxi rides - Feb 2026,196.26
+JE-2026-000271,2026-02-25,Marketing,Advertising,Outbrain,Content recommendation campaign - Feb 2026,8888.23
+JE-2026-000272,2026-02-25,Marketing,Consulting,PwC Kesselman,Tax advisory services - Feb 2026,10767.8
+JE-2026-000273,2026-02-25,R&D,Cloud Infrastructure,Microsoft Azure,Azure virtual machines usage - Feb 2026,10989.05
+JE-2026-000274,2026-02-25,R&D,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Feb 2026,15468.82
+JE-2026-000275,2026-02-25,R&D,Office Supplies,IKEA Israel,Office furniture - Feb 2026,423.65
+JE-2026-000276,2026-02-25,R&D,Travel,Hertz Israel,Car rental - Feb 2026,3264.38
+JE-2026-000277,2026-02-26,HR,Payroll,Hilan,Monthly salary run - Feb 2026,144313.72
+JE-2026-000278,2026-02-26,HR,Payroll,Migdal Pension Fund,Pension and severance contributions - Feb 2026,25902.46
+JE-2026-000279,2026-02-26,HR,Payroll,National Insurance Institute,Employer NII contributions - Feb 2026,14801.41
+JE-2026-000280,2026-02-26,HR,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Feb 2026,1186.12
+JE-2026-000281,2026-02-26,IT,Payroll,Hilan,Monthly salary run - Feb 2026,184704.26
+JE-2026-000282,2026-02-26,IT,Payroll,Migdal Pension Fund,Pension and severance contributions - Feb 2026,33152.05
+JE-2026-000283,2026-02-26,IT,Payroll,National Insurance Institute,Employer NII contributions - Feb 2026,18944.03
+JE-2026-000284,2026-02-26,Marketing,Office Supplies,Shufersal,Kitchen and refreshments - Feb 2026,24.87
+JE-2026-000285,2026-02-26,Marketing,Payroll,Hilan,Monthly salary run - Feb 2026,124473.95
+JE-2026-000286,2026-02-26,Marketing,Payroll,Migdal Pension Fund,Pension and severance contributions - Feb 2026,22341.48
+JE-2026-000287,2026-02-26,Marketing,Payroll,National Insurance Institute,Employer NII contributions - Feb 2026,12766.56
+JE-2026-000288,2026-02-26,Operations,Payroll,Hilan,Monthly salary run - Feb 2026,164626.99
+JE-2026-000289,2026-02-26,Operations,Payroll,Migdal Pension Fund,Pension and severance contributions - Feb 2026,29548.43
+JE-2026-000290,2026-02-26,Operations,Payroll,National Insurance Institute,Employer NII contributions - Feb 2026,16884.82
+JE-2026-000291,2026-02-26,Operations,Software Licenses,Adobe,Adobe Acrobat Pro licenses - Feb 2026,1207.68
+JE-2026-000292,2026-02-26,R&D,Cloud Infrastructure,Google Cloud,BigQuery analytics usage - Feb 2026,27460.19
+JE-2026-000293,2026-02-26,R&D,Cloud Infrastructure,Amazon Web Services,S3 storage and backup - Feb 2026,9159.35
+JE-2026-000294,2026-02-26,R&D,Payroll,Hilan,Monthly salary run - Feb 2026,410102.25
+JE-2026-000295,2026-02-26,R&D,Payroll,Migdal Pension Fund,Pension and severance contributions - Feb 2026,73608.1
+JE-2026-000296,2026-02-26,R&D,Payroll,National Insurance Institute,Employer NII contributions - Feb 2026,42061.77
+JE-2026-000297,2026-03-01,IT,Consulting,Deloitte Israel,Advisory services - process improvement - Mar 2026,12708.33
+JE-2026-000298,2026-03-01,Operations,Travel,El Al Israel Airlines,Flight tickets - business trip - Mar 2026,5237.35
+JE-2026-000299,2026-03-01,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Mar 2026,13905.74
+JE-2026-000300,2026-03-02,HR,Consulting,EY Kost Forer,Financial due diligence support - Mar 2026,1064.64
+JE-2026-000301,2026-03-02,HR,Employee Welfare,Holmes Place,Employee gym memberships - Mar 2026,7697.8
+JE-2026-000302,2026-03-02,Marketing,Office Supplies,Kravitz,Office stationery - Mar 2026,652.63
+JE-2026-000303,2026-03-02,Operations,Travel,Issta Travel,Travel package - conference trip - Mar 2026,1933.33
+JE-2026-000304,2026-03-02,R&D,Office Supplies,IKEA Israel,Office furniture - Mar 2026,450.17
+JE-2026-000305,2026-03-02,R&D,Office Supplies,Shufersal,Kitchen and refreshments - Mar 2026,533.56
+JE-2026-000306,2026-03-03,IT,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - Mar 2026,23909.51
+JE-2026-000307,2026-03-03,Marketing,Advertising,Google Ads,Paid search campaign - Mar 2026,19388.8
+JE-2026-000308,2026-03-04,HR,Software Licenses,Adobe,Adobe Creative Cloud licenses - Mar 2026,294.04
+JE-2026-000309,2026-03-04,Marketing,Advertising,Meta Platforms,Social media ads - Facebook and Instagram - Mar 2026,18821.18
+JE-2026-000310,2026-03-04,Marketing,Advertising,Google Ads,Paid search campaign - Mar 2026,19315.2
+JE-2026-000311,2026-03-04,R&D,Software Licenses,Slack Technologies,Slack Business+ subscription - Mar 2026,762.52
+JE-2026-000312,2026-03-05,HR,Office Supplies,Shufersal,Kitchen and refreshments - Mar 2026,1112.81
+JE-2026-000313,2026-03-05,IT,Travel,Issta Travel,Travel package - conference trip - Mar 2026,459.73
+JE-2026-000314,2026-03-05,Marketing,Office Supplies,Kravitz,Office stationery - Mar 2026,111.02
+JE-2026-000315,2026-03-05,Marketing,Office Supplies,Kravitz,Office stationery - Mar 2026,370.82
+JE-2026-000316,2026-03-05,Marketing,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Mar 2026,1453.88
+JE-2026-000317,2026-03-05,Operations,Office Supplies,Kravitz,Office stationery - Mar 2026,3893.91
+JE-2026-000318,2026-03-05,Operations,Software Licenses,Slack Technologies,Slack Business+ subscription - Mar 2026,856.32
+JE-2026-000319,2026-03-05,R&D,Office Supplies,Office Depot Israel,Office stationery - Mar 2026,37.55
+JE-2026-000320,2026-03-08,IT,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - Mar 2026,19396.15
+JE-2026-000321,2026-03-08,IT,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - Mar 2026,11739.06
+JE-2026-000322,2026-03-08,Marketing,Travel,Issta Travel,Travel package - conference trip - Mar 2026,2530.93
+JE-2026-000323,2026-03-08,Operations,Office Supplies,Office Depot Israel,Office stationery - Mar 2026,369.79
+JE-2026-000324,2026-03-08,Operations,Office Supplies,Shufersal,Kitchen and refreshments - Mar 2026,357.44
+JE-2026-000325,2026-03-08,R&D,Office Supplies,IKEA Israel,Office furniture - Mar 2026,774.51
+JE-2026-000326,2026-03-08,R&D,Travel,Issta Travel,Travel package - conference trip - Mar 2026,1305.36
+JE-2026-000327,2026-03-09,Marketing,Software Licenses,Atlassian,Jira and Confluence subscription - Mar 2026,8674.79
+JE-2026-000328,2026-03-09,Operations,Consulting,Deloitte Israel,Advisory services - process improvement - Mar 2026,233.13
+JE-2026-000329,2026-03-09,Operations,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Mar 2026,11498.35
+JE-2026-000330,2026-03-09,Operations,Travel,El Al Israel Airlines,Flight tickets - business trip - Mar 2026,830.29
+JE-2026-000331,2026-03-09,R&D,Cloud Infrastructure,Microsoft Azure,Azure virtual machines usage - Mar 2026,20138.73
+JE-2026-000332,2026-03-10,HR,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Mar 2026,8263.12
+JE-2026-000333,2026-03-10,HR,Office Supplies,IKEA Israel,Office furniture - Mar 2026,462.28
+JE-2026-000334,2026-03-10,HR,Office Supplies,Office Depot Israel,Printer toner and paper - Mar 2026,1362.13
+JE-2026-000335,2026-03-10,IT,Office Supplies,Shufersal,Kitchen and refreshments - Mar 2026,1465.16
+JE-2026-000336,2026-03-10,IT,Software Licenses,JetBrains,IDE developer licenses renewal - Mar 2026,26780.29
+JE-2026-000337,2026-03-10,IT,Software Licenses,Microsoft,Unplanned M365 E5 upgrade - true-up for all users,42750.0
+JE-2026-000338,2026-03-11,HR,Travel,Hertz Israel,Car rental - Mar 2026,96.23
+JE-2026-000339,2026-03-11,IT,Consulting,KPMG Somekh Chaikin,Internal audit support services - Mar 2026,6766.95
+JE-2026-000340,2026-03-11,Marketing,Software Licenses,Microsoft,Additional M365 user seats - Mar 2026,691.0
+JE-2026-000341,2026-03-11,Operations,Software Licenses,JetBrains,IDE developer licenses renewal - Mar 2026,1145.16
+JE-2026-000342,2026-03-11,R&D,Consulting,KPMG Somekh Chaikin,Internal audit support services - Mar 2026,6869.0
+JE-2026-000343,2026-03-11,R&D,Software Licenses,Slack Technologies,Slack Business+ subscription - Mar 2026,8470.5
+JE-2026-000344,2026-03-12,HR,Software Licenses,Monday.com,Work management platform subscription - Mar 2026,721.05
+JE-2026-000345,2026-03-12,HR,Software Licenses,Atlassian,Jira and Confluence subscription - Mar 2026,588.27
+JE-2026-000346,2026-03-12,HR,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Mar 2026,684.66
+JE-2026-000347,2026-03-12,IT,Software Licenses,Microsoft,Additional M365 user seats - Mar 2026,9136.87
+JE-2026-000348,2026-03-12,IT,Travel,El Al Israel Airlines,Flight tickets - business trip - Mar 2026,447.68
+JE-2026-000349,2026-03-12,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - Mar 2026,18845.01
+JE-2026-000350,2026-03-12,Operations,Office Supplies,Shufersal,Kitchen and refreshments - Mar 2026,3401.88
+JE-2026-000351,2026-03-12,R&D,Software Licenses,JetBrains,IDE developer licenses renewal - Mar 2026,7570.22
+JE-2026-000352,2026-03-15,IT,Cloud Infrastructure,Google Cloud,Cloud storage - Mar 2026,16000.26
+JE-2026-000353,2026-03-15,IT,Consulting,PwC Kesselman,Tax advisory services - Mar 2026,10541.48
+JE-2026-000354,2026-03-15,IT,Software Licenses,Atlassian,Jira and Confluence subscription - Mar 2026,1002.31
+JE-2026-000355,2026-03-15,Marketing,Office Supplies,Shufersal,Kitchen and refreshments - Mar 2026,563.45
+JE-2026-000356,2026-03-15,Operations,Software Licenses,Slack Technologies,Slack Business+ subscription - Mar 2026,415.94
+JE-2026-000357,2026-03-15,Operations,Software Licenses,Adobe,Adobe Creative Cloud licenses - Mar 2026,1572.54
+JE-2026-000358,2026-03-16,HR,Travel,Issta Travel,Travel package - conference trip - Mar 2026,291.79
+JE-2026-000359,2026-03-16,IT,Travel,Booking.com,Hotel accommodation - Mar 2026,1295.23
+JE-2026-000360,2026-03-16,IT,Travel,El Al Israel Airlines,Flight tickets - business trip - Mar 2026,140.28
+JE-2026-000361,2026-03-16,R&D,Software Licenses,Atlassian,Jira and Confluence subscription - Mar 2026,4878.17
+JE-2026-000362,2026-03-16,R&D,Software Licenses,Monday.com,Work management platform subscription - Mar 2026,6834.29
+JE-2026-000363,2026-03-17,HR,Travel,Gett,Local taxi rides - Mar 2026,556.42
+JE-2026-000364,2026-03-17,IT,Software Licenses,Adobe,Adobe Acrobat Pro licenses - Mar 2026,12496.14
+JE-2026-000365,2026-03-17,IT,Travel,Issta Travel,Travel package - conference trip - Mar 2026,240.03
+JE-2026-000366,2026-03-17,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - Mar 2026,9669.69
+JE-2026-000367,2026-03-17,Operations,Software Licenses,Atlassian,Jira and Confluence subscription - Mar 2026,857.7
+JE-2026-000368,2026-03-18,Marketing,Office Supplies,Kravitz,Office stationery - Mar 2026,543.16
+JE-2026-000369,2026-03-18,R&D,Travel,Booking.com,Hotel accommodation - Mar 2026,4841.77
+JE-2026-000370,2026-03-19,HR,Software Licenses,Salesforce,Additional CRM user seats - Mar 2026,2056.65
+JE-2026-000371,2026-03-19,HR,Software Licenses,Slack Technologies,Slack Business+ subscription - Mar 2026,702.39
+JE-2026-000372,2026-03-19,IT,Software Licenses,Slack Technologies,Slack Business+ subscription - Mar 2026,16232.74
+JE-2026-000373,2026-03-19,Marketing,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Mar 2026,7914.51
+JE-2026-000374,2026-03-19,Marketing,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Mar 2026,823.52
+JE-2026-000375,2026-03-19,Operations,Office Supplies,Office Depot Israel,Printer toner and paper - Mar 2026,2948.36
+JE-2026-000376,2026-03-19,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Mar 2026,27790.37
+JE-2026-000377,2026-03-22,IT,Office Supplies,Shufersal,Kitchen and refreshments - Mar 2026,989.13
+JE-2026-000378,2026-03-22,IT,Travel,Booking.com,Hotel accommodation - Mar 2026,328.48
+JE-2026-000379,2026-03-22,IT,Travel,Hertz Israel,Car rental - Mar 2026,645.66
+JE-2026-000380,2026-03-22,R&D,Office Supplies,Kravitz,Office stationery - Mar 2026,1261.36
+JE-2026-000381,2026-03-22,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - Mar 2026,4259.92
+JE-2026-000382,2026-03-23,HR,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Mar 2026,1372.39
+JE-2026-000383,2026-03-23,HR,Travel,Hertz Israel,Car rental - Mar 2026,733.0
+JE-2026-000384,2026-03-23,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - Mar 2026,672.13
+JE-2026-000385,2026-03-23,Operations,Travel,El Al Israel Airlines,Flight tickets - business trip - Mar 2026,1181.52
+JE-2026-000386,2026-03-23,R&D,Consulting,Nisha Recruitment,Recruitment fees - placement - Mar 2026,13008.71
+JE-2026-000387,2026-03-24,Marketing,Consulting,Deloitte Israel,Advisory services - process improvement - Mar 2026,957.27
+JE-2026-000388,2026-03-24,Marketing,Software Licenses,Adobe,Adobe Creative Cloud licenses - Mar 2026,1417.93
+JE-2026-000389,2026-03-24,Operations,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Mar 2026,2693.95
+JE-2026-000390,2026-03-24,R&D,Consulting,PwC Kesselman,Tax advisory services - Mar 2026,9018.64
+JE-2026-000391,2026-03-24,R&D,Office Supplies,Office Depot Israel,Office stationery - Mar 2026,371.58
+JE-2026-000392,2026-03-24,R&D,Travel,Hertz Israel,Car rental - Mar 2026,1218.39
+JE-2026-000393,2026-03-25,Marketing,Advertising,Meta Platforms,Social media ads - Facebook and Instagram - Mar 2026,17451.1
+JE-2026-000394,2026-03-25,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - Mar 2026,23466.48
+JE-2026-000395,2026-03-25,Operations,Consulting,Nisha Recruitment,Recruitment fees - placement - Mar 2026,494.25
+JE-2026-000396,2026-03-25,R&D,Cloud Infrastructure,Google Cloud,BigQuery analytics usage - Mar 2026,16967.47
+JE-2026-000397,2026-03-25,R&D,Consulting,Nisha Recruitment,Recruitment fees - placement - Mar 2026,10356.82
+JE-2026-000398,2026-03-25,R&D,Office Supplies,Shufersal,Kitchen and refreshments - Mar 2026,434.21
+JE-2026-000399,2026-03-26,IT,Software Licenses,Salesforce,Additional CRM user seats - Mar 2026,11961.41
+JE-2026-000400,2026-03-26,Marketing,Advertising,Google Ads,Paid search campaign - Mar 2026,24871.81
+JE-2026-000401,2026-03-26,Operations,Consulting,KPMG Somekh Chaikin,Internal audit support services - Mar 2026,8556.09
+JE-2026-000402,2026-03-26,R&D,Office Supplies,Kravitz,Office stationery - Mar 2026,582.58
+JE-2026-000403,2026-03-26,R&D,Travel,Issta Travel,Travel package - conference trip - Mar 2026,4201.93
+JE-2026-000404,2026-03-29,IT,Office Supplies,Shufersal,Kitchen and refreshments - Mar 2026,927.98
+JE-2026-000405,2026-03-29,IT,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Mar 2026,15450.25
+JE-2026-000406,2026-03-29,Marketing,Travel,Gett,Local taxi rides - Mar 2026,4527.05
+JE-2026-000407,2026-03-29,Operations,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Mar 2026,3785.03
+JE-2026-000408,2026-03-29,Operations,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Mar 2026,1762.75
+JE-2026-000409,2026-03-30,HR,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Mar 2026,7992.11
+JE-2026-000410,2026-03-30,HR,Employee Welfare,BuyMe,Holiday gift cards - Mar 2026,12596.25
+JE-2026-000411,2026-03-30,HR,Office Supplies,Office Depot Israel,Printer toner and paper - Mar 2026,636.94
+JE-2026-000412,2026-03-30,HR,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Mar 2026,602.4
+JE-2026-000413,2026-03-30,Marketing,Office Supplies,Shufersal,Kitchen and refreshments - Mar 2026,753.85
+JE-2026-000414,2026-03-30,Operations,Office Supplies,Office Depot Israel,Printer toner and paper - Mar 2026,1089.99
+JE-2026-000415,2026-03-30,Operations,Travel,Gett,Local taxi rides - Mar 2026,686.48
+JE-2026-000416,2026-03-30,R&D,Travel,Gett,Local taxi rides - Mar 2026,7401.1
+JE-2026-000417,2026-03-31,HR,Payroll,Hilan,Monthly salary run - Mar 2026,144970.18
+JE-2026-000418,2026-03-31,HR,Payroll,Migdal Pension Fund,Pension and severance contributions - Mar 2026,26020.29
+JE-2026-000419,2026-03-31,HR,Payroll,National Insurance Institute,Employer NII contributions - Mar 2026,14868.74
+JE-2026-000420,2026-03-31,IT,Payroll,Hilan,Monthly salary run - Mar 2026,184265.52
+JE-2026-000421,2026-03-31,IT,Payroll,Migdal Pension Fund,Pension and severance contributions - Mar 2026,33073.3
+JE-2026-000422,2026-03-31,IT,Payroll,National Insurance Institute,Employer NII contributions - Mar 2026,18899.03
+JE-2026-000423,2026-03-31,IT,Travel,El Al Israel Airlines,Flight tickets - business trip - Mar 2026,738.65
+JE-2026-000424,2026-03-31,IT,Travel,El Al Israel Airlines,Flight tickets - business trip - Mar 2026,584.92
+JE-2026-000425,2026-03-31,Marketing,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Mar 2026,25536.2
+JE-2026-000426,2026-03-31,Marketing,Payroll,Hilan,Monthly salary run - Mar 2026,127240.28
+JE-2026-000427,2026-03-31,Marketing,Payroll,Migdal Pension Fund,Pension and severance contributions - Mar 2026,22838.0
+JE-2026-000428,2026-03-31,Marketing,Payroll,National Insurance Institute,Employer NII contributions - Mar 2026,13050.28
+JE-2026-000429,2026-03-31,Marketing,Travel,Gett,Local taxi rides - Mar 2026,4719.39
+JE-2026-000430,2026-03-31,Operations,Payroll,Hilan,Monthly salary run - Mar 2026,160956.11
+JE-2026-000431,2026-03-31,Operations,Payroll,Migdal Pension Fund,Pension and severance contributions - Mar 2026,28889.56
+JE-2026-000432,2026-03-31,Operations,Payroll,National Insurance Institute,Employer NII contributions - Mar 2026,16508.32
+JE-2026-000433,2026-03-31,Operations,Software Licenses,Adobe,Adobe Acrobat Pro licenses - Mar 2026,196.8
+JE-2026-000434,2026-03-31,R&D,Payroll,Hilan,Monthly salary run - Mar 2026,399962.97
+JE-2026-000435,2026-03-31,R&D,Payroll,Migdal Pension Fund,Pension and severance contributions - Mar 2026,71788.23
+JE-2026-000436,2026-03-31,R&D,Payroll,National Insurance Institute,Employer NII contributions - Mar 2026,41021.84
+JE-2026-000437,2026-03-31,R&D,Software Licenses,JetBrains,IDE developer licenses renewal - Mar 2026,1668.8
+JE-2026-000438,2026-03-31,R&D,Software Licenses,Atlassian,Jira and Confluence subscription - Mar 2026,2282.13
+JE-2026-000439,2026-04-01,HR,Employee Welfare,Dan Hotels,Team building event - Apr 2026,6500.82
+JE-2026-000440,2026-04-02,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - Apr 2026,4092.2
+JE-2026-000441,2026-04-02,R&D,Travel,Gett,Local taxi rides - Apr 2026,1041.15
+JE-2026-000442,2026-04-05,IT,Travel,Booking.com,Hotel accommodation - Apr 2026,1081.39
+JE-2026-000443,2026-04-05,Operations,Consulting,Nisha Recruitment,Recruitment fees - placement - Apr 2026,6842.68
+JE-2026-000444,2026-04-05,Operations,Travel,Hertz Israel,Car rental - Apr 2026,1140.86
+JE-2026-000445,2026-04-05,R&D,Travel,Booking.com,Hotel accommodation - Apr 2026,1779.03
+JE-2026-000446,2026-04-06,HR,Office Supplies,Shufersal,Kitchen and refreshments - Apr 2026,629.17
+JE-2026-000447,2026-04-06,HR,Software Licenses,JetBrains,IDE developer licenses renewal - Apr 2026,1660.98
+JE-2026-000448,2026-04-06,HR,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Apr 2026,338.37
+JE-2026-000449,2026-04-06,HR,Software Licenses,Slack Technologies,Slack Business+ subscription - Apr 2026,603.58
+JE-2026-000450,2026-04-06,IT,Office Supplies,Shufersal,Kitchen and refreshments - Apr 2026,483.8
+JE-2026-000451,2026-04-06,IT,Travel,Issta Travel,Travel package - conference trip - Apr 2026,445.5
+JE-2026-000452,2026-04-06,Marketing,Advertising,Google Ads,Paid search campaign - Apr 2026,41950.01
+JE-2026-000453,2026-04-06,Marketing,Software Licenses,Adobe,Adobe Acrobat Pro licenses - Apr 2026,5376.85
+JE-2026-000454,2026-04-06,Operations,Software Licenses,Monday.com,Work management platform subscription - Apr 2026,911.19
+JE-2026-000455,2026-04-07,HR,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Apr 2026,8512.24
+JE-2026-000456,2026-04-07,HR,Office Supplies,Office Depot Israel,Printer toner and paper - Apr 2026,274.15
+JE-2026-000457,2026-04-07,HR,Travel,Issta Travel,Travel package - conference trip - Apr 2026,1343.29
+JE-2026-000458,2026-04-07,Marketing,Advertising,Google Ads,Paid search campaign - Apr 2026,4254.4
+JE-2026-000459,2026-04-07,Marketing,Travel,Booking.com,Hotel accommodation - Apr 2026,1290.9
+JE-2026-000460,2026-04-07,Marketing,Travel,Hertz Israel,Car rental - Apr 2026,7333.33
+JE-2026-000461,2026-04-07,Operations,Office Supplies,Office Depot Israel,Printer toner and paper - Apr 2026,2842.0
+JE-2026-000462,2026-04-07,Operations,Software Licenses,Slack Technologies,Slack Business+ subscription - Apr 2026,267.98
+JE-2026-000463,2026-04-07,R&D,Consulting,KPMG Somekh Chaikin,Internal audit support services - Apr 2026,14513.28
+JE-2026-000464,2026-04-07,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - Apr 2026,5227.7
+JE-2026-000465,2026-04-08,HR,Software Licenses,Adobe,Adobe Acrobat Pro licenses - Apr 2026,1416.43
+JE-2026-000466,2026-04-08,IT,Cloud Infrastructure,Amazon Web Services,EC2 compute usage - Apr 2026,29229.49
+JE-2026-000467,2026-04-08,IT,Consulting,Nisha Recruitment,Recruitment fees - placement - Apr 2026,8151.08
+JE-2026-000468,2026-04-08,IT,Office Supplies,Shufersal,Kitchen and refreshments - Apr 2026,442.12
+JE-2026-000469,2026-04-08,IT,Software Licenses,Atlassian,Jira and Confluence subscription - Apr 2026,23214.28
+JE-2026-000470,2026-04-08,Marketing,Office Supplies,Office Depot Israel,Printer toner and paper - Apr 2026,787.25
+JE-2026-000471,2026-04-08,Operations,Consulting,EY Kost Forer,Financial due diligence support - Apr 2026,2818.89
+JE-2026-000472,2026-04-08,Operations,Software Licenses,Salesforce,Sales Cloud subscription - Apr 2026,1007.92
+JE-2026-000473,2026-04-09,IT,Cloud Infrastructure,Google Cloud,Cloud storage - Apr 2026,13219.31
+JE-2026-000474,2026-04-09,Operations,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Apr 2026,1303.8
+JE-2026-000475,2026-04-09,R&D,Travel,Booking.com,Hotel accommodation - Apr 2026,3088.48
+JE-2026-000476,2026-04-12,IT,Cloud Infrastructure,Microsoft Azure,Azure virtual machines usage - Apr 2026,22400.25
+JE-2026-000477,2026-04-12,R&D,Office Supplies,IKEA Israel,Office furniture - Apr 2026,1594.74
+JE-2026-000478,2026-04-13,IT,Consulting,Nisha Recruitment,Recruitment fees - placement - Apr 2026,7126.0
+JE-2026-000479,2026-04-13,IT,Software Licenses,Slack Technologies,Slack Business+ subscription - Apr 2026,59945.73
+JE-2026-000480,2026-04-13,IT,Software Licenses,Atlassian,Jira and Confluence subscription - Apr 2026,12615.73
+JE-2026-000481,2026-04-13,Operations,Software Licenses,Atlassian,Jira and Confluence subscription - Apr 2026,2637.91
+JE-2026-000482,2026-04-13,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - Apr 2026,1587.33
+JE-2026-000483,2026-04-14,IT,Travel,Gett,Local taxi rides - Apr 2026,176.89
+JE-2026-000484,2026-04-14,Marketing,Consulting,Deloitte Israel,Advisory services - process improvement - Apr 2026,2709.29
+JE-2026-000485,2026-04-14,Marketing,Office Supplies,Kravitz,Office stationery - Apr 2026,370.44
+JE-2026-000486,2026-04-14,Operations,Consulting,KPMG Somekh Chaikin,Internal audit support services - Apr 2026,3084.73
+JE-2026-000487,2026-04-14,Operations,Office Supplies,Office Depot Israel,Office stationery - Apr 2026,10731.21
+JE-2026-000488,2026-04-14,Operations,Office Supplies,Kravitz,Office stationery - Apr 2026,1374.52
+JE-2026-000489,2026-04-14,Operations,Travel,El Al Israel Airlines,Flight tickets - business trip - Apr 2026,8289.23
+JE-2026-000490,2026-04-14,R&D,Office Supplies,Kravitz,Office stationery - Apr 2026,1681.39
+JE-2026-000491,2026-04-14,R&D,Software Licenses,Adobe,Adobe Creative Cloud licenses - Apr 2026,9585.88
+JE-2026-000492,2026-04-15,HR,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Apr 2026,292.43
+JE-2026-000493,2026-04-15,R&D,Software Licenses,Monday.com,Work management platform subscription - Apr 2026,15733.15
+JE-2026-000494,2026-04-16,Marketing,Office Supplies,Kravitz,Office stationery - Apr 2026,735.69
+JE-2026-000495,2026-04-16,Marketing,Office Supplies,IKEA Israel,Office furniture - Apr 2026,319.18
+JE-2026-000496,2026-04-16,Marketing,Travel,Gett,Local taxi rides - Apr 2026,861.11
+JE-2026-000497,2026-04-16,Operations,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Apr 2026,1387.7
+JE-2026-000498,2026-04-16,R&D,Cloud Infrastructure,Amazon Web Services,EC2 compute usage - Apr 2026,18016.77
+JE-2026-000499,2026-04-19,HR,Employee Welfare,Cibus,Employee meal vouchers - Apr 2026,15777.33
+JE-2026-000500,2026-04-19,HR,Office Supplies,Kravitz,Office stationery - Apr 2026,172.38
+JE-2026-000501,2026-04-19,R&D,Software Licenses,Atlassian,Jira and Confluence subscription - Apr 2026,2380.22
+JE-2026-000502,2026-04-20,HR,Consulting,EY Kost Forer,Financial due diligence support - Apr 2026,4315.74
+JE-2026-000503,2026-04-20,HR,Office Supplies,Kravitz,Office stationery - Apr 2026,1126.55
+JE-2026-000504,2026-04-20,IT,Travel,Issta Travel,Travel package - conference trip - Apr 2026,651.55
+JE-2026-000505,2026-04-20,IT,Travel,Issta Travel,Travel package - conference trip - Apr 2026,1394.06
+JE-2026-000506,2026-04-20,Marketing,Office Supplies,Office Depot Israel,Printer toner and paper - Apr 2026,181.93
+JE-2026-000507,2026-04-20,R&D,Cloud Infrastructure,Microsoft Azure,Azure virtual machines usage - Apr 2026,3447.01
+JE-2026-000508,2026-04-20,R&D,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - Apr 2026,5994.49
+JE-2026-000509,2026-04-21,HR,Employee Welfare,Cibus,Employee meal vouchers - Apr 2026,13125.77
+JE-2026-000510,2026-04-21,IT,Office Supplies,Kravitz,Office stationery - Apr 2026,1419.05
+JE-2026-000511,2026-04-21,Marketing,Software Licenses,JetBrains,IDE developer licenses renewal - Apr 2026,3881.23
+JE-2026-000512,2026-04-21,Marketing,Travel,Hertz Israel,Car rental - Apr 2026,8369.4
+JE-2026-000513,2026-04-21,Operations,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Apr 2026,6125.55
+JE-2026-000514,2026-04-21,Operations,Travel,Issta Travel,Travel package - conference trip - Apr 2026,1073.88
+JE-2026-000515,2026-04-21,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Apr 2026,38313.3
+JE-2026-000516,2026-04-21,R&D,Travel,Booking.com,Hotel accommodation - Apr 2026,433.15
+JE-2026-000517,2026-04-22,HR,Software Licenses,JetBrains,IDE developer licenses renewal - Apr 2026,728.7
+JE-2026-000518,2026-04-22,HR,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Apr 2026,391.52
+JE-2026-000519,2026-04-22,HR,Travel,Hertz Israel,Car rental - Apr 2026,102.09
+JE-2026-000520,2026-04-22,Marketing,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Apr 2026,20251.02
+JE-2026-000521,2026-04-22,R&D,Office Supplies,Shufersal,Kitchen and refreshments - Apr 2026,1051.12
+JE-2026-000522,2026-04-22,R&D,Software Licenses,Slack Technologies,Slack Business+ subscription - Apr 2026,16704.78
+JE-2026-000523,2026-04-23,HR,Office Supplies,Shufersal,Kitchen and refreshments - Apr 2026,1144.53
+JE-2026-000524,2026-04-23,HR,Travel,Issta Travel,Travel package - conference trip - Apr 2026,186.25
+JE-2026-000525,2026-04-23,HR,Travel,Gett,Local taxi rides - Apr 2026,255.83
+JE-2026-000526,2026-04-23,IT,Consulting,EY Kost Forer,Financial due diligence support - Apr 2026,10962.13
+JE-2026-000527,2026-04-23,IT,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Apr 2026,452.06
+JE-2026-000528,2026-04-23,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - Apr 2026,20485.75
+JE-2026-000529,2026-04-23,Marketing,Advertising,Outbrain,Content recommendation campaign - Apr 2026,6337.13
+JE-2026-000530,2026-04-23,Operations,Office Supplies,Shufersal,Kitchen and refreshments - Apr 2026,1034.73
+JE-2026-000531,2026-04-23,Operations,Software Licenses,Adobe,Adobe Creative Cloud licenses - Apr 2026,1029.32
+JE-2026-000532,2026-04-23,R&D,Consulting,KPMG Somekh Chaikin,Internal audit support services - Apr 2026,14676.14
+JE-2026-000533,2026-04-26,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - Apr 2026,228.18
+JE-2026-000534,2026-04-27,IT,Travel,Booking.com,Hotel accommodation - Apr 2026,806.29
+JE-2026-000535,2026-04-27,Marketing,Office Supplies,Office Depot Israel,Office stationery - Apr 2026,784.08
+JE-2026-000536,2026-04-27,Marketing,Software Licenses,Monday.com,Work management platform subscription - Apr 2026,1897.17
+JE-2026-000537,2026-04-27,R&D,Travel,Gett,Local taxi rides - Apr 2026,920.28
+JE-2026-000538,2026-04-27,R&D,Travel,Booking.com,Hotel accommodation - Apr 2026,2878.34
+JE-2026-000539,2026-04-28,HR,Employee Welfare,Dan Hotels,Team building event - Apr 2026,5772.38
+JE-2026-000540,2026-04-28,HR,Travel,Hertz Israel,Car rental - Apr 2026,86.26
+JE-2026-000541,2026-04-28,Marketing,Advertising,Outbrain,Content recommendation campaign - Apr 2026,23400.19
+JE-2026-000542,2026-04-28,Marketing,Advertising,Meta Platforms,Social media ads - Facebook and Instagram - Apr 2026,17363.64
+JE-2026-000543,2026-04-28,R&D,Cloud Infrastructure,Google Cloud,Cloud storage - Apr 2026,2653.24
+JE-2026-000544,2026-04-28,R&D,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Apr 2026,10506.48
+JE-2026-000545,2026-04-29,HR,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Apr 2026,1800.86
+JE-2026-000546,2026-04-29,IT,Office Supplies,Shufersal,Kitchen and refreshments - Apr 2026,611.18
+JE-2026-000547,2026-04-29,Marketing,Software Licenses,Salesforce,Sales Cloud subscription - Apr 2026,579.2
+JE-2026-000548,2026-04-29,Operations,Software Licenses,Slack Technologies,Slack Business+ subscription - Apr 2026,1167.03
+JE-2026-000549,2026-04-29,Operations,Travel,El Al Israel Airlines,Emergency supplier site visits - Far East,10800.0
+JE-2026-000550,2026-04-30,HR,Office Supplies,Office Depot Israel,Office stationery - Apr 2026,145.75
+JE-2026-000551,2026-04-30,HR,Payroll,Hilan,Monthly salary run - Apr 2026,140507.59
+JE-2026-000552,2026-04-30,HR,Payroll,Migdal Pension Fund,Pension and severance contributions - Apr 2026,25219.31
+JE-2026-000553,2026-04-30,HR,Payroll,National Insurance Institute,Employer NII contributions - Apr 2026,14411.03
+JE-2026-000554,2026-04-30,IT,Payroll,Hilan,Monthly salary run - Apr 2026,191990.03
+JE-2026-000555,2026-04-30,IT,Payroll,Migdal Pension Fund,Pension and severance contributions - Apr 2026,34459.75
+JE-2026-000556,2026-04-30,IT,Payroll,National Insurance Institute,Employer NII contributions - Apr 2026,19691.29
+JE-2026-000557,2026-04-30,IT,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Apr 2026,220.27
+JE-2026-000558,2026-04-30,Marketing,Consulting,Deloitte Israel,Advisory services - process improvement - Apr 2026,7237.09
+JE-2026-000559,2026-04-30,Marketing,Payroll,Hilan,Monthly salary run - Apr 2026,122653.13
+JE-2026-000560,2026-04-30,Marketing,Payroll,Migdal Pension Fund,Pension and severance contributions - Apr 2026,22014.66
+JE-2026-000561,2026-04-30,Marketing,Payroll,National Insurance Institute,Employer NII contributions - Apr 2026,12579.81
+JE-2026-000562,2026-04-30,Operations,Consulting,KPMG Somekh Chaikin,Internal audit support services - Apr 2026,2611.01
+JE-2026-000563,2026-04-30,Operations,Payroll,Hilan,Monthly salary run - Apr 2026,160438.01
+JE-2026-000564,2026-04-30,Operations,Payroll,Migdal Pension Fund,Pension and severance contributions - Apr 2026,28796.57
+JE-2026-000565,2026-04-30,Operations,Payroll,National Insurance Institute,Employer NII contributions - Apr 2026,16455.18
+JE-2026-000566,2026-04-30,R&D,Cloud Infrastructure,Google Cloud,BigQuery analytics usage - Apr 2026,11925.1
+JE-2026-000567,2026-04-30,R&D,Payroll,Hilan,Monthly salary run - Apr 2026,412715.47
+JE-2026-000568,2026-04-30,R&D,Payroll,Migdal Pension Fund,Pension and severance contributions - Apr 2026,74077.14
+JE-2026-000569,2026-04-30,R&D,Payroll,National Insurance Institute,Employer NII contributions - Apr 2026,42329.79
+JE-2026-000570,2026-05-03,HR,Office Supplies,Office Depot Israel,Printer toner and paper - May 2026,540.55
+JE-2026-000571,2026-05-03,IT,Cloud Infrastructure,Google Cloud,BigQuery analytics usage - May 2026,12154.62
+JE-2026-000572,2026-05-03,IT,Cloud Infrastructure,Amazon Web Services,S3 storage and backup - May 2026,12512.99
+JE-2026-000573,2026-05-03,IT,Office Supplies,Kravitz,Office stationery - May 2026,682.26
+JE-2026-000574,2026-05-03,IT,Software Licenses,Atlassian,Jira and Confluence subscription - May 2026,10575.01
+JE-2026-000575,2026-05-03,IT,Software Licenses,JetBrains,IDE developer licenses renewal - May 2026,9848.87
+JE-2026-000576,2026-05-03,IT,Travel,Hertz Israel,Car rental - May 2026,1442.22
+JE-2026-000577,2026-05-03,Marketing,Office Supplies,Shufersal,Kitchen and refreshments - May 2026,404.37
+JE-2026-000578,2026-05-03,Marketing,Software Licenses,Atlassian,Jira and Confluence subscription - May 2026,2660.38
+JE-2026-000579,2026-05-03,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - May 2026,11262.35
+JE-2026-000580,2026-05-03,R&D,Software Licenses,Monday.com,Work management platform subscription - May 2026,5306.46
+JE-2026-000581,2026-05-04,HR,Consulting,PwC Kesselman,Tax advisory services - May 2026,7658.81
+JE-2026-000582,2026-05-04,HR,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - May 2026,405.13
+JE-2026-000583,2026-05-04,Operations,Office Supplies,Shufersal,Kitchen and refreshments - May 2026,7555.62
+JE-2026-000584,2026-05-04,Operations,Software Licenses,Zoom Video Communications,Zoom business plan subscription - May 2026,538.2
+JE-2026-000585,2026-05-04,Operations,Software Licenses,Zoom Video Communications,Zoom business plan subscription - May 2026,1803.63
+JE-2026-000586,2026-05-04,Operations,Travel,Hertz Israel,Car rental - May 2026,972.27
+JE-2026-000587,2026-05-05,HR,Consulting,KPMG Somekh Chaikin,Internal audit support services - May 2026,1772.81
+JE-2026-000588,2026-05-05,HR,Software Licenses,Slack Technologies,Slack Business+ subscription - May 2026,439.21
+JE-2026-000589,2026-05-05,HR,Travel,Booking.com,Hotel accommodation - May 2026,385.75
+JE-2026-000590,2026-05-05,Marketing,Office Supplies,Kravitz,Office stationery - May 2026,368.81
+JE-2026-000591,2026-05-06,HR,Software Licenses,Microsoft,Additional M365 user seats - May 2026,1621.77
+JE-2026-000592,2026-05-06,HR,Travel,Booking.com,Hotel accommodation - May 2026,1047.52
+JE-2026-000593,2026-05-06,HR,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - May 2026,358.51
+JE-2026-000594,2026-05-06,IT,Travel,Issta Travel,Travel package - conference trip - May 2026,778.55
+JE-2026-000595,2026-05-06,Operations,Office Supplies,Office Depot Israel,Printer toner and paper - May 2026,587.52
+JE-2026-000596,2026-05-06,Operations,Software Licenses,Atlassian,Jira and Confluence subscription - May 2026,1949.02
+JE-2026-000597,2026-05-06,Operations,Travel,El Al Israel Airlines,Flight tickets - business trip - May 2026,3614.87
+JE-2026-000598,2026-05-06,Operations,Travel,Booking.com,Hotel accommodation - May 2026,550.38
+JE-2026-000599,2026-05-06,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - May 2026,7039.29
+JE-2026-000600,2026-05-06,R&D,Consulting,PwC Kesselman,Tax advisory services - May 2026,9636.03
+JE-2026-000601,2026-05-07,HR,Office Supplies,Office Depot Israel,Office stationery - May 2026,89.52
+JE-2026-000602,2026-05-07,Marketing,Advertising,Meta Platforms,Social media ads - Facebook and Instagram - May 2026,7875.24
+JE-2026-000603,2026-05-10,IT,Office Supplies,Office Depot Israel,Printer toner and paper - May 2026,249.43
+JE-2026-000604,2026-05-10,Marketing,Office Supplies,Shufersal,Kitchen and refreshments - May 2026,358.61
+JE-2026-000605,2026-05-10,Marketing,Office Supplies,Kravitz,Office stationery - May 2026,266.4
+JE-2026-000606,2026-05-10,R&D,Office Supplies,IKEA Israel,Office furniture - May 2026,1462.73
+JE-2026-000607,2026-05-10,R&D,Software Licenses,Atlassian,Jira and Confluence subscription - May 2026,3085.97
+JE-2026-000608,2026-05-11,HR,Employee Welfare,Cibus,Employee meal vouchers - May 2026,2874.82
+JE-2026-000609,2026-05-11,HR,Office Supplies,IKEA Israel,Office furniture - May 2026,417.21
+JE-2026-000610,2026-05-11,IT,Cloud Infrastructure,Microsoft Azure,Azure virtual machines usage - May 2026,18073.32
+JE-2026-000611,2026-05-11,IT,Software Licenses,Monday.com,Work management platform subscription - May 2026,13813.04
+JE-2026-000612,2026-05-11,Operations,Office Supplies,Office Depot Israel,Office stationery - May 2026,2811.78
+JE-2026-000613,2026-05-11,Operations,Travel,El Al Israel Airlines,Flight tickets - business trip - May 2026,93.8
+JE-2026-000614,2026-05-11,R&D,Office Supplies,Office Depot Israel,Office stationery - May 2026,204.27
+JE-2026-000615,2026-05-11,R&D,Office Supplies,Shufersal,Kitchen and refreshments - May 2026,713.33
+JE-2026-000616,2026-05-12,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - May 2026,12734.03
+JE-2026-000617,2026-05-12,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - May 2026,3251.52
+JE-2026-000618,2026-05-12,Marketing,Advertising,Taboola,Native advertising campaign - May 2026,27614.41
+JE-2026-000619,2026-05-12,Marketing,Travel,Booking.com,Hotel accommodation - May 2026,7033.09
+JE-2026-000620,2026-05-12,Marketing,Travel,El Al Israel Airlines,Flight tickets - business trip - May 2026,2734.67
+JE-2026-000621,2026-05-12,Operations,Software Licenses,JetBrains,IDE developer licenses renewal - May 2026,935.7
+JE-2026-000622,2026-05-12,Operations,Travel,Hertz Israel,Car rental - May 2026,1536.52
+JE-2026-000623,2026-05-12,R&D,Software Licenses,Microsoft,Additional M365 user seats - May 2026,2476.0
+JE-2026-000624,2026-05-13,Marketing,Office Supplies,Shufersal,Kitchen and refreshments - May 2026,612.95
+JE-2026-000625,2026-05-13,Marketing,Office Supplies,Shufersal,Kitchen and refreshments - May 2026,842.24
+JE-2026-000626,2026-05-13,Operations,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - May 2026,865.16
+JE-2026-000627,2026-05-13,R&D,Travel,Hertz Israel,Car rental - May 2026,687.92
+JE-2026-000628,2026-05-14,HR,Consulting,KPMG Somekh Chaikin,Internal audit support services - May 2026,1045.84
+JE-2026-000629,2026-05-14,HR,Employee Welfare,Dan Hotels,Team building event - May 2026,4063.04
+JE-2026-000630,2026-05-14,HR,Office Supplies,IKEA Israel,Office furniture - May 2026,336.69
+JE-2026-000631,2026-05-14,HR,Office Supplies,IKEA Israel,Office furniture - May 2026,755.34
+JE-2026-000632,2026-05-14,HR,Software Licenses,Zoom Video Communications,Zoom business plan subscription - May 2026,1272.07
+JE-2026-000633,2026-05-14,HR,Software Licenses,Adobe,Adobe Creative Cloud licenses - May 2026,943.34
+JE-2026-000634,2026-05-14,IT,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - May 2026,1295.9
+JE-2026-000635,2026-05-14,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - May 2026,13468.05
+JE-2026-000636,2026-05-14,Marketing,Advertising,Meta Platforms,Unbudgeted product-launch campaign - Israel & EU,72000.0
+JE-2026-000637,2026-05-14,Marketing,Office Supplies,IKEA Israel,Office furniture - May 2026,181.03
+JE-2026-000638,2026-05-14,R&D,Consulting,PwC Kesselman,Tax advisory services - May 2026,30012.56
+JE-2026-000639,2026-05-14,R&D,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - May 2026,3452.21
+JE-2026-000640,2026-05-14,R&D,Travel,Issta Travel,Travel package - conference trip - May 2026,5367.35
+JE-2026-000641,2026-05-17,HR,Office Supplies,IKEA Israel,Office furniture - May 2026,128.08
+JE-2026-000642,2026-05-17,IT,Office Supplies,Shufersal,Kitchen and refreshments - May 2026,1077.7
+JE-2026-000643,2026-05-17,IT,Software Licenses,JetBrains,IDE developer licenses renewal - May 2026,18342.86
+JE-2026-000644,2026-05-17,Operations,Consulting,Deloitte Israel,Advisory services - process improvement - May 2026,2606.51
+JE-2026-000645,2026-05-17,Operations,Office Supplies,Shufersal,Kitchen and refreshments - May 2026,724.61
+JE-2026-000646,2026-05-17,Operations,Travel,Hertz Israel,Car rental - May 2026,2446.62
+JE-2026-000647,2026-05-17,R&D,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - May 2026,11465.86
+JE-2026-000648,2026-05-17,R&D,Software Licenses,Microsoft,Additional M365 user seats - May 2026,27995.62
+JE-2026-000649,2026-05-17,R&D,Travel,Gett,Local taxi rides - May 2026,1137.11
+JE-2026-000650,2026-05-18,HR,Consulting,KPMG Somekh Chaikin,Internal audit support services - May 2026,4409.14
+JE-2026-000651,2026-05-18,HR,Travel,Hertz Israel,Car rental - May 2026,491.73
+JE-2026-000652,2026-05-18,IT,Office Supplies,Office Depot Israel,Office stationery - May 2026,2135.15
+JE-2026-000653,2026-05-18,IT,Travel,Gett,Local taxi rides - May 2026,1519.66
+JE-2026-000654,2026-05-18,Operations,Software Licenses,Monday.com,Work management platform subscription - May 2026,255.48
+JE-2026-000655,2026-05-18,R&D,Cloud Infrastructure,Amazon Web Services,Data transfer charges - May 2026,22608.08
+JE-2026-000656,2026-05-19,HR,Travel,Booking.com,Hotel accommodation - May 2026,847.82
+JE-2026-000657,2026-05-19,IT,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - May 2026,8040.52
+JE-2026-000658,2026-05-19,Marketing,Advertising,Google Ads,Paid search campaign - May 2026,12580.22
+JE-2026-000659,2026-05-19,Operations,Office Supplies,IKEA Israel,Office furniture - May 2026,871.66
+JE-2026-000660,2026-05-19,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - May 2026,12596.69
+JE-2026-000661,2026-05-20,HR,Software Licenses,JetBrains,IDE developer licenses renewal - May 2026,1281.12
+JE-2026-000662,2026-05-20,HR,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - May 2026,109.75
+JE-2026-000663,2026-05-20,IT,Software Licenses,Atlassian,Jira and Confluence subscription - May 2026,19658.76
+JE-2026-000664,2026-05-20,Operations,Consulting,EY Kost Forer,Financial due diligence support - May 2026,3763.99
+JE-2026-000665,2026-05-21,HR,Travel,Issta Travel,Travel package - conference trip - May 2026,48.81
+JE-2026-000666,2026-05-21,Marketing,Consulting,Deloitte Israel,Advisory services - process improvement - May 2026,14708.2
+JE-2026-000667,2026-05-21,Marketing,Consulting,PwC Kesselman,Tax advisory services - May 2026,8795.87
+JE-2026-000668,2026-05-21,Operations,Office Supplies,Shufersal,Kitchen and refreshments - May 2026,2213.31
+JE-2026-000669,2026-05-21,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - May 2026,18784.75
+JE-2026-000670,2026-05-24,IT,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - May 2026,10609.85
+JE-2026-000671,2026-05-24,IT,Consulting,PwC Kesselman,Tax advisory services - May 2026,8436.59
+JE-2026-000672,2026-05-24,IT,Consulting,PwC Kesselman,Tax advisory services - May 2026,10677.4
+JE-2026-000673,2026-05-24,IT,Software Licenses,JetBrains,IDE developer licenses renewal - May 2026,5684.33
+JE-2026-000674,2026-05-24,Marketing,Advertising,Meta Platforms,Social media ads - Facebook and Instagram - May 2026,17355.58
+JE-2026-000675,2026-05-24,Marketing,Travel,Issta Travel,Travel package - conference trip - May 2026,2812.38
+JE-2026-000676,2026-05-24,Operations,Consulting,Deloitte Israel,Advisory services - process improvement - May 2026,7324.19
+JE-2026-000677,2026-05-24,Operations,Software Licenses,Monday.com,Work management platform subscription - May 2026,1188.31
+JE-2026-000678,2026-05-25,Marketing,Software Licenses,Microsoft,Additional M365 user seats - May 2026,1050.75
+JE-2026-000679,2026-05-25,Operations,Travel,El Al Israel Airlines,Flight tickets - business trip - May 2026,1975.76
+JE-2026-000680,2026-05-25,R&D,Office Supplies,Shufersal,Kitchen and refreshments - May 2026,1488.55
+JE-2026-000681,2026-05-25,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - May 2026,2237.83
+JE-2026-000682,2026-05-26,HR,Employee Welfare,Holmes Place,Employee gym memberships - May 2026,3101.58
+JE-2026-000683,2026-05-26,IT,Consulting,PwC Kesselman,Tax advisory services - May 2026,11019.01
+JE-2026-000684,2026-05-26,Marketing,Advertising,Google Ads,Paid search campaign - May 2026,18485.93
+JE-2026-000685,2026-05-26,Marketing,Travel,Booking.com,Hotel accommodation - May 2026,5305.44
+JE-2026-000686,2026-05-26,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - May 2026,1857.02
+JE-2026-000687,2026-05-27,HR,Software Licenses,Monday.com,Work management platform subscription - May 2026,207.12
+JE-2026-000688,2026-05-27,HR,Travel,Booking.com,Hotel accommodation - May 2026,207.31
+JE-2026-000689,2026-05-27,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - May 2026,64.78
+JE-2026-000690,2026-05-27,Marketing,Advertising,Google Ads,Paid search campaign - May 2026,4739.05
+JE-2026-000691,2026-05-27,Operations,Consulting,Nisha Recruitment,Recruitment fees - placement - May 2026,11568.87
+JE-2026-000692,2026-05-27,Operations,Software Licenses,Microsoft,Microsoft 365 subscription - May 2026,1336.21
+JE-2026-000693,2026-05-27,R&D,Travel,Gett,Local taxi rides - May 2026,767.59
+JE-2026-000694,2026-05-27,R&D,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - May 2026,2234.86
+JE-2026-000695,2026-05-28,Marketing,Software Licenses,Atlassian,Jira and Confluence subscription - May 2026,2458.45
+JE-2026-000696,2026-05-28,Marketing,Software Licenses,Monday.com,Work management platform subscription - May 2026,3139.11
+JE-2026-000697,2026-05-28,R&D,Travel,Booking.com,Hotel accommodation - May 2026,2057.08
+JE-2026-000698,2026-05-31,HR,Consulting,Nisha Recruitment,Recruitment fees - placement - May 2026,3425.94
+JE-2026-000699,2026-05-31,HR,Employee Welfare,Cibus,Employee meal vouchers - May 2026,3597.5
+JE-2026-000700,2026-05-31,HR,Employee Welfare,BuyMe,Holiday gift cards - May 2026,5751.84
+JE-2026-000701,2026-05-31,HR,Office Supplies,Shufersal,Kitchen and refreshments - May 2026,513.5
+JE-2026-000702,2026-05-31,HR,Office Supplies,Kravitz,Office stationery - May 2026,754.62
+JE-2026-000703,2026-05-31,HR,Payroll,Hilan,Monthly salary run - May 2026,146379.51
+JE-2026-000704,2026-05-31,HR,Payroll,Migdal Pension Fund,Pension and severance contributions - May 2026,26273.25
+JE-2026-000705,2026-05-31,HR,Payroll,National Insurance Institute,Employer NII contributions - May 2026,15013.28
+JE-2026-000706,2026-05-31,IT,Payroll,Hilan,Monthly salary run - May 2026,184776.17
+JE-2026-000707,2026-05-31,IT,Payroll,Migdal Pension Fund,Pension and severance contributions - May 2026,33164.95
+JE-2026-000708,2026-05-31,IT,Payroll,National Insurance Institute,Employer NII contributions - May 2026,18951.4
+JE-2026-000709,2026-05-31,IT,Software Licenses,Adobe,Adobe Acrobat Pro licenses - May 2026,8764.16
+JE-2026-000710,2026-05-31,Marketing,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - May 2026,4458.13
+JE-2026-000711,2026-05-31,Marketing,Payroll,Hilan,Monthly salary run - May 2026,124827.48
+JE-2026-000712,2026-05-31,Marketing,Payroll,Migdal Pension Fund,Pension and severance contributions - May 2026,22404.93
+JE-2026-000713,2026-05-31,Marketing,Payroll,National Insurance Institute,Employer NII contributions - May 2026,12802.82
+JE-2026-000714,2026-05-31,Operations,Payroll,Hilan,Monthly salary run - May 2026,162679.23
+JE-2026-000715,2026-05-31,Operations,Payroll,Migdal Pension Fund,Pension and severance contributions - May 2026,29198.84
+JE-2026-000716,2026-05-31,Operations,Payroll,National Insurance Institute,Employer NII contributions - May 2026,16685.05
+JE-2026-000717,2026-05-31,R&D,Payroll,Hilan,Monthly salary run - May 2026,404022.97
+JE-2026-000718,2026-05-31,R&D,Payroll,Migdal Pension Fund,Pension and severance contributions - May 2026,72516.94
+JE-2026-000719,2026-05-31,R&D,Payroll,National Insurance Institute,Employer NII contributions - May 2026,41438.25
+JE-2026-000720,2026-06-01,HR,Consulting,PwC Kesselman,Tax advisory services - Jun 2026,6119.41
+JE-2026-000721,2026-06-01,HR,Payroll,Hilan,Mid-year retention bonus - not in budget,22200.0
+JE-2026-000722,2026-06-01,HR,Software Licenses,Monday.com,Work management platform subscription - Jun 2026,1356.03
+JE-2026-000723,2026-06-01,Marketing,Consulting,PwC Kesselman,Tax advisory services - Jun 2026,5956.62
+JE-2026-000724,2026-06-01,R&D,Travel,Issta Travel,Travel package - conference trip - Jun 2026,5114.35
+JE-2026-000725,2026-06-02,HR,Office Supplies,IKEA Israel,Office furniture - Jun 2026,1584.91
+JE-2026-000726,2026-06-02,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - Jun 2026,201.89
+JE-2026-000727,2026-06-02,Marketing,Office Supplies,Shufersal,Kitchen and refreshments - Jun 2026,25.94
+JE-2026-000728,2026-06-02,Marketing,Office Supplies,Office Depot Israel,Printer toner and paper - Jun 2026,474.93
+JE-2026-000729,2026-06-02,Marketing,Travel,Hertz Israel,Car rental - Jun 2026,3582.8
+JE-2026-000730,2026-06-02,Operations,Office Supplies,Kravitz,Office stationery - Jun 2026,2552.74
+JE-2026-000731,2026-06-02,Operations,Travel,Hertz Israel,Car rental - Jun 2026,2450.13
+JE-2026-000732,2026-06-02,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Jun 2026,13111.54
+JE-2026-000733,2026-06-03,HR,Software Licenses,Salesforce,Additional CRM user seats - Jun 2026,1222.77
+JE-2026-000734,2026-06-03,HR,Travel,Gett,Local taxi rides - Jun 2026,301.22
+JE-2026-000735,2026-06-03,IT,Consulting,EY Kost Forer,Financial due diligence support - Jun 2026,7534.06
+JE-2026-000736,2026-06-03,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - Jun 2026,44377.92
+JE-2026-000737,2026-06-03,Marketing,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Jun 2026,6755.14
+JE-2026-000738,2026-06-03,Operations,Office Supplies,IKEA Israel,Office furniture - Jun 2026,4207.14
+JE-2026-000739,2026-06-03,R&D,Software Licenses,Monday.com,Work management platform subscription - Jun 2026,4213.54
+JE-2026-000740,2026-06-04,IT,Cloud Infrastructure,Amazon Web Services,Data transfer charges - Jun 2026,26935.34
+JE-2026-000741,2026-06-04,IT,Cloud Infrastructure,Microsoft Azure,Azure virtual machines usage - Jun 2026,6662.89
+JE-2026-000742,2026-06-04,Operations,Software Licenses,Salesforce,Additional CRM user seats - Jun 2026,3310.63
+JE-2026-000743,2026-06-04,R&D,Cloud Infrastructure,Amazon Web Services,S3 storage and backup - Jun 2026,19895.01
+JE-2026-000744,2026-06-04,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Jun 2026,20221.67
+JE-2026-000745,2026-06-04,R&D,Office Supplies,Kravitz,Office stationery - Jun 2026,93.93
+JE-2026-000746,2026-06-04,R&D,Office Supplies,Kravitz,Office stationery - Jun 2026,304.24
+JE-2026-000747,2026-06-07,HR,Software Licenses,Monday.com,Work management platform subscription - Jun 2026,585.52
+JE-2026-000748,2026-06-07,Operations,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jun 2026,11462.36
+JE-2026-000749,2026-06-07,Operations,Software Licenses,Microsoft,Microsoft 365 subscription - Jun 2026,2095.45
+JE-2026-000750,2026-06-07,Operations,Software Licenses,JetBrains,IDE developer licenses renewal - Jun 2026,209.05
+JE-2026-000751,2026-06-07,R&D,Software Licenses,Monday.com,Work management platform subscription - Jun 2026,2233.7
+JE-2026-000752,2026-06-08,IT,Office Supplies,Shufersal,Kitchen and refreshments - Jun 2026,176.48
+JE-2026-000753,2026-06-08,Marketing,Advertising,Google Ads,Paid search campaign - Jun 2026,22396.52
+JE-2026-000754,2026-06-08,Marketing,Office Supplies,Office Depot Israel,Office stationery - Jun 2026,363.96
+JE-2026-000755,2026-06-09,Operations,Consulting,Deloitte Israel,Advisory services - process improvement - Jun 2026,2821.65
+JE-2026-000756,2026-06-09,Operations,Office Supplies,IKEA Israel,Office furniture - Jun 2026,534.24
+JE-2026-000757,2026-06-09,R&D,Software Licenses,Slack Technologies,Slack Business+ subscription - Jun 2026,6103.65
+JE-2026-000758,2026-06-09,R&D,Software Licenses,Adobe,Adobe Creative Cloud licenses - Jun 2026,5748.99
+JE-2026-000759,2026-06-10,HR,Office Supplies,Kravitz,Office stationery - Jun 2026,1202.71
+JE-2026-000760,2026-06-10,IT,Cloud Infrastructure,Microsoft Azure,Azure virtual machines usage - Jun 2026,2225.18
+JE-2026-000761,2026-06-10,Marketing,Advertising,Outbrain,Content recommendation campaign - Jun 2026,13451.13
+JE-2026-000762,2026-06-10,R&D,Office Supplies,Kravitz,Office stationery - Jun 2026,462.1
+JE-2026-000763,2026-06-11,HR,Office Supplies,Office Depot Israel,Office stationery - Jun 2026,88.85
+JE-2026-000764,2026-06-11,HR,Software Licenses,Atlassian,Jira and Confluence subscription - Jun 2026,726.58
+JE-2026-000765,2026-06-11,Operations,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Jun 2026,1073.98
+JE-2026-000766,2026-06-11,R&D,Software Licenses,Adobe,Adobe Creative Cloud licenses - Jun 2026,12511.55
+JE-2026-000767,2026-06-14,R&D,Office Supplies,IKEA Israel,Office furniture - Jun 2026,2998.29
+JE-2026-000768,2026-06-15,HR,Employee Welfare,Dan Hotels,Team building event - Jun 2026,6090.23
+JE-2026-000769,2026-06-15,IT,Travel,El Al Israel Airlines,Flight tickets - business trip - Jun 2026,473.99
+JE-2026-000770,2026-06-15,Marketing,Office Supplies,IKEA Israel,Office furniture - Jun 2026,700.03
+JE-2026-000771,2026-06-15,Marketing,Software Licenses,Microsoft,Microsoft 365 subscription - Jun 2026,5460.31
+JE-2026-000772,2026-06-15,Marketing,Travel,Gett,Local taxi rides - Jun 2026,884.94
+JE-2026-000773,2026-06-16,HR,Employee Welfare,Cibus,Employee meal vouchers - Jun 2026,3562.19
+JE-2026-000774,2026-06-16,IT,Office Supplies,IKEA Israel,Office furniture - Jun 2026,508.23
+JE-2026-000775,2026-06-16,IT,Office Supplies,IKEA Israel,Office furniture - Jun 2026,399.79
+JE-2026-000776,2026-06-16,IT,Office Supplies,IKEA Israel,Office furniture - Jun 2026,921.97
+JE-2026-000777,2026-06-16,Marketing,Office Supplies,IKEA Israel,Office furniture - Jun 2026,114.32
+JE-2026-000778,2026-06-16,Operations,Consulting,Nisha Recruitment,Recruitment fees - placement - Jun 2026,3417.44
+JE-2026-000779,2026-06-16,Operations,Office Supplies,Shufersal,Kitchen and refreshments - Jun 2026,4487.84
+JE-2026-000780,2026-06-16,Operations,Travel,Hertz Israel,Car rental - Jun 2026,1154.28
+JE-2026-000781,2026-06-17,HR,Office Supplies,Shufersal,Kitchen and refreshments - Jun 2026,137.76
+JE-2026-000782,2026-06-17,IT,Software Licenses,JetBrains,IDE developer licenses renewal - Jun 2026,8218.87
+JE-2026-000783,2026-06-17,Marketing,Advertising,Meta Platforms,Social media ads - Facebook and Instagram - Jun 2026,12699.24
+JE-2026-000784,2026-06-17,Operations,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Jun 2026,947.91
+JE-2026-000785,2026-06-17,R&D,Software Licenses,Monday.com,Work management platform subscription - Jun 2026,10044.56
+JE-2026-000786,2026-06-18,HR,Software Licenses,Atlassian,Jira and Confluence subscription - Jun 2026,146.45
+JE-2026-000787,2026-06-18,HR,Software Licenses,Adobe,Adobe Acrobat Pro licenses - Jun 2026,1230.12
+JE-2026-000788,2026-06-18,HR,Travel,Gett,Local taxi rides - Jun 2026,575.63
+JE-2026-000789,2026-06-18,IT,Consulting,Nisha Recruitment,Recruitment fees - placement - Jun 2026,15495.77
+JE-2026-000790,2026-06-18,IT,Office Supplies,IKEA Israel,Office furniture - Jun 2026,314.97
+JE-2026-000791,2026-06-18,IT,Travel,El Al Israel Airlines,Flight tickets - business trip - Jun 2026,2455.09
+JE-2026-000792,2026-06-18,Marketing,Office Supplies,IKEA Israel,Office furniture - Jun 2026,778.04
+JE-2026-000793,2026-06-18,Operations,Office Supplies,Office Depot Israel,Office stationery - Jun 2026,1693.33
+JE-2026-000794,2026-06-21,IT,Travel,Gett,Local taxi rides - Jun 2026,359.88
+JE-2026-000795,2026-06-21,Marketing,Consulting,PwC Kesselman,Tax advisory services - Jun 2026,8038.92
+JE-2026-000796,2026-06-21,Marketing,Office Supplies,Kravitz,Office stationery - Jun 2026,193.39
+JE-2026-000797,2026-06-21,Marketing,Software Licenses,Salesforce,Additional CRM user seats - Jun 2026,3711.11
+JE-2026-000798,2026-06-21,Marketing,Travel,Hertz Israel,Car rental - Jun 2026,4330.63
+JE-2026-000799,2026-06-21,Operations,Office Supplies,Kravitz,Office stationery - Jun 2026,416.76
+JE-2026-000800,2026-06-21,R&D,Consulting,PwC Kesselman,Tax advisory services - Jun 2026,13334.02
+JE-2026-000801,2026-06-21,R&D,Travel,Hertz Israel,Car rental - Jun 2026,6792.79
+JE-2026-000802,2026-06-22,HR,Consulting,Deloitte Israel,Advisory services - process improvement - Jun 2026,3868.83
+JE-2026-000803,2026-06-22,HR,Travel,Gett,Local taxi rides - Jun 2026,745.98
+JE-2026-000804,2026-06-22,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - Jun 2026,1215.49
+JE-2026-000805,2026-06-22,IT,Travel,Hertz Israel,Car rental - Jun 2026,793.22
+JE-2026-000806,2026-06-22,Operations,Travel,Booking.com,Hotel accommodation - Jun 2026,1504.4
+JE-2026-000807,2026-06-23,HR,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jun 2026,2240.39
+JE-2026-000808,2026-06-23,HR,Travel,Hertz Israel,Car rental - Jun 2026,89.83
+JE-2026-000809,2026-06-23,HR,Travel,Booking.com,Hotel accommodation - Jun 2026,123.63
+JE-2026-000810,2026-06-23,Marketing,Advertising,Taboola,Native advertising campaign - Jun 2026,24460.24
+JE-2026-000811,2026-06-23,Marketing,Travel,Booking.com,Hotel accommodation - Jun 2026,1027.96
+JE-2026-000812,2026-06-23,Operations,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Jun 2026,1371.7
+JE-2026-000813,2026-06-23,R&D,Consulting,Deloitte Israel,Cyber security penetration test - urgent,34000.0
+JE-2026-000814,2026-06-23,R&D,Office Supplies,Kravitz,Office stationery - Jun 2026,344.54
+JE-2026-000815,2026-06-23,R&D,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Jun 2026,2399.4
+JE-2026-000816,2026-06-24,HR,Consulting,Deloitte Israel,Advisory services - process improvement - Jun 2026,2124.52
+JE-2026-000817,2026-06-24,HR,Employee Welfare,BuyMe,Holiday gift cards - Jun 2026,4087.73
+JE-2026-000818,2026-06-24,Marketing,Software Licenses,Monday.com,Work management platform subscription - Jun 2026,2967.32
+JE-2026-000819,2026-06-24,Marketing,Travel,Gett,Local taxi rides - Jun 2026,2062.62
+JE-2026-000820,2026-06-24,Operations,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Jun 2026,1092.02
+JE-2026-000821,2026-06-24,R&D,Cloud Infrastructure,Google Cloud,BigQuery analytics usage - Jun 2026,25859.58
+JE-2026-000822,2026-06-24,R&D,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jun 2026,27991.88
+JE-2026-000823,2026-06-24,R&D,Office Supplies,Shufersal,Kitchen and refreshments - Jun 2026,625.75
+JE-2026-000824,2026-06-24,R&D,Office Supplies,Shufersal,Kitchen and refreshments - Jun 2026,432.91
+JE-2026-000825,2026-06-24,R&D,Software Licenses,Adobe,Adobe Acrobat Pro licenses - Jun 2026,1392.93
+JE-2026-000826,2026-06-25,HR,Office Supplies,Kravitz,Office stationery - Jun 2026,147.52
+JE-2026-000827,2026-06-25,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - Jun 2026,98.57
+JE-2026-000828,2026-06-25,IT,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Jun 2026,23874.97
+JE-2026-000829,2026-06-25,IT,Travel,Booking.com,Hotel accommodation - Jun 2026,886.92
+JE-2026-000830,2026-06-25,Marketing,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Jun 2026,241.8
+JE-2026-000831,2026-06-25,Marketing,Travel,Issta Travel,Travel package - conference trip - Jun 2026,213.15
+JE-2026-000832,2026-06-25,Marketing,Travel,El Al Israel Airlines,Flight tickets - business trip - Jun 2026,2263.4
+JE-2026-000833,2026-06-25,Operations,Travel,Issta Travel,Travel package - conference trip - Jun 2026,1310.86
+JE-2026-000834,2026-06-25,R&D,Travel,Gett,Local taxi rides - Jun 2026,2998.98
+JE-2026-000835,2026-06-28,HR,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jun 2026,1237.38
+JE-2026-000836,2026-06-28,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - Jun 2026,607.27
+JE-2026-000837,2026-06-28,Marketing,Office Supplies,Shufersal,Kitchen and refreshments - Jun 2026,273.15
+JE-2026-000838,2026-06-29,IT,Cloud Infrastructure,Microsoft Azure,Azure SQL database - Jun 2026,19695.84
+JE-2026-000839,2026-06-29,IT,Office Supplies,Shufersal,Kitchen and refreshments - Jun 2026,1141.05
+JE-2026-000840,2026-06-29,IT,Office Supplies,Office Depot Israel,Printer toner and paper - Jun 2026,82.77
+JE-2026-000841,2026-06-29,Operations,Office Supplies,Shufersal,Kitchen and refreshments - Jun 2026,290.36
+JE-2026-000842,2026-06-29,Operations,Travel,Issta Travel,Travel package - conference trip - Jun 2026,1132.55
+JE-2026-000843,2026-06-29,R&D,Travel,Booking.com,Hotel accommodation - Jun 2026,3356.01
+JE-2026-000844,2026-06-30,HR,Employee Welfare,Dan Hotels,Team building event - Jun 2026,5455.06
+JE-2026-000845,2026-06-30,HR,Payroll,Hilan,Monthly salary run - Jun 2026,143068.82
+JE-2026-000846,2026-06-30,HR,Payroll,Migdal Pension Fund,Pension and severance contributions - Jun 2026,25679.02
+JE-2026-000847,2026-06-30,HR,Payroll,National Insurance Institute,Employer NII contributions - Jun 2026,14673.72
+JE-2026-000848,2026-06-30,HR,Software Licenses,Salesforce,Additional CRM user seats - Jun 2026,663.37
+JE-2026-000849,2026-06-30,IT,Cloud Infrastructure,Microsoft Azure,Azure SQL database - Jun 2026,1772.6
+JE-2026-000850,2026-06-30,IT,Office Supplies,Office Depot Israel,Office stationery - Jun 2026,392.66
+JE-2026-000851,2026-06-30,IT,Payroll,Hilan,Monthly salary run - Jun 2026,188853.08
+JE-2026-000852,2026-06-30,IT,Payroll,Migdal Pension Fund,Pension and severance contributions - Jun 2026,33896.71
+JE-2026-000853,2026-06-30,IT,Payroll,National Insurance Institute,Employer NII contributions - Jun 2026,19369.55
+JE-2026-000854,2026-06-30,IT,Software Licenses,Monday.com,Work management platform subscription - Jun 2026,65662.07
+JE-2026-000855,2026-06-30,Marketing,Consulting,Deloitte Israel,Advisory services - process improvement - Jun 2026,5586.04
+JE-2026-000856,2026-06-30,Marketing,Payroll,Hilan,Monthly salary run - Jun 2026,123150.32
+JE-2026-000857,2026-06-30,Marketing,Payroll,Migdal Pension Fund,Pension and severance contributions - Jun 2026,22103.9
+JE-2026-000858,2026-06-30,Marketing,Payroll,National Insurance Institute,Employer NII contributions - Jun 2026,12630.8
+JE-2026-000859,2026-06-30,Operations,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jun 2026,6773.67
+JE-2026-000860,2026-06-30,Operations,Payroll,Hilan,Monthly salary run - Jun 2026,162818.31
+JE-2026-000861,2026-06-30,Operations,Payroll,Migdal Pension Fund,Pension and severance contributions - Jun 2026,29223.8
+JE-2026-000862,2026-06-30,Operations,Payroll,National Insurance Institute,Employer NII contributions - Jun 2026,16699.31
+JE-2026-000863,2026-06-30,Operations,Travel,Booking.com,Hotel accommodation - Jun 2026,202.1
+JE-2026-000864,2026-06-30,R&D,Payroll,Hilan,Monthly salary run - Jun 2026,413304.2
+JE-2026-000865,2026-06-30,R&D,Payroll,Migdal Pension Fund,Pension and severance contributions - Jun 2026,74182.81
+JE-2026-000866,2026-06-30,R&D,Payroll,National Insurance Institute,Employer NII contributions - Jun 2026,42390.17
+JE-2026-000867,2026-07-01,HR,Travel,Issta Travel,Travel package - conference trip - Jul 2026,691.48
+JE-2026-000868,2026-07-01,IT,Cloud Infrastructure,Google Cloud,Cloud storage - Jul 2026,5014.91
+JE-2026-000869,2026-07-01,R&D,Office Supplies,Shufersal,Kitchen and refreshments - Jul 2026,488.86
+JE-2026-000870,2026-07-02,IT,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Jul 2026,6445.86
+JE-2026-000871,2026-07-02,IT,Software Licenses,Monday.com,Work management platform subscription - Jul 2026,38336.73
+JE-2026-000872,2026-07-02,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - Jul 2026,35879.35
+JE-2026-000873,2026-07-02,Marketing,Office Supplies,Office Depot Israel,Printer toner and paper - Jul 2026,106.14
+JE-2026-000874,2026-07-02,R&D,Cloud Infrastructure,Microsoft Azure,Azure SQL database - Jul 2026,21372.47
+JE-2026-000875,2026-07-02,R&D,Consulting,Deloitte Israel,Advisory services - process improvement - Jul 2026,5274.05
+JE-2026-000876,2026-07-05,HR,Travel,Gett,Local taxi rides - Jul 2026,343.25
+JE-2026-000877,2026-07-05,IT,Cloud Infrastructure,Amazon Web Services,EC2 usage spike - untagged dev instances,21000.0
+JE-2026-000878,2026-07-05,IT,Travel,Gett,Local taxi rides - Jul 2026,178.71
+JE-2026-000879,2026-07-05,Marketing,Advertising,Taboola,Native advertising campaign - Jul 2026,19966.42
+JE-2026-000880,2026-07-05,Marketing,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jul 2026,4711.83
+JE-2026-000881,2026-07-05,Marketing,Office Supplies,Office Depot Israel,Office stationery - Jul 2026,1118.99
+JE-2026-000882,2026-07-05,Marketing,Travel,Gett,Local taxi rides - Jul 2026,2950.17
+JE-2026-000883,2026-07-05,R&D,Travel,Booking.com,Hotel accommodation - Jul 2026,555.13
+JE-2026-000884,2026-07-06,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - Jul 2026,281.83
+JE-2026-000885,2026-07-06,IT,Cloud Infrastructure,Amazon Web Services,Data transfer charges - Jul 2026,33093.33
+JE-2026-000886,2026-07-06,Marketing,Travel,Hertz Israel,Car rental - Jul 2026,183.44
+JE-2026-000887,2026-07-06,Operations,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Jul 2026,1634.23
+JE-2026-000888,2026-07-06,R&D,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Jul 2026,10070.14
+JE-2026-000889,2026-07-06,R&D,Travel,Gett,Local taxi rides - Jul 2026,2631.97
+JE-2026-000890,2026-07-07,HR,Employee Welfare,Cibus,Employee meal vouchers - Jul 2026,7235.32
+JE-2026-000891,2026-07-07,HR,Travel,Gett,Local taxi rides - Jul 2026,346.29
+JE-2026-000892,2026-07-07,IT,Travel,Hertz Israel,Car rental - Jul 2026,303.03
+JE-2026-000893,2026-07-07,IT,Travel,Issta Travel,Travel package - conference trip - Jul 2026,624.63
+JE-2026-000894,2026-07-07,Marketing,Software Licenses,Adobe,Adobe Acrobat Pro licenses - Jul 2026,2923.26
+JE-2026-000895,2026-07-07,Marketing,Software Licenses,Salesforce,Additional CRM user seats - Jul 2026,1353.94
+JE-2026-000896,2026-07-07,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Jul 2026,21025.06
+JE-2026-000897,2026-07-07,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - Jul 2026,988.67
+JE-2026-000898,2026-07-08,IT,Office Supplies,Office Depot Israel,Printer toner and paper - Jul 2026,229.31
+JE-2026-000899,2026-07-08,Marketing,Office Supplies,Kravitz,Office stationery - Jul 2026,755.27
+JE-2026-000900,2026-07-08,Marketing,Software Licenses,Monday.com,Work management platform subscription - Jul 2026,1596.12
+JE-2026-000901,2026-07-08,Marketing,Software Licenses,Adobe,Adobe Creative Cloud licenses - Jul 2026,2284.91
+JE-2026-000902,2026-07-08,Operations,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Jul 2026,611.98
+JE-2026-000903,2026-07-08,R&D,Software Licenses,JetBrains,IDE developer licenses renewal - Jul 2026,10257.56
+JE-2026-000904,2026-07-09,HR,Software Licenses,JetBrains,IDE developer licenses renewal - Jul 2026,1016.27
+JE-2026-000905,2026-07-09,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - Jul 2026,185.85
+JE-2026-000906,2026-07-09,Marketing,Consulting,EY Kost Forer,Financial due diligence support - Jul 2026,3766.21
+JE-2026-000907,2026-07-09,Marketing,Office Supplies,Office Depot Israel,Printer toner and paper - Jul 2026,263.9
+JE-2026-000908,2026-07-09,Marketing,Travel,El Al Israel Airlines,Flight tickets - business trip - Jul 2026,2517.5
+JE-2026-000909,2026-07-09,Operations,Travel,Booking.com,Hotel accommodation - Jul 2026,1798.21
+JE-2026-000910,2026-07-09,R&D,Consulting,PwC Kesselman,Tax advisory services - Jul 2026,18557.07
+JE-2026-000911,2026-07-09,R&D,Software Licenses,Slack Technologies,Slack Business+ subscription - Jul 2026,10453.38
+JE-2026-000912,2026-07-09,R&D,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Jul 2026,2101.8
+JE-2026-000913,2026-07-12,HR,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jul 2026,7643.3
+JE-2026-000914,2026-07-12,IT,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Jul 2026,731.58
+JE-2026-000915,2026-07-12,Marketing,Software Licenses,Salesforce,Additional CRM user seats - Jul 2026,763.32
+JE-2026-000916,2026-07-12,Operations,Office Supplies,Office Depot Israel,Printer toner and paper - Jul 2026,3042.21
+JE-2026-000917,2026-07-12,Operations,Office Supplies,Kravitz,Office stationery - Jul 2026,1635.48
+JE-2026-000918,2026-07-12,Operations,Travel,Issta Travel,Travel package - conference trip - Jul 2026,1248.4
+JE-2026-000919,2026-07-13,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - Jul 2026,421.46
+JE-2026-000920,2026-07-14,HR,Software Licenses,Atlassian,Jira and Confluence subscription - Jul 2026,1054.96
+JE-2026-000921,2026-07-15,HR,Employee Welfare,Cibus,Employee meal vouchers - Jul 2026,5033.97
+JE-2026-000922,2026-07-15,HR,Software Licenses,Slack Technologies,Slack Business+ subscription - Jul 2026,937.33
+JE-2026-000923,2026-07-15,IT,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Jul 2026,13621.26
+JE-2026-000924,2026-07-15,IT,Office Supplies,Kravitz,Office stationery - Jul 2026,401.75
+JE-2026-000925,2026-07-15,IT,Travel,El Al Israel Airlines,Flight tickets - business trip - Jul 2026,785.63
+JE-2026-000926,2026-07-16,HR,Office Supplies,IKEA Israel,Office furniture - Jul 2026,256.66
+JE-2026-000927,2026-07-16,HR,Software Licenses,Adobe,Adobe Creative Cloud licenses - Jul 2026,1888.38
+JE-2026-000928,2026-07-16,HR,Travel,Booking.com,Hotel accommodation - Jul 2026,108.23
+JE-2026-000929,2026-07-16,IT,Office Supplies,Shufersal,Kitchen and refreshments - Jul 2026,1246.48
+JE-2026-000930,2026-07-16,R&D,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Jul 2026,4209.78
+JE-2026-000931,2026-07-19,HR,Office Supplies,Kravitz,Office stationery - Jul 2026,1173.13
+JE-2026-000932,2026-07-19,IT,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Jul 2026,25287.25
+JE-2026-000933,2026-07-19,Marketing,Travel,Booking.com,Hotel accommodation - Jul 2026,2050.58
+JE-2026-000934,2026-07-19,Operations,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jul 2026,10951.63
+JE-2026-000935,2026-07-19,Operations,Software Licenses,Slack Technologies,Slack Business+ subscription - Jul 2026,2948.31
+JE-2026-000936,2026-07-19,R&D,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - Jul 2026,13886.23
+JE-2026-000937,2026-07-19,R&D,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Jul 2026,6441.68
+JE-2026-000938,2026-07-19,R&D,Consulting,Nisha Recruitment,Recruitment fees - placement - Jul 2026,6495.39
+JE-2026-000939,2026-07-20,Marketing,Advertising,Google Ads,Paid search campaign - Jul 2026,19796.7
+JE-2026-000940,2026-07-20,R&D,Office Supplies,IKEA Israel,Office furniture - Jul 2026,1307.05
+JE-2026-000941,2026-07-20,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - Jul 2026,260.36
+JE-2026-000942,2026-07-21,HR,Office Supplies,IKEA Israel,Office furniture - Jul 2026,812.05
+JE-2026-000943,2026-07-21,IT,Consulting,Nisha Recruitment,Recruitment fees - placement - Jul 2026,3740.04
+JE-2026-000944,2026-07-21,IT,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Jul 2026,24495.79
+JE-2026-000945,2026-07-21,Operations,Consulting,KPMG Somekh Chaikin,Internal audit support services - Jul 2026,2182.69
+JE-2026-000946,2026-07-21,Operations,Office Supplies,IKEA Israel,Office furniture - Jul 2026,4087.44
+JE-2026-000947,2026-07-21,R&D,Software Licenses,JetBrains,IDE developer licenses renewal - Jul 2026,15774.98
+JE-2026-000948,2026-07-22,Marketing,Consulting,PwC Kesselman,Tax advisory services - Jul 2026,840.73
+JE-2026-000949,2026-07-22,Marketing,Consulting,Nisha Recruitment,Recruitment fees - placement - Jul 2026,15102.75
+JE-2026-000950,2026-07-22,Marketing,Travel,Hertz Israel,Car rental - Jul 2026,2306.6
+JE-2026-000951,2026-07-22,Operations,Consulting,PwC Kesselman,Tax advisory services - Jul 2026,4768.4
+JE-2026-000952,2026-07-22,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - Jul 2026,720.95
+JE-2026-000953,2026-07-22,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - Jul 2026,3132.25
+JE-2026-000954,2026-07-23,HR,Employee Welfare,Dan Hotels,Team building event - Jul 2026,1296.95
+JE-2026-000955,2026-07-23,HR,Office Supplies,Shufersal,Kitchen and refreshments - Jul 2026,592.93
+JE-2026-000956,2026-07-23,Marketing,Advertising,Outbrain,Content recommendation campaign - Jul 2026,6132.41
+JE-2026-000957,2026-07-23,Operations,Office Supplies,Office Depot Israel,Printer toner and paper - Jul 2026,2638.39
+JE-2026-000958,2026-07-23,R&D,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - Jul 2026,5077.22
+JE-2026-000959,2026-07-23,R&D,Office Supplies,Shufersal,Kitchen and refreshments - Jul 2026,552.66
+JE-2026-000960,2026-07-26,HR,Software Licenses,Atlassian,Jira and Confluence subscription - Jul 2026,991.66
+JE-2026-000961,2026-07-26,IT,Cloud Infrastructure,Microsoft Azure,Azure SQL database - Jul 2026,7629.05
+JE-2026-000962,2026-07-26,IT,Travel,Gett,Local taxi rides - Jul 2026,1065.55
+JE-2026-000963,2026-07-26,Marketing,Office Supplies,IKEA Israel,Office furniture - Jul 2026,580.73
+JE-2026-000964,2026-07-26,Marketing,Software Licenses,Salesforce,Additional CRM user seats - Jul 2026,2488.03
+JE-2026-000965,2026-07-26,R&D,Office Supplies,Kravitz,Office stationery - Jul 2026,1755.56
+JE-2026-000966,2026-07-27,IT,Office Supplies,Kravitz,Office stationery - Jul 2026,182.29
+JE-2026-000967,2026-07-27,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - Jul 2026,33817.51
+JE-2026-000968,2026-07-27,Marketing,Advertising,Meta Platforms,Social media ads - Facebook and Instagram - Jul 2026,12534.36
+JE-2026-000969,2026-07-28,Marketing,Advertising,Outbrain,Content recommendation campaign - Jul 2026,800.79
+JE-2026-000970,2026-07-28,Operations,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Jul 2026,1092.81
+JE-2026-000971,2026-07-29,HR,Consulting,EY Kost Forer,Financial due diligence support - Jul 2026,8357.48
+JE-2026-000972,2026-07-29,IT,Office Supplies,Office Depot Israel,Office stationery - Jul 2026,749.62
+JE-2026-000973,2026-07-29,Marketing,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Jul 2026,5328.48
+JE-2026-000974,2026-07-29,Marketing,Travel,Issta Travel,Travel package - conference trip - Jul 2026,609.7
+JE-2026-000975,2026-07-29,Operations,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Jul 2026,3216.09
+JE-2026-000976,2026-07-29,R&D,Cloud Infrastructure,Amazon Web Services,EC2 compute usage - Jul 2026,9322.25
+JE-2026-000977,2026-07-30,HR,Employee Welfare,Dan Hotels,Team building event - Jul 2026,4291.93
+JE-2026-000978,2026-07-30,HR,Payroll,Hilan,Monthly salary run - Jul 2026,145147.39
+JE-2026-000979,2026-07-30,HR,Payroll,Migdal Pension Fund,Pension and severance contributions - Jul 2026,26052.1
+JE-2026-000980,2026-07-30,HR,Payroll,National Insurance Institute,Employer NII contributions - Jul 2026,14886.91
+JE-2026-000981,2026-07-30,HR,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Jul 2026,711.4
+JE-2026-000982,2026-07-30,IT,Payroll,Hilan,Monthly salary run - Jul 2026,189953.73
+JE-2026-000983,2026-07-30,IT,Payroll,Migdal Pension Fund,Pension and severance contributions - Jul 2026,34094.26
+JE-2026-000984,2026-07-30,IT,Payroll,National Insurance Institute,Employer NII contributions - Jul 2026,19482.43
+JE-2026-000985,2026-07-30,IT,Software Licenses,Atlassian,Jira and Confluence subscription - Jul 2026,25537.95
+JE-2026-000986,2026-07-30,Marketing,Payroll,Hilan,Monthly salary run - Jul 2026,125818.13
+JE-2026-000987,2026-07-30,Marketing,Payroll,Migdal Pension Fund,Pension and severance contributions - Jul 2026,22582.74
+JE-2026-000988,2026-07-30,Marketing,Payroll,National Insurance Institute,Employer NII contributions - Jul 2026,12904.42
+JE-2026-000989,2026-07-30,Operations,Office Supplies,Office Depot Israel,Printer toner and paper - Jul 2026,2452.33
+JE-2026-000990,2026-07-30,Operations,Office Supplies,Shufersal,Kitchen and refreshments - Jul 2026,1359.89
+JE-2026-000991,2026-07-30,Operations,Payroll,Hilan,Monthly salary run - Jul 2026,161802.52
+JE-2026-000992,2026-07-30,Operations,Payroll,Migdal Pension Fund,Pension and severance contributions - Jul 2026,29041.48
+JE-2026-000993,2026-07-30,Operations,Payroll,National Insurance Institute,Employer NII contributions - Jul 2026,16595.13
+JE-2026-000994,2026-07-30,R&D,Cloud Infrastructure,Amazon Web Services,EC2 compute usage - Jul 2026,10208.24
+JE-2026-000995,2026-07-30,R&D,Payroll,Hilan,Monthly salary run - Jul 2026,406321.95
+JE-2026-000996,2026-07-30,R&D,Payroll,Migdal Pension Fund,Pension and severance contributions - Jul 2026,72929.58
+JE-2026-000997,2026-07-30,R&D,Payroll,National Insurance Institute,Employer NII contributions - Jul 2026,41674.05
+JE-2026-000998,2026-07-30,R&D,Travel,Hertz Israel,Car rental - Jul 2026,729.48
+JE-2026-000999,2026-07-30,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - Jul 2026,1786.11
+JE-2026-001000,2026-08-02,HR,Software Licenses,JetBrains,IDE developer licenses renewal - Aug 2026,1812.77
+JE-2026-001001,2026-08-02,HR,Travel,Booking.com,Hotel accommodation - Aug 2026,510.13
+JE-2026-001002,2026-08-02,Marketing,Consulting,EY Kost Forer,Financial due diligence support - Aug 2026,18382.07
+JE-2026-001003,2026-08-02,Marketing,Consulting,Deloitte Israel,Advisory services - process improvement - Aug 2026,11951.63
+JE-2026-001004,2026-08-02,Operations,Software Licenses,Atlassian,Jira and Confluence subscription - Aug 2026,1286.82
+JE-2026-001005,2026-08-02,R&D,Consulting,KPMG Somekh Chaikin,Internal audit support services - Aug 2026,13538.51
+JE-2026-001006,2026-08-03,HR,Office Supplies,Shufersal,Kitchen and refreshments - Aug 2026,403.08
+JE-2026-001007,2026-08-03,HR,Software Licenses,Adobe,Adobe Creative Cloud licenses - Aug 2026,624.21
+JE-2026-001008,2026-08-03,HR,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Aug 2026,168.89
+JE-2026-001009,2026-08-03,HR,Travel,El Al Israel Airlines,Flight tickets - business trip - Aug 2026,67.79
+JE-2026-001010,2026-08-03,IT,Office Supplies,IKEA Israel,Office furniture - Aug 2026,1133.0
+JE-2026-001011,2026-08-03,IT,Travel,Gett,Local taxi rides - Aug 2026,316.29
+JE-2026-001012,2026-08-03,Marketing,Advertising,Google Ads,Paid search campaign - Aug 2026,54604.05
+JE-2026-001013,2026-08-03,Operations,Office Supplies,Kravitz,Office stationery - Aug 2026,1039.2
+JE-2026-001014,2026-08-03,Operations,Travel,Gett,Local taxi rides - Aug 2026,1783.0
+JE-2026-001015,2026-08-03,R&D,Cloud Infrastructure,Google Cloud,BigQuery analytics usage - Aug 2026,10575.5
+JE-2026-001016,2026-08-04,HR,Travel,Gett,Local taxi rides - Aug 2026,81.64
+JE-2026-001017,2026-08-04,IT,Travel,Hertz Israel,Car rental - Aug 2026,517.19
+JE-2026-001018,2026-08-04,R&D,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - Aug 2026,14952.95
+JE-2026-001019,2026-08-05,HR,Consulting,KPMG Somekh Chaikin,Internal audit support services - Aug 2026,1206.78
+JE-2026-001020,2026-08-05,HR,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Aug 2026,1749.79
+JE-2026-001021,2026-08-05,IT,Cloud Infrastructure,Google Cloud,Cloud storage - Aug 2026,10774.59
+JE-2026-001022,2026-08-05,IT,Software Licenses,Atlassian,Jira and Confluence subscription - Aug 2026,17036.95
+JE-2026-001023,2026-08-05,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Aug 2026,11015.8
+JE-2026-001024,2026-08-06,Marketing,Software Licenses,Salesforce,Additional CRM user seats - Aug 2026,1617.85
+JE-2026-001025,2026-08-06,Operations,Travel,Issta Travel,Travel package - conference trip - Aug 2026,330.37
+JE-2026-001026,2026-08-06,R&D,Office Supplies,Shufersal,Kitchen and refreshments - Aug 2026,1039.69
+JE-2026-001027,2026-08-09,Operations,Office Supplies,Office Depot Israel,Office stationery - Aug 2026,2841.96
+JE-2026-001028,2026-08-09,R&D,Office Supplies,Shufersal,Kitchen and refreshments - Aug 2026,301.71
+JE-2026-001029,2026-08-10,HR,Employee Welfare,Cibus,Employee meal vouchers - Aug 2026,5909.68
+JE-2026-001030,2026-08-10,HR,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Aug 2026,39.94
+JE-2026-001031,2026-08-10,HR,Travel,Hertz Israel,Car rental - Aug 2026,745.82
+JE-2026-001032,2026-08-10,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - Aug 2026,11652.19
+JE-2026-001033,2026-08-10,Marketing,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Aug 2026,1323.27
+JE-2026-001034,2026-08-10,Operations,Consulting,KPMG Somekh Chaikin,Internal audit support services - Aug 2026,3546.64
+JE-2026-001035,2026-08-10,Operations,Travel,Gett,Local taxi rides - Aug 2026,1783.44
+JE-2026-001036,2026-08-10,Operations,Travel,Hertz Israel,Car rental - Aug 2026,2673.97
+JE-2026-001037,2026-08-10,R&D,Consulting,PwC Kesselman,Tax advisory services - Aug 2026,7843.24
+JE-2026-001038,2026-08-10,R&D,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Aug 2026,1666.88
+JE-2026-001039,2026-08-11,IT,Cloud Infrastructure,Microsoft Azure,Azure virtual machines usage - Aug 2026,24116.81
+JE-2026-001040,2026-08-11,IT,Office Supplies,Kravitz,Office stationery - Aug 2026,419.19
+JE-2026-001041,2026-08-11,Operations,Consulting,KPMG Somekh Chaikin,Internal audit support services - Aug 2026,10741.19
+JE-2026-001042,2026-08-12,Operations,Software Licenses,Slack Technologies,Slack Business+ subscription - Aug 2026,1082.16
+JE-2026-001043,2026-08-12,R&D,Travel,Issta Travel,Travel package - conference trip - Aug 2026,1637.6
+JE-2026-001044,2026-08-12,R&D,Travel,Gett,Local taxi rides - Aug 2026,270.73
+JE-2026-001045,2026-08-13,IT,Software Licenses,Monday.com,Work management platform subscription - Aug 2026,63609.85
+JE-2026-001046,2026-08-13,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - Aug 2026,10428.88
+JE-2026-001047,2026-08-13,Marketing,Office Supplies,Kravitz,Office stationery - Aug 2026,141.27
+JE-2026-001048,2026-08-13,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Aug 2026,11074.01
+JE-2026-001049,2026-08-16,HR,Office Supplies,Shufersal,Kitchen and refreshments - Aug 2026,1677.96
+JE-2026-001050,2026-08-16,HR,Software Licenses,Salesforce,Sales Cloud subscription - Aug 2026,1046.33
+JE-2026-001051,2026-08-16,IT,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Aug 2026,25963.39
+JE-2026-001052,2026-08-16,Marketing,Office Supplies,IKEA Israel,Office furniture - Aug 2026,429.77
+JE-2026-001053,2026-08-16,Marketing,Software Licenses,Salesforce,Additional CRM user seats - Aug 2026,4098.25
+JE-2026-001054,2026-08-16,Marketing,Travel,Gett,Local taxi rides - Aug 2026,1840.14
+JE-2026-001055,2026-08-16,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - Aug 2026,665.62
+JE-2026-001056,2026-08-17,IT,Consulting,Nisha Recruitment,Recruitment fees - placement - Aug 2026,11375.0
+JE-2026-001057,2026-08-17,IT,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Aug 2026,319.5
+JE-2026-001058,2026-08-17,Marketing,Office Supplies,Kravitz,Office stationery - Aug 2026,389.73
+JE-2026-001059,2026-08-17,Marketing,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Aug 2026,1524.41
+JE-2026-001060,2026-08-17,Operations,Consulting,Nisha Recruitment,Recruitment fees - placement - Aug 2026,3339.76
+JE-2026-001061,2026-08-17,Operations,Office Supplies,Shufersal,Kitchen and refreshments - Aug 2026,1216.73
+JE-2026-001062,2026-08-17,R&D,Consulting,PwC Kesselman,Tax advisory services - Aug 2026,1189.82
+JE-2026-001063,2026-08-17,R&D,Office Supplies,Office Depot Israel,Office stationery - Aug 2026,2399.66
+JE-2026-001064,2026-08-17,R&D,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Aug 2026,12997.67
+JE-2026-001065,2026-08-18,HR,Travel,Issta Travel,Travel package - conference trip - Aug 2026,553.95
+JE-2026-001066,2026-08-18,Marketing,Software Licenses,Atlassian,Jira and Confluence subscription - Aug 2026,620.85
+JE-2026-001067,2026-08-19,HR,Consulting,KPMG Somekh Chaikin,Internal audit support services - Aug 2026,1215.32
+JE-2026-001068,2026-08-19,HR,Software Licenses,Atlassian,Jira and Confluence subscription - Aug 2026,521.42
+JE-2026-001069,2026-08-19,HR,Travel,Hertz Israel,Car rental - Aug 2026,296.58
+JE-2026-001070,2026-08-19,IT,Cloud Infrastructure,Amazon Web Services,EC2 usage spike - untagged dev instances,24500.0
+JE-2026-001071,2026-08-19,IT,Consulting,PwC Kesselman,Tax advisory services - Aug 2026,5457.79
+JE-2026-001072,2026-08-19,Marketing,Advertising,Google Ads,Paid search campaign - Aug 2026,31954.28
+JE-2026-001073,2026-08-19,Marketing,Office Supplies,Shufersal,Kitchen and refreshments - Aug 2026,422.91
+JE-2026-001074,2026-08-19,Marketing,Office Supplies,Shufersal,Kitchen and refreshments - Aug 2026,802.43
+JE-2026-001075,2026-08-20,HR,Consulting,KPMG Somekh Chaikin,Internal audit support services - Aug 2026,2180.59
+JE-2026-001076,2026-08-20,HR,Employee Welfare,BuyMe,Holiday gift cards - Aug 2026,5592.55
+JE-2026-001077,2026-08-20,IT,Consulting,Deloitte Israel,Advisory services - process improvement - Aug 2026,5041.16
+JE-2026-001078,2026-08-20,IT,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Aug 2026,238.54
+JE-2026-001079,2026-08-20,Operations,Office Supplies,IKEA Israel,Office furniture - Aug 2026,4329.59
+JE-2026-001080,2026-08-23,HR,Office Supplies,Kravitz,Office stationery - Aug 2026,1407.93
+JE-2026-001081,2026-08-23,IT,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Aug 2026,6916.85
+JE-2026-001082,2026-08-23,IT,Office Supplies,Shufersal,Kitchen and refreshments - Aug 2026,150.86
+JE-2026-001083,2026-08-23,IT,Software Licenses,Salesforce,Sales Cloud subscription - Aug 2026,8289.52
+JE-2026-001084,2026-08-23,IT,Travel,El Al Israel Airlines,Flight tickets - business trip - Aug 2026,146.83
+JE-2026-001085,2026-08-23,Operations,Office Supplies,Kravitz,Office stationery - Aug 2026,3181.32
+JE-2026-001086,2026-08-23,R&D,Travel,Issta Travel,Travel package - conference trip - Aug 2026,1537.94
+JE-2026-001087,2026-08-24,HR,Travel,Booking.com,Hotel accommodation - Aug 2026,264.52
+JE-2026-001088,2026-08-24,Marketing,Advertising,Meta Platforms,Social media ads - Facebook and Instagram - Aug 2026,645.33
+JE-2026-001089,2026-08-24,Marketing,Office Supplies,IKEA Israel,Office furniture - Aug 2026,427.47
+JE-2026-001090,2026-08-24,Operations,Software Licenses,Monday.com,Work management platform subscription - Aug 2026,1106.12
+JE-2026-001091,2026-08-24,R&D,Travel,El Al Israel Airlines,Flight tickets - business trip - Aug 2026,1808.63
+JE-2026-001092,2026-08-25,Marketing,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Aug 2026,3557.45
+JE-2026-001093,2026-08-25,Marketing,Travel,Booking.com,Hotel accommodation - Aug 2026,5083.69
+JE-2026-001094,2026-08-25,Marketing,Travel,Gett,Local taxi rides - Aug 2026,1465.71
+JE-2026-001095,2026-08-25,Marketing,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Aug 2026,335.29
+JE-2026-001096,2026-08-25,Operations,Software Licenses,JetBrains,IDE developer licenses renewal - Aug 2026,912.86
+JE-2026-001097,2026-08-25,R&D,Travel,Issta Travel,Travel package - conference trip - Aug 2026,552.13
+JE-2026-001098,2026-08-25,R&D,Travel,Gett,Local taxi rides - Aug 2026,894.33
+JE-2026-001099,2026-08-25,R&D,Travel,Hertz Israel,Car rental - Aug 2026,2156.78
+JE-2026-001100,2026-08-26,IT,Cloud Infrastructure,Cloudflare,CDN and DDoS protection plan - Aug 2026,1598.08
+JE-2026-001101,2026-08-26,IT,Office Supplies,Office Depot Israel,Office stationery - Aug 2026,1165.83
+JE-2026-001102,2026-08-26,IT,Office Supplies,Kravitz,Office stationery - Aug 2026,916.35
+JE-2026-001103,2026-08-26,IT,Travel,Issta Travel,Travel package - conference trip - Aug 2026,762.89
+JE-2026-001104,2026-08-26,Operations,Consulting,Deloitte Israel,Advisory services - process improvement - Aug 2026,1104.79
+JE-2026-001105,2026-08-26,Operations,Office Supplies,IKEA Israel,Office furniture - Aug 2026,2738.52
+JE-2026-001106,2026-08-26,Operations,Software Licenses,Slack Technologies,Slack Business+ subscription - Aug 2026,514.8
+JE-2026-001107,2026-08-27,IT,Cloud Infrastructure,Microsoft Azure,Azure SQL database - Aug 2026,6401.23
+JE-2026-001108,2026-08-27,IT,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Aug 2026,785.16
+JE-2026-001109,2026-08-27,Marketing,Advertising,Google Ads,Paid search campaign - Aug 2026,9380.82
+JE-2026-001110,2026-08-27,R&D,Software Licenses,Salesforce,Sales Cloud subscription - Aug 2026,16823.13
+JE-2026-001111,2026-08-27,R&D,Software Licenses,Monday.com,Work management platform subscription - Aug 2026,5940.48
+JE-2026-001112,2026-08-30,HR,Consulting,PwC Kesselman,Tax advisory services - Aug 2026,6709.91
+JE-2026-001113,2026-08-30,HR,Employee Welfare,BuyMe,Holiday gift cards - Aug 2026,6345.13
+JE-2026-001114,2026-08-30,Operations,Software Licenses,Atlassian,Jira and Confluence subscription - Aug 2026,1364.52
+JE-2026-001115,2026-08-30,R&D,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Aug 2026,13998.37
+JE-2026-001116,2026-08-30,R&D,Office Supplies,Kravitz,Office stationery - Aug 2026,899.78
+JE-2026-001117,2026-08-30,R&D,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Aug 2026,1404.53
+JE-2026-001118,2026-08-31,HR,Consulting,Nisha Recruitment,Recruitment fees - placement - Aug 2026,2398.89
+JE-2026-001119,2026-08-31,HR,Payroll,Hilan,Monthly salary run - Aug 2026,142313.62
+JE-2026-001120,2026-08-31,HR,Payroll,Migdal Pension Fund,Pension and severance contributions - Aug 2026,25543.47
+JE-2026-001121,2026-08-31,HR,Payroll,National Insurance Institute,Employer NII contributions - Aug 2026,14596.27
+JE-2026-001122,2026-08-31,IT,Payroll,Hilan,Monthly salary run - Aug 2026,185381.94
+JE-2026-001123,2026-08-31,IT,Payroll,Migdal Pension Fund,Pension and severance contributions - Aug 2026,33273.68
+JE-2026-001124,2026-08-31,IT,Payroll,National Insurance Institute,Employer NII contributions - Aug 2026,19013.53
+JE-2026-001125,2026-08-31,Marketing,Consulting,Deloitte Israel,Advisory services - process improvement - Aug 2026,3470.76
+JE-2026-001126,2026-08-31,Marketing,Payroll,Hilan,Monthly salary run - Aug 2026,124365.01
+JE-2026-001127,2026-08-31,Marketing,Payroll,Migdal Pension Fund,Pension and severance contributions - Aug 2026,22321.92
+JE-2026-001128,2026-08-31,Marketing,Payroll,National Insurance Institute,Employer NII contributions - Aug 2026,12755.39
+JE-2026-001129,2026-08-31,Operations,Payroll,Hilan,Monthly salary run - Aug 2026,163899.11
+JE-2026-001130,2026-08-31,Operations,Payroll,Migdal Pension Fund,Pension and severance contributions - Aug 2026,29417.79
+JE-2026-001131,2026-08-31,Operations,Payroll,National Insurance Institute,Employer NII contributions - Aug 2026,16810.16
+JE-2026-001132,2026-08-31,R&D,Cloud Infrastructure,Microsoft Azure,Azure SQL database - Aug 2026,34232.93
+JE-2026-001133,2026-08-31,R&D,Payroll,Hilan,Monthly salary run - Aug 2026,395834.84
+JE-2026-001134,2026-08-31,R&D,Payroll,Migdal Pension Fund,Pension and severance contributions - Aug 2026,71047.28
+JE-2026-001135,2026-08-31,R&D,Payroll,National Insurance Institute,Employer NII contributions - Aug 2026,40598.44
+JE-2026-001136,2026-09-01,HR,Travel,Booking.com,Hotel accommodation - Sep 2026,301.59
+JE-2026-001137,2026-09-01,IT,Office Supplies,IKEA Israel,Office furniture - Sep 2026,772.9
+JE-2026-001138,2026-09-01,IT,Software Licenses,Atlassian,Jira and Confluence subscription - Sep 2026,5326.11
+JE-2026-001139,2026-09-01,IT,Travel,Issta Travel,Travel package - conference trip - Sep 2026,1783.35
+JE-2026-001140,2026-09-01,Marketing,Consulting,EY Kost Forer,Financial due diligence support - Sep 2026,14390.66
+JE-2026-001141,2026-09-01,Marketing,Travel,Hertz Israel,Car rental - Sep 2026,1073.25
+JE-2026-001142,2026-09-01,R&D,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Sep 2026,6442.26
+JE-2026-001143,2026-09-02,HR,Office Supplies,Kravitz,Office stationery - Sep 2026,532.81
+JE-2026-001144,2026-09-02,HR,Office Supplies,Shufersal,Kitchen and refreshments - Sep 2026,460.78
+JE-2026-001145,2026-09-02,IT,Cloud Infrastructure,Microsoft Azure,Azure virtual machines usage - Sep 2026,15914.09
+JE-2026-001146,2026-09-02,IT,Cloud Infrastructure,Microsoft Azure,Azure virtual machines usage - Sep 2026,15849.76
+JE-2026-001147,2026-09-02,IT,Consulting,KPMG Somekh Chaikin,Internal audit support services - Sep 2026,15748.42
+JE-2026-001148,2026-09-02,IT,Travel,Issta Travel,Travel package - conference trip - Sep 2026,60.88
+JE-2026-001149,2026-09-02,Marketing,Office Supplies,Office Depot Israel,Office stationery - Sep 2026,1017.58
+JE-2026-001150,2026-09-02,Marketing,Software Licenses,Microsoft,Microsoft 365 subscription - Sep 2026,2335.3
+JE-2026-001151,2026-09-02,Operations,Consulting,EY Kost Forer,Financial due diligence support - Sep 2026,8754.29
+JE-2026-001152,2026-09-02,R&D,Cloud Infrastructure,Amazon Web Services,EC2 compute usage - Sep 2026,42296.6
+JE-2026-001153,2026-09-03,Marketing,Software Licenses,Slack Technologies,Slack Business+ subscription - Sep 2026,3123.32
+JE-2026-001154,2026-09-03,R&D,Cloud Infrastructure,Google Cloud,BigQuery analytics usage - Sep 2026,19241.79
+JE-2026-001155,2026-09-03,R&D,Office Supplies,Kravitz,Office stationery - Sep 2026,514.38
+JE-2026-001156,2026-09-03,R&D,Travel,El Al Israel Airlines,Team flights to AWS re:Invent - business class,20900.0
+JE-2026-001157,2026-09-06,IT,Cloud Infrastructure,Microsoft Azure,Azure SQL database - Sep 2026,25108.76
+JE-2026-001158,2026-09-06,IT,Office Supplies,Kravitz,Office stationery - Sep 2026,774.27
+JE-2026-001159,2026-09-06,IT,Office Supplies,Kravitz,Office stationery - Sep 2026,553.88
+JE-2026-001160,2026-09-06,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - Sep 2026,37505.07
+JE-2026-001161,2026-09-06,Marketing,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Sep 2026,4257.46
+JE-2026-001162,2026-09-06,Marketing,Office Supplies,IKEA Israel,Office furniture - Sep 2026,1547.9
+JE-2026-001163,2026-09-06,Operations,Office Supplies,IKEA Israel,Office furniture - Sep 2026,3861.07
+JE-2026-001164,2026-09-06,Operations,Software Licenses,Monday.com,Work management platform subscription - Sep 2026,3218.04
+JE-2026-001165,2026-09-06,Operations,Software Licenses,Monday.com,Work management platform subscription - Sep 2026,2369.66
+JE-2026-001166,2026-09-06,R&D,Software Licenses,Salesforce,Sales Cloud subscription - Sep 2026,3876.88
+JE-2026-001167,2026-09-07,HR,Office Supplies,Office Depot Israel,Office stationery - Sep 2026,751.89
+JE-2026-001168,2026-09-07,HR,Travel,Gett,Local taxi rides - Sep 2026,216.04
+JE-2026-001169,2026-09-07,IT,Office Supplies,Office Depot Israel,Office stationery - Sep 2026,282.15
+JE-2026-001170,2026-09-07,Marketing,Software Licenses,Monday.com,Work management platform subscription - Sep 2026,427.21
+JE-2026-001171,2026-09-07,Operations,Office Supplies,Kravitz,Office stationery - Sep 2026,2378.86
+JE-2026-001172,2026-09-07,Operations,Office Supplies,Office Depot Israel,Office stationery - Sep 2026,1504.89
+JE-2026-001173,2026-09-07,Operations,Office Supplies,Kravitz,Office stationery - Sep 2026,2968.61
+JE-2026-001174,2026-09-07,R&D,Consulting,Nisha Recruitment,Recruitment fees - placement - Sep 2026,13445.64
+JE-2026-001175,2026-09-07,R&D,Consulting,Nisha Recruitment,Recruitment fees - placement - Sep 2026,15521.78
+JE-2026-001176,2026-09-07,R&D,Software Licenses,Monday.com,Work management platform subscription - Sep 2026,1955.8
+JE-2026-001177,2026-09-08,HR,Office Supplies,Kravitz,Office stationery - Sep 2026,370.2
+JE-2026-001178,2026-09-08,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - Sep 2026,9088.15
+JE-2026-001179,2026-09-08,Marketing,Travel,El Al Israel Airlines,Flight tickets - business trip - Sep 2026,3710.32
+JE-2026-001180,2026-09-09,HR,Consulting,EY Kost Forer,Financial due diligence support - Sep 2026,13406.34
+JE-2026-001181,2026-09-09,HR,Office Supplies,IKEA Israel,Office furniture - Sep 2026,793.65
+JE-2026-001182,2026-09-09,IT,Office Supplies,Kravitz,Office stationery - Sep 2026,386.45
+JE-2026-001183,2026-09-09,Operations,Travel,Gett,Local taxi rides - Sep 2026,1521.27
+JE-2026-001184,2026-09-09,R&D,Software Licenses,Salesforce,Additional CRM user seats - Sep 2026,24346.12
+JE-2026-001185,2026-09-10,HR,Employee Welfare,Holmes Place,Employee gym memberships - Sep 2026,22246.06
+JE-2026-001186,2026-09-10,HR,Office Supplies,Kravitz,Office stationery - Sep 2026,236.57
+JE-2026-001187,2026-09-10,HR,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Sep 2026,1498.27
+JE-2026-001188,2026-09-10,IT,Software Licenses,Salesforce,Additional CRM user seats - Sep 2026,16125.58
+JE-2026-001189,2026-09-10,IT,Travel,Booking.com,Hotel accommodation - Sep 2026,232.81
+JE-2026-001190,2026-09-10,Marketing,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Sep 2026,2695.33
+JE-2026-001191,2026-09-10,Operations,Software Licenses,Monday.com,Work management platform subscription - Sep 2026,2067.64
+JE-2026-001192,2026-09-13,IT,Travel,Issta Travel,Travel package - conference trip - Sep 2026,186.91
+JE-2026-001193,2026-09-13,Operations,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Sep 2026,1349.07
+JE-2026-001194,2026-09-14,IT,Travel,Hertz Israel,Car rental - Sep 2026,368.25
+JE-2026-001195,2026-09-14,Operations,Consulting,Herzog Fox & Neeman,Legal counsel - commercial contracts - Sep 2026,2926.79
+JE-2026-001196,2026-09-14,Operations,Consulting,EY Kost Forer,Financial due diligence support - Sep 2026,6521.61
+JE-2026-001197,2026-09-14,R&D,Office Supplies,Kravitz,Office stationery - Sep 2026,1420.08
+JE-2026-001198,2026-09-15,HR,Travel,Booking.com,Hotel accommodation - Sep 2026,328.12
+JE-2026-001199,2026-09-15,HR,Travel,Booking.com,Hotel accommodation - Sep 2026,350.17
+JE-2026-001200,2026-09-15,Marketing,Consulting,EY Kost Forer,Financial due diligence support - Sep 2026,3196.44
+JE-2026-001201,2026-09-15,Marketing,Travel,Issta Travel,Travel package - conference trip - Sep 2026,1538.49
+JE-2026-001202,2026-09-15,Operations,Travel,Issta Travel,Travel package - conference trip - Sep 2026,1899.55
+JE-2026-001203,2026-09-15,R&D,Office Supplies,Shufersal,Kitchen and refreshments - Sep 2026,372.96
+JE-2026-001204,2026-09-16,HR,Office Supplies,Shufersal,Kitchen and refreshments - Sep 2026,88.68
+JE-2026-001205,2026-09-16,IT,Software Licenses,Salesforce,Additional CRM user seats - Sep 2026,45743.88
+JE-2026-001206,2026-09-16,IT,Travel,Issta Travel,Travel package - conference trip - Sep 2026,71.66
+JE-2026-001207,2026-09-16,Marketing,Advertising,LinkedIn,Sponsored content - B2B campaign - Sep 2026,11937.21
+JE-2026-001208,2026-09-16,Marketing,Consulting,Nisha Recruitment,Recruitment fees - placement - Sep 2026,6108.99
+JE-2026-001209,2026-09-16,Marketing,Travel,Issta Travel,Travel package - conference trip - Sep 2026,2541.04
+JE-2026-001210,2026-09-16,Marketing,Travel,Booking.com,Hotel accommodation - Sep 2026,3575.88
+JE-2026-001211,2026-09-16,R&D,Cloud Infrastructure,Datadog,Infrastructure monitoring and logging - Sep 2026,4719.32
+JE-2026-001212,2026-09-16,R&D,Software Licenses,Atlassian,Jira and Confluence subscription - Sep 2026,2216.16
+JE-2026-001213,2026-09-16,R&D,Travel,Gett,Local taxi rides - Sep 2026,3840.96
+JE-2026-001214,2026-09-16,R&D,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Sep 2026,3130.66
+JE-2026-001215,2026-09-17,IT,Consulting,Nisha Recruitment,Recruitment fees - placement - Sep 2026,13720.88
+JE-2026-001216,2026-09-17,IT,Office Supplies,Shufersal,Kitchen and refreshments - Sep 2026,509.7
+JE-2026-001217,2026-09-17,Marketing,Travel,Hertz Israel,Car rental - Sep 2026,2448.31
+JE-2026-001218,2026-09-17,Operations,Travel,Gett,Local taxi rides - Sep 2026,900.07
+JE-2026-001219,2026-09-17,R&D,Office Supplies,Office Depot Israel,Office stationery - Sep 2026,1045.84
+JE-2026-001220,2026-09-20,HR,Consulting,KPMG Somekh Chaikin,Internal audit support services - Sep 2026,4959.15
+JE-2026-001221,2026-09-20,HR,Employee Welfare,Holmes Place,Employee gym memberships - Sep 2026,12615.75
+JE-2026-001222,2026-09-21,HR,Travel,Gett,Local taxi rides - Sep 2026,389.5
+JE-2026-001223,2026-09-21,HR,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Sep 2026,80.49
+JE-2026-001224,2026-09-21,IT,Office Supplies,IKEA Israel,Office furniture - Sep 2026,283.3
+JE-2026-001225,2026-09-21,Marketing,Advertising,Outbrain,Content recommendation campaign - Sep 2026,22834.44
+JE-2026-001226,2026-09-21,Marketing,Software Licenses,Slack Technologies,Slack Business+ subscription - Sep 2026,4145.88
+JE-2026-001227,2026-09-22,IT,Software Licenses,Monday.com,Work management platform subscription - Sep 2026,1205.66
+JE-2026-001228,2026-09-22,IT,Software Licenses,Microsoft,Microsoft 365 subscription - Sep 2026,22833.99
+JE-2026-001229,2026-09-22,Marketing,Consulting,EY Kost Forer,Financial due diligence support - Sep 2026,8066.55
+JE-2026-001230,2026-09-22,Marketing,Software Licenses,JetBrains,IDE developer licenses renewal - Sep 2026,1636.98
+JE-2026-001231,2026-09-22,R&D,Consulting,KPMG Somekh Chaikin,Internal audit support services - Sep 2026,6470.73
+JE-2026-001232,2026-09-22,R&D,Travel,Hertz Israel,Car rental - Sep 2026,1379.95
+JE-2026-001233,2026-09-23,HR,Software Licenses,Adobe,Adobe Acrobat Pro licenses - Sep 2026,743.67
+JE-2026-001234,2026-09-23,HR,Travel,Booking.com,Hotel accommodation - Sep 2026,629.67
+JE-2026-001235,2026-09-23,IT,Travel,El Al Israel Airlines,Flight tickets - business trip - Sep 2026,1820.17
+JE-2026-001236,2026-09-23,R&D,Office Supplies,Shufersal,Kitchen and refreshments - Sep 2026,422.02
+JE-2026-001237,2026-09-23,R&D,Office Supplies,IKEA Israel,Office furniture - Sep 2026,1720.69
+JE-2026-001238,2026-09-24,HR,Office Supplies,Kravitz,Office stationery - Sep 2026,530.62
+JE-2026-001239,2026-09-24,HR,Software Licenses,Salesforce,Additional CRM user seats - Sep 2026,2474.09
+JE-2026-001240,2026-09-24,HR,Travel,Hertz Israel,Car rental - Sep 2026,449.27
+JE-2026-001241,2026-09-24,Operations,Travel,Issta Travel,Travel package - conference trip - Sep 2026,3122.72
+JE-2026-001242,2026-09-24,R&D,Software Licenses,Microsoft,Microsoft 365 subscription - Sep 2026,2017.2
+JE-2026-001243,2026-09-27,IT,Travel,Hertz Israel,Car rental - Sep 2026,196.69
+JE-2026-001244,2026-09-27,Marketing,Advertising,Google Ads,Paid search campaign - Sep 2026,4415.87
+JE-2026-001245,2026-09-27,Operations,Office Supplies,IKEA Israel,Office furniture - Sep 2026,4316.51
+JE-2026-001246,2026-09-27,R&D,Travel,Gett,Local taxi rides - Sep 2026,3720.31
+JE-2026-001247,2026-09-28,HR,Travel,Issta Travel,Travel package - conference trip - Sep 2026,858.16
+JE-2026-001248,2026-09-28,IT,Travel,Gett,Local taxi rides - Sep 2026,64.46
+JE-2026-001249,2026-09-28,Operations,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Sep 2026,560.06
+JE-2026-001250,2026-09-28,Operations,Travel,Issta Travel,Travel package - conference trip - Sep 2026,897.83
+JE-2026-001251,2026-09-28,R&D,Cloud Infrastructure,Google Cloud,Cloud storage - Sep 2026,9887.79
+JE-2026-001252,2026-09-28,R&D,Travel,Hertz Israel,Car rental - Sep 2026,3021.1
+JE-2026-001253,2026-09-29,HR,Employee Welfare,BuyMe,Holiday gift cards - Sep 2026,3104.42
+JE-2026-001254,2026-09-29,IT,Software Licenses,Zoom Video Communications,Zoom business plan subscription - Sep 2026,3136.71
+JE-2026-001255,2026-09-29,Marketing,Advertising,Outbrain,Content recommendation campaign - Sep 2026,14127.92
+JE-2026-001256,2026-09-29,Marketing,Office Supplies,Office Depot Israel,Printer toner and paper - Sep 2026,458.95
+JE-2026-001257,2026-09-29,Marketing,Software Licenses,Microsoft,Additional M365 user seats - Sep 2026,1531.31
+JE-2026-001258,2026-09-29,Operations,Consulting,Deloitte Israel,Advisory services - process improvement - Sep 2026,6590.55
+JE-2026-001259,2026-09-29,Operations,Travel,Hertz Israel,Car rental - Sep 2026,1324.91
+JE-2026-001260,2026-09-30,HR,Payroll,Hilan,Monthly salary run - Sep 2026,148198.24
+JE-2026-001261,2026-09-30,HR,Payroll,Migdal Pension Fund,Pension and severance contributions - Sep 2026,26599.69
+JE-2026-001262,2026-09-30,HR,Payroll,National Insurance Institute,Employer NII contributions - Sep 2026,15199.82
+JE-2026-001263,2026-09-30,HR,Travel,Hertz Israel,Car rental - Sep 2026,304.22
+JE-2026-001264,2026-09-30,IT,Payroll,Hilan,Monthly salary run - Sep 2026,185941.2
+JE-2026-001265,2026-09-30,IT,Payroll,Migdal Pension Fund,Pension and severance contributions - Sep 2026,33374.06
+JE-2026-001266,2026-09-30,IT,Payroll,National Insurance Institute,Employer NII contributions - Sep 2026,19070.89
+JE-2026-001267,2026-09-30,IT,Travel,Dan Hotels,Hotel accommodation - Tel Aviv offsite - Sep 2026,185.34
+JE-2026-001268,2026-09-30,Marketing,Payroll,Hilan,Monthly salary run - Sep 2026,123030.48
+JE-2026-001269,2026-09-30,Marketing,Payroll,Migdal Pension Fund,Pension and severance contributions - Sep 2026,22082.39
+JE-2026-001270,2026-09-30,Marketing,Payroll,National Insurance Institute,Employer NII contributions - Sep 2026,12618.51
+JE-2026-001271,2026-09-30,Operations,Payroll,Hilan,Monthly salary run - Sep 2026,159957.98
+JE-2026-001272,2026-09-30,Operations,Payroll,Migdal Pension Fund,Pension and severance contributions - Sep 2026,28710.41
+JE-2026-001273,2026-09-30,Operations,Payroll,National Insurance Institute,Employer NII contributions - Sep 2026,16405.95
+JE-2026-001274,2026-09-30,R&D,Cloud Infrastructure,Google Cloud,BigQuery analytics usage - Sep 2026,13132.62
+JE-2026-001275,2026-09-30,R&D,Payroll,Hilan,Monthly salary run - Sep 2026,407403.2
+JE-2026-001276,2026-09-30,R&D,Payroll,Migdal Pension Fund,Pension and severance contributions - Sep 2026,73123.65
+JE-2026-001277,2026-09-30,R&D,Payroll,National Insurance Institute,Employer NII contributions - Sep 2026,41784.94
