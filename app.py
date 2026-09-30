@@ -10,6 +10,7 @@ Run with:  streamlit run app.py
 from __future__ import annotations
 
 import html
+import io
 
 import pandas as pd
 import plotly.graph_objects as go
@@ -21,17 +22,27 @@ import data_engine as de
 # Design tokens
 # ---------------------------------------------------------------------------
 
-COLOR_SIDEBAR = "#009688"
-COLOR_SAVINGS = "#2e7d32"
-COLOR_OVERSPEND = "#d32f2f"
-COLOR_BACKGROUND = "#f5f7f8"
-COLOR_TEXT = "#1f2d3d"
-COLOR_MUTED = "#6b7c8f"
-COLOR_BLUE_LIGHT = "#64b5f6"
-COLOR_BLUE_DARK = "#0d47a1"
-BLUE_SEQUENCE = ["#0d47a1", "#1565c0", "#1e88e5", "#42a5f5",
-                 "#64b5f6", "#90caf9", "#bbdefb", "#e3f2fd"]
-FONT_FAMILY = "Heebo, 'Segoe UI', Arial, sans-serif"
+# Dark SaaS theme (keep in sync with .streamlit/config.toml)
+COLOR_BACKGROUND = "#0a0f1c"
+COLOR_SURFACE = "#111827"
+COLOR_SURFACE_ALT = "#1f2937"
+COLOR_SIDEBAR = "#0d1321"
+COLOR_TEXT = "#f8fafc"
+COLOR_MUTED = "#94a3b8"
+COLOR_BORDER = "rgba(255, 255, 255, 0.1)"
+COLOR_GRID = "rgba(255, 255, 255, 0.06)"
+COLOR_PINK = "#ec4899"
+COLOR_PURPLE = "#a855f7"
+COLOR_CYAN = "#22d3ee"
+# Variance semantics stay red/green, in neon tones readable on dark
+COLOR_OVERSPEND = "#f43f5e"
+COLOR_SAVINGS = "#34d399"
+GRADIENT = f"linear-gradient(to left, {COLOR_PINK}, {COLOR_PURPLE})"
+NEON_SEQUENCE = ["#a855f7", "#ec4899", "#22d3ee", "#6366f1",
+                 "#f472b6", "#2dd4bf", "#c084fc", "#67e8f9"]
+# Calibri (the Excel default) first; Carlito is its metric-compatible web
+# twin for viewers without Office, and Heebo covers Hebrew glyphs Calibri lacks.
+FONT_FAMILY = "Calibri, Carlito, Heebo, 'Segoe UI', Arial, sans-serif"
 
 # ---------------------------------------------------------------------------
 # Hebrew display labels (data values stay English in the backend)
@@ -72,18 +83,44 @@ STATUS_ICON = {
 VIEW_YTD = "מצטבר מתחילת השנה (YTD)"
 VIEW_MTD = "חודש בודד"
 
+# Cost-behavior slicer: backend values stay English, labels are Hebrew
+BEHAVIOR_ALL = "All"
+BEHAVIOR_HE = {
+    BEHAVIOR_ALL: "הכל",
+    de.BEHAVIOR_FIXED: "קבועה",
+    de.BEHAVIOR_VARIABLE: "משתנה",
+}
+
 # ---------------------------------------------------------------------------
 # Global CSS
 # ---------------------------------------------------------------------------
 
 CUSTOM_CSS = f"""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Heebo:wght@300;400;500;700;800&display=swap');
 
-html, body, .stApp, .stMarkdown, button, input, select, textarea {{
-    font-family: {FONT_FAMILY};
+/* ---------- Typography: Calibri everywhere ---------- */
+html, body, .stApp, .stApp h1, .stApp h2, .stApp h3, .stApp h4,
+.stApp p, .stApp span, .stApp div, .stApp label, .stApp li,
+.stApp table, .stApp th, .stApp td, .stMarkdown,
+button, input, select, textarea {{
+    font-family: {FONT_FAMILY} !important;
 }}
-.stApp {{ background-color: {COLOR_BACKGROUND}; }}
+/* Keep Material icons (sidebar toggle, expander chevrons) as glyphs */
+.stApp [data-testid="stIconMaterial"] {{
+    font-family: 'Material Symbols Rounded' !important;
+}}
+
+/* ---------- Canvas ---------- */
+.stApp {{
+    background-color: {COLOR_BACKGROUND};
+    /* Faint neon glows in the corners for depth */
+    background-image:
+        radial-gradient(900px 500px at 100% -10%, rgba(168, 85, 247, 0.10), transparent 60%),
+        radial-gradient(700px 400px at 0% 0%, rgba(236, 72, 153, 0.06), transparent 60%);
+    background-attachment: fixed;
+    color: {COLOR_TEXT};
+}}
 header[data-testid="stHeader"] {{ background: transparent; }}
 
 /* ---------- Global RTL ----------
@@ -111,96 +148,243 @@ header[data-testid="stHeader"] {{ background: transparent; }}
 /* Keep interactive grids and charts LTR internally to avoid rendering bugs */
 [data-testid="stDataFrame"], .js-plotly-plot {{ direction: ltr; }}
 
-/* Sidebar (now on the right): move its border to the inner (left) edge */
+/* ---------- Sidebar (on the right; border on its inner/left edge) ---------- */
 [data-testid="stSidebar"] {{
     background-color: {COLOR_SIDEBAR};
-    border-left: 1px solid rgba(0,0,0,0.08);
+    border-left: 1px solid {COLOR_BORDER};
     border-right: none;
 }}
 [data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2,
 [data-testid="stSidebar"] h3, [data-testid="stSidebar"] p,
 [data-testid="stSidebar"] label, [data-testid="stSidebar"] span,
 [data-testid="stSidebar"] div {{
-    color: #ffffff;
+    color: {COLOR_TEXT};
 }}
-[data-testid="stSidebar"] [data-baseweb="select"] * {{ color: {COLOR_TEXT}; }}
-[data-testid="stSidebar"] hr {{ border-color: rgba(255,255,255,0.3); }}
+[data-testid="stSidebar"] hr {{ border-color: {COLOR_BORDER}; }}
+
+/* Collapsed state: Streamlit shrinks the sidebar to 1px and slides it by
+   -width, which assumes an LTR (left) sidebar. In RTL that pushes it into the
+   main area and the squeezed text wraps letter-by-letter over the dashboard,
+   so clip everything and slide it off the right edge instead. */
+[data-testid="stSidebar"][aria-expanded="false"] {{
+    overflow: hidden !important;
+    transform: translateX(100%) !important;
+    border-left: none;
+}}
+[data-testid="stSidebar"][aria-expanded="false"] h1,
+[data-testid="stSidebar"][aria-expanded="false"] h2,
+[data-testid="stSidebar"][aria-expanded="false"] h3,
+[data-testid="stSidebar"][aria-expanded="false"] p,
+[data-testid="stSidebar"][aria-expanded="false"] label,
+[data-testid="stSidebar"][aria-expanded="false"] div {{
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}}
 .sidebar-logo {{
     font-size: 1.35rem; font-weight: 800; line-height: 1.3;
     padding: 0.5rem 0 0.25rem 0;
 }}
-.sidebar-tagline {{ font-size: 0.85rem; opacity: 0.85; }}
+.sidebar-tagline {{ font-size: 0.85rem; color: {COLOR_MUTED} !important; }}
 .sidebar-info {{
-    background: rgba(255,255,255,0.12); border-radius: 10px;
-    padding: 0.75rem 0.9rem; font-size: 0.85rem; line-height: 1.7;
+    background: rgba(255, 255, 255, 0.04); border: 1px solid {COLOR_BORDER};
+    border-radius: 16px; padding: 0.8rem 1rem; font-size: 0.85rem; line-height: 1.8;
 }}
 
-/* Cards: any container whose key starts with "card" */
-div[class*="st-key-card"] {{
-    background: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 2px 14px rgba(16, 42, 67, 0.08);
-    border: 1px solid #e6ecef;
-    padding: 1.25rem 1.5rem;
+/* ---------- Typography ---------- */
+.page-title {{
+    font-size: 2.4rem; font-weight: 800; color: #ffffff; margin: 0;
+    letter-spacing: -0.01em;
 }}
-
-/* Page header */
-.page-title {{ font-size: 2rem; font-weight: 800; color: {COLOR_TEXT}; margin: 0; }}
-.page-subtitle {{ color: {COLOR_MUTED}; font-size: 1rem; margin-bottom: 1rem; }}
+.page-subtitle {{ color: {COLOR_MUTED}; font-size: 1rem; margin-bottom: 1.25rem; }}
 .section-title {{
-    font-size: 1.2rem; font-weight: 700; color: {COLOR_TEXT};
+    font-size: 1.3rem; font-weight: 800; color: #ffffff;
     margin: 0 0 0.25rem 0;
 }}
 .section-caption {{ color: {COLOR_MUTED}; font-size: 0.9rem; margin-bottom: 0.75rem; }}
-
-/* Alert banner */
-.alert-banner {{
-    border-radius: 14px; padding: 1rem 1.25rem; margin-bottom: 1.25rem;
-    font-size: 1.02rem; line-height: 1.7; border-right: 6px solid;
+/* Pink-to-purple gradient text for highlights */
+.gradient-text {{
+    background: {GRADIENT};
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }}
-.alert-red {{ background: #fdecea; border-color: {COLOR_OVERSPEND}; color: #7f1d1d; }}
-.alert-green {{ background: #e8f5e9; border-color: {COLOR_SAVINGS}; color: #1b4d20; }}
-.alert-banner b {{ font-weight: 700; }}
 
-/* KPI cards */
-.kpi-card {{
-    background: #ffffff; border-radius: 16px; padding: 1.1rem 1.3rem;
-    box-shadow: 0 2px 14px rgba(16, 42, 67, 0.08);
-    border: 1px solid #e6ecef; border-top: 4px solid {COLOR_BLUE_DARK};
+/* ---------- Cards: any container whose key starts with "card" ---------- */
+div[class*="st-key-card"] {{
+    background: {COLOR_SURFACE};
+    border: 1px solid {COLOR_BORDER};
+    border-radius: 20px;
+    padding: 1.4rem 1.6rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}}
+
+/* ---------- Alert banner ---------- */
+.alert-banner {{
+    border-radius: 20px; padding: 1rem 1.3rem; margin-bottom: 1.25rem;
+    font-size: 1.02rem; line-height: 1.7; border: 1px solid;
+}}
+.alert-red {{
+    background: rgba(244, 63, 94, 0.08); border-color: rgba(244, 63, 94, 0.35);
+    color: #fecdd3; box-shadow: 0 0 28px rgba(244, 63, 94, 0.10);
+}}
+.alert-green {{
+    background: rgba(52, 211, 153, 0.07); border-color: rgba(52, 211, 153, 0.35);
+    color: #d1fae5; box-shadow: 0 0 28px rgba(52, 211, 153, 0.08);
+}}
+.alert-banner b {{ font-weight: 700; color: #ffffff; }}
+
+/* ---------- KPI cards (HTML cards + native st.metric, same look) ---------- */
+.kpi-card, [data-testid="stMetric"] {{
+    background: {COLOR_SURFACE};
+    border: 1px solid {COLOR_BORDER};
+    border-radius: 20px;
+    padding: 1.2rem 1.4rem;
     height: 100%;
 }}
-.kpi-label {{ color: {COLOR_MUTED}; font-size: 0.95rem; font-weight: 500; }}
-.kpi-value {{ font-size: 1.85rem; font-weight: 800; color: {COLOR_TEXT}; margin: 0.2rem 0; }}
+/* Variance card: gradient border + soft glow, red or green */
+.kpi-glow-red, .kpi-glow-green {{
+    border: 1px solid transparent;
+    background:
+        linear-gradient({COLOR_SURFACE}, {COLOR_SURFACE}) padding-box,
+        var(--glow-gradient) border-box;
+}}
+.kpi-glow-red {{
+    --glow-gradient: linear-gradient(to left, {COLOR_OVERSPEND}, {COLOR_PINK});
+    box-shadow: 0 0 32px rgba(244, 63, 94, 0.22);
+}}
+.kpi-glow-green {{
+    --glow-gradient: linear-gradient(to left, {COLOR_SAVINGS}, {COLOR_CYAN});
+    box-shadow: 0 0 32px rgba(52, 211, 153, 0.18);
+}}
+.kpi-label, [data-testid="stMetricLabel"] {{
+    color: {COLOR_MUTED}; font-size: 0.95rem; font-weight: 500;
+}}
+.kpi-value, [data-testid="stMetricValue"] {{
+    /* Fluid size: five cards share one row on desktop */
+    font-size: clamp(1.2rem, 1.55vw, 1.9rem);
+    font-weight: 800; color: #ffffff; margin: 0.2rem 0; white-space: nowrap;
+}}
 .kpi-sub {{ color: {COLOR_MUTED}; font-size: 0.85rem; }}
 /* Compact KPI row used inside drill-down cards */
 .kpi-mini-row {{ display: flex; gap: 0.75rem; }}
 .kpi-mini {{
-    flex: 1; background: {COLOR_BACKGROUND}; border: 1px solid #e6ecef;
-    border-radius: 12px; padding: 0.7rem 0.9rem;
+    flex: 1; background: rgba(255, 255, 255, 0.03); border: 1px solid {COLOR_BORDER};
+    border-radius: 16px; padding: 0.75rem 1rem;
 }}
-.kpi-mini-value {{ font-size: 1.3rem; font-weight: 800; color: {COLOR_TEXT}; }}
-.kpi-red {{ color: {COLOR_OVERSPEND} !important; }}
-.kpi-green {{ color: {COLOR_SAVINGS} !important; }}
+.kpi-mini-value {{ font-size: 1.3rem; font-weight: 800; color: #ffffff; }}
+.kpi-red {{ color: {COLOR_OVERSPEND} !important; text-shadow: 0 0 18px rgba(244, 63, 94, 0.45); }}
+.kpi-green {{ color: {COLOR_SAVINGS} !important; text-shadow: 0 0 18px rgba(52, 211, 153, 0.4); }}
 
+/* ---------- Selectboxes: pill shape ---------- */
+[data-testid="stSelectbox"] div[data-baseweb="select"],
+[data-testid="stSelectbox"] div[data-baseweb="select"] > div {{
+    border-radius: 50px !important;
+}}
+[data-testid="stSelectbox"] div[data-baseweb="select"] > div {{
+    background-color: {COLOR_SURFACE_ALT} !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding-inline: 0.5rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}}
+[data-testid="stSelectbox"] div[data-baseweb="select"] > div:hover {{
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}}
+[data-testid="stSelectbox"] div[data-baseweb="select"] > div:focus-within {{
+    border-color: {COLOR_PURPLE} !important;
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.25);
+}}
+[data-testid="stSelectbox"] div[data-baseweb="select"] * {{ color: #ffffff !important; }}
+
+/* ---------- Radio (cost-behavior slicer): segmented pills ---------- */
+[data-testid="stRadio"] div[role="radiogroup"] {{ gap: 0.4rem; flex-wrap: wrap; }}
+[data-testid="stRadio"] label[data-baseweb="radio"] {{
+    margin: 0; padding: 0.3rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 50px;
+    background: {COLOR_SURFACE_ALT}; cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}}
+/* Hide the native radio circle: the whole pill is the control */
+[data-testid="stRadio"] label[data-baseweb="radio"] > div:first-child {{ display: none; }}
+[data-testid="stRadio"] label[data-baseweb="radio"]:hover {{
+    border-color: rgba(255, 255, 255, 0.5);
+}}
+[data-testid="stRadio"] label[data-baseweb="radio"]:has(input:checked) {{
+    background: linear-gradient(to right, {COLOR_PINK}, {COLOR_PURPLE});
+    border-color: transparent;
+    box-shadow: 0 4px 16px rgba(217, 70, 239, 0.35);
+}}
+[data-testid="stRadio"] label[data-baseweb="radio"]:has(input:checked) p {{
+    color: #ffffff; font-weight: 700;
+}}
+
+/* ---------- Buttons (incl. CSV download): gradient pill ---------- */
+[data-testid="stButton"] button,
+[data-testid="stDownloadButton"] button {{
+    border-radius: 50px;
+    background: linear-gradient(to right, {COLOR_PINK}, {COLOR_PURPLE});
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0.55rem 1.4rem;
+    box-shadow: 0 8px 24px rgba(217, 70, 239, 0.25);
+    transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
+}}
+[data-testid="stButton"] button:hover,
+[data-testid="stDownloadButton"] button:hover {{
+    color: #ffffff; filter: brightness(1.1); transform: translateY(-1px);
+    box-shadow: 0 10px 30px rgba(217, 70, 239, 0.4);
+}}
+[data-testid="stButton"] button p,
+[data-testid="stDownloadButton"] button p {{ color: #ffffff; font-weight: 700; }}
+
+/* ---------- Tables ---------- */
+/* st.dataframe cells are canvas-drawn: colors come from config.toml */
+[data-testid="stDataFrame"] {{
+    border: 1px solid {COLOR_BORDER}; border-radius: 16px; overflow: hidden;
+}}
 /* HTML tables (red flags, category breakdown) */
 .fin-table {{ width: 100%; border-collapse: collapse; font-size: 0.93rem; direction: rtl; }}
 .fin-table th {{
-    text-align: right; color: {COLOR_MUTED}; font-weight: 600;
-    border-bottom: 2px solid #e6ecef; padding: 0.55rem 0.6rem;
+    text-align: right; color: rgba(255, 255, 255, 0.55); font-weight: 600;
+    border-bottom: 1px solid {COLOR_BORDER}; padding: 0.6rem 0.6rem;
 }}
-.fin-table td {{ padding: 0.55rem 0.6rem; border-bottom: 1px solid #f0f3f5; color: {COLOR_TEXT}; }}
-.fin-table tr:hover td {{ background: #f8fafb; }}
+.fin-table td {{
+    padding: 0.6rem 0.6rem; border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #e2e8f0;
+}}
+.fin-table tr:hover td {{ background: rgba(255, 255, 255, 0.03); }}
 .fin-table .num {{ white-space: nowrap; }}
 .cell-red {{ color: {COLOR_OVERSPEND}; font-weight: 700; }}
 .cell-green {{ color: {COLOR_SAVINGS}; font-weight: 700; }}
 .rank {{ color: {COLOR_MUTED}; font-weight: 600; }}
-.dot {{ display: inline-block; width: 11px; height: 11px; border-radius: 50%; }}
-.dot-red {{ background: {COLOR_OVERSPEND}; }}
-.dot-green {{ background: {COLOR_SAVINGS}; }}
-.dot-gray {{ background: #b0bec5; }}
+.dot {{ display: inline-block; width: 10px; height: 10px; border-radius: 50%; }}
+.dot-red {{ background: {COLOR_OVERSPEND}; box-shadow: 0 0 10px {COLOR_OVERSPEND}; }}
+.dot-green {{ background: {COLOR_SAVINGS}; box-shadow: 0 0 10px {COLOR_SAVINGS}; }}
+.dot-gray {{ background: #475569; }}
 
-/* Hide the floating Deploy button that overlaps RTL content */
+/* ---------- Clean app chrome ----------
+   Hide the main menu, Deploy button and header for a standalone-app look.
+   The "expand sidebar" control lives inside the header, so it is made
+   visible again: otherwise a collapsed sidebar (the default on mobile)
+   could never be reopened. */
+#MainMenu {{ visibility: hidden; }}
+header {{ visibility: hidden; }}
 [data-testid="stAppDeployButton"] {{ display: none; }}
+[data-testid="stExpandSidebarButton"] {{ visibility: visible; }}
+
+/* Compact template buttons so the labels fit on one line */
+[data-testid="stSidebar"] [data-testid="stDownloadButton"] button {{
+    padding: 0.45rem 0.8rem;
+}}
+[data-testid="stSidebar"] [data-testid="stDownloadButton"] button p {{
+    font-size: 0.85rem; white-space: nowrap;
+}}
+
+/* Sidebar expander (data templates) */
+[data-testid="stSidebar"] [data-testid="stExpander"] details {{
+    border: 1px solid {COLOR_BORDER}; border-radius: 16px;
+    background: rgba(255, 255, 255, 0.03);
+}}
 </style>
 """
 
@@ -254,6 +438,19 @@ def ltr(text: str) -> str:
     return f'<span class="num-ltr" dir="ltr">{html.escape(text)}</span>'
 
 
+def to_excel_csv(df: pd.DataFrame) -> bytes:
+    """
+    Serialize a DataFrame to CSV bytes encoded as UTF-8 with BOM (utf-8-sig),
+    so Excel opens Hebrew text correctly.
+
+    Writes to a binary buffer on purpose: when to_csv() returns a string
+    (no buffer given), pandas silently ignores the encoding argument.
+    """
+    buffer = io.BytesIO()
+    df.to_csv(buffer, index=False, encoding="utf-8-sig")
+    return buffer.getvalue()
+
+
 def month_label(month: str) -> str:
     """Convert '2026-05' to 'מאי 2026'."""
     year, month_num = month.split("-")
@@ -276,15 +473,19 @@ def variance_class(variance: float) -> str:
 
 
 def style_figure(fig: go.Figure, height: int) -> go.Figure:
-    """Apply the shared chart style: transparent background, Heebo font."""
+    """Apply the shared dark chart style: transparent background, light text."""
     fig.update_layout(
         height=height,
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
         font=dict(family=FONT_FAMILY, color=COLOR_TEXT, size=13),
+        font_color=COLOR_TEXT,
         margin=dict(l=10, r=10, t=40, b=10),
-        hoverlabel=dict(font_family=FONT_FAMILY),
+        hoverlabel=dict(font_family=FONT_FAMILY, bgcolor=COLOR_SURFACE_ALT,
+                        bordercolor=COLOR_PURPLE, font_color=COLOR_TEXT),
     )
+    fig.update_xaxes(color=COLOR_MUTED, linecolor=COLOR_BORDER)
+    fig.update_yaxes(color=COLOR_MUTED, linecolor=COLOR_BORDER)
     return fig
 
 
@@ -307,8 +508,9 @@ def load_data() -> tuple[pd.DataFrame, pd.DataFrame]:
 # ---------------------------------------------------------------------------
 
 
-def render_sidebar(closed_months: list[str], last_closed: str) -> tuple[str, str]:
-    """Render the sidebar and return the selected (period, month)."""
+def render_sidebar(closed_months: list[str],
+                   last_closed: str) -> tuple[str, str, str | None]:
+    """Render the sidebar and return (period, month, cost behavior or None)."""
     with st.sidebar:
         st.markdown(
             '<div class="sidebar-logo">📊 מערכת בקרת תקציב - Drill-Down</div>'
@@ -324,6 +526,13 @@ def render_sidebar(closed_months: list[str], last_closed: str) -> tuple[str, str
             format_func=month_label,
             key="month",
         )
+        behavior = st.radio(
+            "סוג הוצאה",
+            list(BEHAVIOR_HE),
+            format_func=BEHAVIOR_HE.get,
+            horizontal=True,
+            key="cost_behavior",
+        )
         st.divider()
         st.markdown(
             f'<div class="sidebar-info">'
@@ -334,7 +543,34 @@ def render_sidebar(closed_months: list[str], last_closed: str) -> tuple[str, str
             f'</div>',
             unsafe_allow_html=True,
         )
-    return (de.PERIOD_YTD if is_ytd else de.PERIOD_MTD), month
+        st.write("")
+        render_data_templates()
+    period = de.PERIOD_YTD if is_ytd else de.PERIOD_MTD
+    return period, month, None if behavior == BEHAVIOR_ALL else behavior
+
+
+def render_data_templates() -> None:
+    """Sidebar expander with empty CSV templates matching the data schema."""
+    with st.expander("עדכון נתונים - תבניות להורדה"):
+        st.caption("קובצי CSV ריקים עם שמות העמודות שמנוע הנתונים מצפה להם.")
+        # Column lists come from data_engine, so templates never drift
+        # from what the loader validates
+        st.download_button(
+            "הורד תבנית תקציב (CSV)",
+            data=to_excel_csv(pd.DataFrame(columns=de.BUDGET_COLUMNS)),
+            file_name="budget_template.csv",
+            mime="text/csv",
+            width="stretch",
+            key="template_budget",
+        )
+        st.download_button(
+            "הורד תבנית פקודות יומן (CSV)",
+            data=to_excel_csv(pd.DataFrame(columns=de.ACTUALS_COLUMNS)),
+            file_name="actuals_gl_template.csv",
+            mime="text/csv",
+            width="stretch",
+            key="template_gl",
+        )
 
 
 def period_label(period: str, month: str) -> str:
@@ -365,16 +601,37 @@ def render_alert_banner(totals: dict, flag_count: int, label: str) -> None:
                 unsafe_allow_html=True)
 
 
-def kpi_card(label: str, value: str, sub: str, value_class: str = "") -> str:
-    """HTML for a single KPI card."""
-    return (f'<div class="kpi-card"><div class="kpi-label">{label}</div>'
+def kpi_card(label: str, value: str, sub: str, value_class: str = "",
+             card_class: str = "") -> str:
+    """HTML for a single KPI card (card_class adds e.g. a glow border)."""
+    return (f'<div class="kpi-card {card_class}"><div class="kpi-label">{label}</div>'
             f'<div class="kpi-value {value_class}">{value}</div>'
             f'<div class="kpi-sub">{sub}</div></div>')
 
 
-def render_kpis(totals: dict, full_year: pd.DataFrame, label: str,
+def run_rate_card(rr: dict) -> str:
+    """KPI card for the straight-line run-rate forecast, with status glow."""
+    projected = rr["projected_variance"]
+    # Sign-based glow, like the total-variance card: any projected overrun
+    # is red, any projected saving is green
+    is_over = projected > 0
+    projected_text = (f'{fmt_ils(projected, signed=True)} '
+                      f'({fmt_pct(rr["projected_variance_pct"])})')
+    return kpi_card(
+        # Isolated so "(Run-Rate)" never breaks across lines
+        f'תחזית גמר שנה {ltr("(Run-Rate)")}',
+        ltr(fmt_ils(rr["run_rate"])),
+        f'סטייה צפויה <span class="{variance_class(projected)}">'
+        f'{ltr(projected_text)}</span><br>'
+        f'לפי קצב שריפה ממוצע של {ltr(fmt_ils(rr["avg_monthly"]))} לחודש',
+        value_class="kpi-red" if is_over else "kpi-green",
+        card_class="kpi-glow-red" if is_over else "kpi-glow-green",
+    )
+
+
+def render_kpis(totals: dict, full_year: pd.DataFrame, rr: dict, label: str,
                 last_closed: str) -> None:
-    """Four KPI cards: budget, actual, variance, year-end forecast."""
+    """KPI cards: budget, actual, variance and two year-end forecasts."""
     annual_budget = full_year["Annual_Budget"].sum()
     forecast = full_year["Forecast"].sum()
     forecast_var = forecast - annual_budget
@@ -384,27 +641,34 @@ def render_kpis(totals: dict, full_year: pd.DataFrame, label: str,
         kpi_card("סך תקציב", ltr(fmt_ils(totals["budget"])), label),
         kpi_card("סך ביצוע", ltr(fmt_ils(totals["actual"])),
                  f'{totals["entries"]:,} פקודות יומן'),
-        kpi_card("סך סטייה", ltr(fmt_ils(variance, signed=True)),
+        kpi_card('<span class="gradient-text">סך סטייה</span>',
+                 ltr(fmt_ils(variance, signed=True)),
                  f'{ltr(fmt_pct(totals["variance_pct"]))} מהתקציב · '
                  f'{"חריגה" if variance > 0 else "חיסכון"}',
-                 "kpi-red" if variance > 0 else "kpi-green"),
-        kpi_card("תחזית סוף שנה", ltr(fmt_ils(forecast)),
-                 f'תקציב שנתי {ltr(fmt_ils(annual_budget))} · סטייה צפויה '
+                 value_class="kpi-red" if variance > 0 else "kpi-green",
+                 card_class="kpi-glow-red" if variance > 0 else "kpi-glow-green"),
+        kpi_card("תחזית גמר שנה (תקציבית)", ltr(fmt_ils(forecast)),
+                 f'תקציב שנתי {ltr(fmt_ils(annual_budget))}<br>סטייה צפויה '
                  f'<span class="{variance_class(forecast_var)}">'
                  f'{ltr(fmt_ils(forecast_var, signed=True))}</span>'),
+        run_rate_card(rr),
     ]
-    for column, card in zip(st.columns(4), cards):
+    for column, card in zip(st.columns(len(cards)), cards):
         column.markdown(card, unsafe_allow_html=True)
-    st.caption(f"התחזית: ביצוע בפועל עד {month_label(last_closed)} "
-               f"+ יתרת התקציב לחודשים שטרם נסגרו.")
+    st.caption(
+        f"תחזית תקציבית: ביצוע בפועל עד {month_label(last_closed)} + יתרת התקציב "
+        f"לחודשים שטרם נסגרו. · Run-Rate: ממוצע חודשי בתקופה הנבחרת × 12, "
+        f"בקו ישר וללא עונתיות."
+    )
 
 
 def render_red_flags(flags: pd.DataFrame, label: str) -> None:
     """Top material overspends at month x cost center x category level."""
     with st.container(key="card_red_flags"):
         st.markdown(
-            f'<div class="section-title">🚩 דגלים אדומים — 10 החריגות המהותיות '
-            f'הגדולות</div><div class="section-caption">ברמת חודש × מחלקה × '
+            f'<div class="section-title">🚩 <span class="gradient-text">דגלים אדומים'
+            f'</span> — 10 החריגות המהותיות הגדולות</div>'
+            f'<div class="section-caption">ברמת חודש × מחלקה × '
             f'קטגוריה · {label} · חריגות אלו עלולות להיות מוסתרות בסיכום '
             f'המצטבר</div>',
             unsafe_allow_html=True,
@@ -457,8 +721,9 @@ def render_variance_waterfall(cc_summary: pd.DataFrame, label: str) -> None:
             measure=["relative"] * len(steps) + ["total"],
             increasing=dict(marker=dict(color=COLOR_OVERSPEND)),
             decreasing=dict(marker=dict(color=COLOR_SAVINGS)),
-            totals=dict(marker=dict(color=COLOR_BLUE_DARK)),
-            connector=dict(line=dict(color="#b0bec5", width=1, dash="dot")),
+            totals=dict(marker=dict(color=COLOR_PURPLE)),
+            connector=dict(line=dict(color="rgba(255,255,255,0.25)", width=1,
+                                     dash="dot")),
             text=labels,
             textposition="outside",
             cliponaxis=False,
@@ -472,7 +737,7 @@ def render_variance_waterfall(cc_summary: pd.DataFrame, label: str) -> None:
         high = max(running.max(), total_variance, 0)
         pad = (high - low) * 0.18 or 1
         waterfall.update_layout(showlegend=False)
-        waterfall.update_yaxes(title="סטייה (₪)", gridcolor="#eef2f4",
+        waterfall.update_yaxes(title="סטייה (₪)", gridcolor=COLOR_GRID,
                                zeroline=True, zerolinecolor=COLOR_MUTED,
                                tickformat=",.0f", side="right",
                                range=[low - pad, high + pad])
@@ -538,9 +803,11 @@ def render_cost_center_analysis(table: pd.DataFrame, cc_summary: pd.DataFrame,
             hole=0.58,
             sort=True,
             direction="clockwise",
-            marker=dict(colors=BLUE_SEQUENCE, line=dict(color="#ffffff", width=2)),
+            # Slice borders in the card color create clean gaps on dark
+            marker=dict(colors=NEON_SEQUENCE, line=dict(color=COLOR_SURFACE, width=3)),
             textinfo="percent",
             textposition="inside",
+            insidetextfont=dict(color="#ffffff"),
             hovertemplate=(f"%{{label}}<br>ביצוע: {hover_ils('%{value:,.0f}')}"
                            "<br>%{percent}<extra></extra>"),
         ))
@@ -577,7 +844,135 @@ def render_cost_center_analysis(table: pd.DataFrame, cc_summary: pd.DataFrame,
             f'<table class="fin-table">{header}{"".join(rows)}</table>',
             unsafe_allow_html=True,
         )
+        # MoM slicer: full card width below the donut and category table
+        render_monthly_trend(table, cost_center, period, month)
     return cost_center, categories
+
+
+def trend_diagnosis(overspend_months: int, total_months: int) -> str:
+    """Classify a monthly overspend pattern as isolated or recurring."""
+    if overspend_months == 0:
+        return f"אין חודשים בחריגה מהותית מתוך {total_months}"
+    if overspend_months == 1:
+        return f"חריגה נקודתית: חודש אחד מתוך {total_months}"
+    if overspend_months == 2:
+        return f"חריגות חוזרות: 2 חודשים מתוך {total_months}"
+    return f"דפוס מתמשך: {overspend_months} חודשים מתוך {total_months}"
+
+
+def render_monthly_trend(table: pd.DataFrame, cost_center: str, period: str,
+                         month: str) -> None:
+    """
+    MoM volatility slicer: monthly actuals vs. budget of one cost center.
+
+    Materially overspent months get large red markers, so a one-off spike
+    is easy to tell apart from a consistent burn-rate problem.
+    """
+    trend = de.summarize_monthly_trend(table, cost_center)
+    months = [MONTH_NAMES_HE[int(m[-2:])] for m in trend["Month"]]
+    is_over = (trend["Status"] == de.STATUS_OVERSPEND).tolist()
+    hover_data = [
+        [plot_ils(a), plot_ils(b), plot_ils(v, signed=True)]
+        for a, b, v in zip(trend["Actual_Amount"], trend["Budget_Amount"],
+                           trend["Variance"])
+    ]
+
+    fig = go.Figure([
+        # Wide translucent underlay = neon glow effect
+        go.Scatter(x=months, y=trend["Actual_Amount"], mode="lines",
+                   line=dict(color="rgba(34, 211, 238, 0.18)", width=12,
+                             shape="linear"),
+                   hoverinfo="skip", showlegend=False),
+        go.Scatter(x=months, y=trend["Budget_Amount"], name="תקציב",
+                   mode="lines", hoverinfo="skip",
+                   line=dict(color="rgba(255, 255, 255, 0.4)", width=1.5,
+                             dash="dash")),
+        go.Scatter(x=months, y=trend["Actual_Amount"], name="ביצוע",
+                   mode="lines+markers",
+                   line=dict(color=COLOR_CYAN, width=3, shape="linear"),
+                   marker=dict(size=[13 if o else 7 for o in is_over],
+                               color=[COLOR_OVERSPEND if o else COLOR_CYAN
+                                      for o in is_over],
+                               line=dict(color=COLOR_SURFACE, width=2)),
+                   customdata=hover_data,
+                   hovertemplate=("%{x}<br>ביצוע: %{customdata[0]}"
+                                  "<br>תקציב: %{customdata[1]}"
+                                  "<br>סטייה: %{customdata[2]}<extra></extra>")),
+    ])
+    # Mark the month selected in the sidebar when viewing a single month
+    if period == de.PERIOD_MTD and month in trend["Month"].values:
+        idx = trend["Month"].tolist().index(month)
+        fig.add_vrect(x0=idx - 0.5, x1=idx + 0.5, line_width=0,
+                      fillcolor="rgba(168, 85, 247, 0.14)")
+    fig.update_layout(
+        title="מגמה חודשית · ביצוע מול תקציב",
+        legend=dict(orientation="h", x=0, xanchor="left", y=1.12),
+    )
+    fig.update_yaxes(tickformat=",.0f", gridcolor=COLOR_GRID, side="right")
+    # RTL reading order: January on the right
+    fig.update_xaxes(autorange="reversed", showgrid=False)
+    # Keep edge markers (first/last month) from being clipped
+    fig.update_traces(cliponaxis=False)
+    st.plotly_chart(style_figure(fig, 290), width="stretch", config=PLOTLY_CONFIG)
+
+    over_count = sum(is_over)
+    css = "cell-red" if over_count else "cell-green"
+    st.markdown(
+        f'<div class="section-caption">🔴 = חודש בחריגה מהותית · '
+        f'<span class="{css}">{trend_diagnosis(over_count, len(trend))}</span>'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
+
+
+PARETO_COLORS = ["#ec4899", "#d946ef", "#c026d3", "#a855f7", "#8b5cf6"]
+
+
+def render_vendor_pareto(entries: pd.DataFrame, category: str) -> None:
+    """Pareto view: top 5 vendors by spend in the selected category."""
+    vendors = de.top_vendors(entries, n=5)
+    if vendors.empty:
+        return
+    top_share = vendors["Cumulative_Pct"].iloc[-1]
+    labels = [f"{plot_ils(a)}  ·  {LRI}{s:.0%}{PDI}"
+              for a, s in zip(vendors["Actual_Amount"], vendors["Share_Pct"])]
+
+    fig = go.Figure(go.Bar(
+        x=vendors["Actual_Amount"],
+        y=vendors["Vendor_Name"],
+        orientation="h",
+        marker=dict(color=PARETO_COLORS[:len(vendors)],
+                    line=dict(color="rgba(255, 255, 255, 0.15)", width=1)),
+        text=labels,
+        textposition="outside",
+        cliponaxis=False,
+        customdata=[[plot_ils(a), c] for a, c in
+                    zip(vendors["Actual_Amount"], vendors["Entry_Count"])],
+        hovertemplate=("%{y}<br>הוצאה: %{customdata[0]}"
+                       "<br>%{customdata[1]} תנועות<extra></extra>"),
+    ))
+    # No digits at the start of the title: Plotly's LTR SVG text would
+    # move a leading number to the end of a Hebrew line
+    fig.update_layout(title=f"הספקים המובילים לפי היקף הוצאה · "
+                            f"{category_label(category)}", bargap=0.35)
+    # Bars grow right-to-left (RTL); extra range leaves room for the labels
+    fig.update_xaxes(range=[vendors["Actual_Amount"].max() * 1.6, 0],
+                     showgrid=False, showticklabels=False, zeroline=False)
+    fig.update_yaxes(autorange="reversed", side="right", ticklabelstandoff=10)
+    st.plotly_chart(style_figure(fig, 90 + 46 * len(vendors)), width="stretch",
+                    config=PLOTLY_CONFIG)
+    total_vendors = entries["Vendor_Name"].nunique()
+    if total_vendors > len(vendors):
+        concentration = (f'{len(vendors)} הספקים המובילים מרכזים '
+                         f'<b>{ltr(f"{top_share:.0%}")}</b> מההוצאה בקטגוריה '
+                         f'(מתוך {total_vendors} ספקים)')
+    else:
+        # With 5 vendors or fewer the "top 5" always covers 100%
+        concentration = f'כל ההוצאה בקטגוריה מתחלקת בין {total_vendors} ספקים'
+    st.markdown(
+        f'<div class="section-caption">ריכוזיות ספקים: {concentration}</div>',
+        unsafe_allow_html=True,
+    )
 
 
 def render_gl_entries(actuals: pd.DataFrame, cost_center: str,
@@ -598,7 +993,9 @@ def render_gl_entries(actuals: pd.DataFrame, cost_center: str,
             "בחר קטגוריית הוצאה",
             categories["Expense_Category"].tolist(),
             format_func=category_label,
-            key=f"gl_category_{cost_center}",
+            # Key includes the cost behavior too: switching the slicer can
+            # remove the previously selected category from the options
+            key=f"gl_category_{cost_center}_{st.session_state.get('cost_behavior')}",
         )
         cat_row = categories.set_index("Expense_Category").loc[category]
         st.markdown(
@@ -608,6 +1005,8 @@ def render_gl_entries(actuals: pd.DataFrame, cost_center: str,
         )
 
         entries = de.get_gl_entries(actuals, cost_center, category, period, month)
+        # Pareto of vendors, computed from the same filtered entries as the table
+        render_vendor_pareto(entries, category)
         vendor_count = entries["Vendor_Name"].nunique()
         st.markdown(
             f'<div class="section-caption" style="margin-top:0.75rem">{label} · '
@@ -634,7 +1033,7 @@ def render_gl_entries(actuals: pd.DataFrame, cost_center: str,
 
         st.download_button(
             "⬇️ הורדת התנועות (CSV)",
-            data=entries.to_csv(index=False).encode("utf-8-sig"),
+            data=to_excel_csv(entries),
             file_name=(f"gl_{cost_center}_{category}_{period}_{month}.csv"
                        .replace(" ", "_").replace("&", "and")),
             mime="text/csv",
@@ -665,28 +1064,37 @@ def main() -> None:
                        layout="wide")
     st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
-    actuals, table = load_data()
-    last_closed = de.get_last_closed_month(actuals)
-    closed_months = sorted(table.loc[table["Is_Closed"], "Month"].unique())
+    all_actuals, all_table = load_data()
+    last_closed = de.get_last_closed_month(all_actuals)
+    closed_months = sorted(all_table.loc[all_table["Is_Closed"], "Month"].unique())
 
-    period, month = render_sidebar(closed_months, last_closed)
+    period, month, behavior = render_sidebar(closed_months, last_closed)
     label = period_label(period, month)
+
+    # Global cost-behavior slicer: filter once here, so every section below
+    # (KPIs, flags, waterfall, trend, Pareto, GL) recalculates on the subset
+    actuals = de.filter_cost_behavior(all_actuals, behavior)
+    table = de.filter_cost_behavior(all_table, behavior)
+    if behavior is not None:
+        label = f"{label} · הוצאות {BEHAVIOR_HE[behavior]} בלבד"
 
     cc_summary = de.summarize_by_cost_center(table, period, month)
     totals = compute_totals(cc_summary)
     full_year = de.build_full_year_view(table)
+    run_rate = de.run_rate_forecast(table, period, month)
     period_cells = de.filter_period(table.loc[table["Is_Closed"]], period, month)
     flags = de.top_variances(period_cells, n=10)
     flag_count = int((period_cells["Status"] == de.STATUS_OVERSPEND).sum())
 
     st.markdown(
-        f'<div class="page-title">בקרת תקציב מול ביצוע</div>'
+        f'<div class="page-title">בקרת תקציב <span class="gradient-text">מול ביצוע'
+        f'</span></div>'
         f'<div class="page-subtitle">שנת תקציב {last_closed[:4]} · '
         f'נתונים סגורים עד {month_label(last_closed)} · תצוגה: {label}</div>',
         unsafe_allow_html=True,
     )
     render_alert_banner(totals, flag_count, label)
-    render_kpis(totals, full_year, label, last_closed)
+    render_kpis(totals, full_year, run_rate, label, last_closed)
     st.write("")
     render_red_flags(flags, label)
     st.write("")

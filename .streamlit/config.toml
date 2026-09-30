@@ -1,0 +1,18 @@
+[theme]
+base = "dark"
+primaryColor = "#d946ef"
+backgroundColor = "#0a0f1c"
+secondaryBackgroundColor = "#111827"
+textColor = "#f8fafc"
+# Also drives the canvas-rendered st.dataframe grid, which CSS cannot reach
+font = "Calibri, Carlito, Heebo, 'Segoe UI', sans-serif"
+
+# st.dataframe is canvas-rendered, so CSS cannot reach its cells:
+# these theme keys are the supported way to style the GL grid.
+borderColor = "rgba(255, 255, 255, 0.1)"
+dataframeBorderColor = "rgba(255, 255, 255, 0.05)"
+dataframeHeaderBackgroundColor = "#0f1626"
+
+[theme.sidebar]
+backgroundColor = "#0d1321"
+secondaryBackgroundColor = "#1f2937"

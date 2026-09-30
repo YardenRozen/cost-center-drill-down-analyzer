@@ -42,6 +42,10 @@ desktop.ini
 # Office temporary lock files (e.g. ~$document.docx)
 ~$*
 
+# Private working notes and machine-specific shortcuts
+שלבי עבודה לפרויקט.docx
+*.lnk
+
 # Explicitly keep the mock data, even if a global ignore rule matches it
 !data/
 !data/*.csv

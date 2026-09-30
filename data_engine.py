@@ -48,6 +48,25 @@ MERGE_NO_ACTUALS = "No Actuals"   # budget line with no postings
 PERIOD_MTD = "MTD"
 PERIOD_YTD = "YTD"
 
+# Cost behavior: does the expense scale with activity or not?
+BEHAVIOR_FIXED = "Fixed"
+BEHAVIOR_VARIABLE = "Variable"
+BEHAVIOR_UNCLASSIFIED = "Unclassified"  # new categories not yet mapped
+
+COST_BEHAVIOR: dict[str, str] = {
+    "Payroll": BEHAVIOR_FIXED,
+    "Rent": BEHAVIOR_FIXED,
+    "Software Licenses": BEHAVIOR_FIXED,
+    "Cloud Infrastructure": BEHAVIOR_FIXED,
+    "Employee Welfare": BEHAVIOR_FIXED,      # per-headcount benefits
+    "Advertising": BEHAVIOR_VARIABLE,
+    "Travel": BEHAVIOR_VARIABLE,
+    "Consulting": BEHAVIOR_VARIABLE,
+    "Office Supplies": BEHAVIOR_VARIABLE,
+}
+
+MONTHS_PER_YEAR = 12
+
 KEYS = ["Month", "Cost_Center", "Expense_Category"]
 
 BUDGET_COLUMNS = ["Month", "Cost_Center", "Expense_Category", "Budget_Amount"]
@@ -84,7 +103,25 @@ def load_actuals(path: Path = ACTUALS_FILE) -> pd.DataFrame:
     actuals["Date"] = pd.to_datetime(actuals["Date"], errors="raise")
     actuals["Actual_Amount"] = pd.to_numeric(actuals["Actual_Amount"], errors="raise")
     actuals["Month"] = actuals["Date"].dt.strftime("%Y-%m")
+    actuals["Cost_Behavior"] = classify_cost_behavior(actuals["Expense_Category"])
     return actuals
+
+
+def classify_cost_behavior(categories: pd.Series) -> pd.Series:
+    """Map expense categories to Fixed / Variable (Unclassified if unknown)."""
+    return categories.map(COST_BEHAVIOR).fillna(BEHAVIOR_UNCLASSIFIED)
+
+
+def filter_cost_behavior(df: pd.DataFrame, behavior: str | None) -> pd.DataFrame:
+    """
+    Global slicer: keep only rows of one cost behavior.
+
+    None means no filter (all expenses). Works on both the actuals and the
+    variance table, since both carry the Cost_Behavior column.
+    """
+    if behavior is None:
+        return df
+    return df.loc[df["Cost_Behavior"] == behavior]
 
 
 def get_last_closed_month(actuals: pd.DataFrame) -> str:
@@ -159,6 +196,7 @@ def build_variance_table(
     merged["Actual_Amount"] = merged["Actual_Amount"].fillna(0.0)
     merged["Entry_Count"] = merged["Entry_Count"].fillna(0).astype(int)
     merged["Is_Closed"] = merged["Month"] <= last_closed_month
+    merged["Cost_Behavior"] = classify_cost_behavior(merged["Expense_Category"])
 
     merged = add_variance_metrics(merged)
     # Variance is meaningless for periods that have not been closed yet
@@ -267,6 +305,44 @@ def build_full_year_view(table: pd.DataFrame,
     return view.sort_values("Forecast_Variance", ascending=False).reset_index(drop=True)
 
 
+def run_rate_forecast(table: pd.DataFrame, period: str,
+                      month: str) -> dict[str, float | int | str]:
+    """
+    Straight-line run-rate forecast for the year end.
+
+    avg_monthly     = actuals of the selected period / months in the period
+    run_rate        = avg_monthly * 12
+    projected_var   = run_rate - annual_budget
+                      (positive = expected overspend, same sign convention
+                      as every other variance in the engine)
+
+    Note: a straight line ignores seasonality in the budget (e.g. Q4
+    campaign peaks), which is why it complements, not replaces, the
+    budget-based forecast in build_full_year_view.
+    """
+    closed = table.loc[table["Is_Closed"]]
+    subset = filter_period(closed, period, month)
+    months = int(subset["Month"].nunique())
+    actual = float(subset["Actual_Amount"].sum())
+    avg_monthly = actual / months if months else float("nan")
+    run_rate = avg_monthly * MONTHS_PER_YEAR
+    annual_budget = float(table["Budget_Amount"].sum())
+    projected_var = run_rate - annual_budget
+    status = classify_variance(pd.Series([projected_var]),
+                               pd.Series([annual_budget])).iloc[0]
+    return {
+        "months": months,
+        "actual": actual,
+        "avg_monthly": avg_monthly,
+        "run_rate": run_rate,
+        "annual_budget": annual_budget,
+        "projected_variance": projected_var,
+        "projected_variance_pct": (projected_var / annual_budget
+                                   if annual_budget else float("nan")),
+        "status": status,
+    }
+
+
 # ---------------------------------------------------------------------------
 # Drill-down to GL and exception reporting
 # ---------------------------------------------------------------------------
@@ -289,6 +365,28 @@ def get_gl_entries(
         .sort_values("Actual_Amount", ascending=False)
         .reset_index(drop=True)
     )
+
+
+def top_vendors(entries: pd.DataFrame, n: int = 5) -> pd.DataFrame:
+    """
+    Pareto view: the n vendors with the highest spend in a set of GL entries.
+
+    Takes the already-filtered entries (e.g. from get_gl_entries) to avoid
+    filtering twice. Share_Pct is each vendor's share of the total spend of
+    ALL entries, and Cumulative_Pct shows the concentration of the top n.
+    """
+    total = entries["Actual_Amount"].sum()
+    vendors = (
+        entries.groupby("Vendor_Name", as_index=False)
+        .agg(Actual_Amount=("Actual_Amount", "sum"),
+             Entry_Count=("Transaction_ID", "count"))
+        .sort_values("Actual_Amount", ascending=False)
+        .head(n)
+        .reset_index(drop=True)
+    )
+    vendors["Share_Pct"] = vendors["Actual_Amount"] / total if total else np.nan
+    vendors["Cumulative_Pct"] = vendors["Share_Pct"].cumsum()
+    return vendors
 
 
 def top_variances(
